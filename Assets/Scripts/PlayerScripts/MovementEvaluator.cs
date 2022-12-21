@@ -86,10 +86,10 @@ public class MovementEvaluator
     }
 
     public Vector3 CanGoOntoLedge() {
-        Vector3 pos = new Vector3(owner.transform.position.x, owner.CurrentLedge.transform.position.y + .1f, owner.transform.position.z);
+        Vector3 pos = new Vector3(owner.LedgeCheck.transform.position.x, owner.LedgeCheck.transform.position.y + .1f, owner.LedgeCheck.transform.position.z);
         Ray ray = new(pos, owner.transform.forward);
 
-        if (!Physics.Raycast(ray, out var hit, 3f)) {
+        if (!Physics.Raycast(ray, out var hit, .1f)) {
             return owner.transform.position + owner.transform.forward * 1.2f + new Vector3(0, 2.4f, 0);
         }
 

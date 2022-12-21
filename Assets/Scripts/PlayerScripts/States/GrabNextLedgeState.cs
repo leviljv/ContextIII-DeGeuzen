@@ -20,8 +20,6 @@ public class GrabNextLedgeState : MoveState
         dis = Vector3.Distance(owner.CurrentLedge.transform.position, owner.LedgeCheck.transform.position);
 
         owner.canGrabNextLedge = false;
-
-        Debug.Log("Enter!");
     }
 
     public override void OnExit() {

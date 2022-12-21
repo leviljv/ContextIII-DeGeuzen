@@ -99,6 +99,19 @@ public class MovementManager : MonoBehaviour
             return false;
         }, typeof(GrabNextLedgeState));
 
+        var wallLatchState = new LedgeGrabbingState(movementStateMachine);
+        movementStateMachine.AddState(typeof(LedgeGrabbingState), wallLatchState);
+        AddTransitionWithKey(wallLatchState, KeyCode.C, typeof(AirbornState));
+        AddTransitionWithPrediquete(wallLatchState, (x) => { return Input.GetKey(KeyCode.W) && evaluator.CanGoOntoLedge() != Vector3.zero; }, typeof(GetUpOnPlatformState));
+        AddTransitionWithPrediquete(wallLatchState, (x) => {
+            var tmp = evaluator.SphereCast(new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0), 1, spherecheckRadius);
+            if (tmp != null && canGrabNextLedge) {
+                CurrentLedge = tmp;
+                return true;
+            }
+            return false;
+        }, typeof(GrabNextLedgeState));
+
         var wallClimbState = new GrabNextLedgeState(movementStateMachine);
         movementStateMachine.AddState(typeof(GrabNextLedgeState), wallClimbState);
         AddTransitionWithPrediquete(wallClimbState, (x) => { return wallClimbState.isDone; }, typeof(LedgeGrabbingState));
