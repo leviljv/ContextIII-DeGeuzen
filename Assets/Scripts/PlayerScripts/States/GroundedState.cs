@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GroundedState : MoveState {
+    private float previousValue;
+    private bool Toggle = true;
+
     public GroundedState(StateMachine<MovementManager> owner) : base(owner) {
         this.owner = stateMachine.Owner;
     }
@@ -25,8 +28,18 @@ public class GroundedState : MoveState {
         var movedir = owner.SlopeTransform.TransformDirection(input.normalized);
         velocity += movedir * owner.speed;
 
+        if (input.magnitude != previousValue) {
+            owner.audioManager.PlayLoopedAudio("Walking", Toggle);
+            Toggle = !Toggle;
+        }
+        previousValue = input.magnitude;
+
         //jump 
         if (Input.GetKeyDown(KeyCode.Space)) {
+            owner.audioManager.PlayLoopedAudio("Walking", false);
+            owner.audioManager.PlayAudio("Jump");
+            Toggle = true;
+            previousValue = 0;
             owner.velocity += new Vector3(0, Mathf.Sqrt(owner.jumpHeight * -2 * owner.gravity), 0);
         }
 

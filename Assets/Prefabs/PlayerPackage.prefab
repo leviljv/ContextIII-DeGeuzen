@@ -564,6 +564,7 @@ GameObject:
   - component: {fileID: 3882733532703035154}
   - component: {fileID: 3882733534584538036}
   - component: {fileID: 3882733534584538037}
+  - component: {fileID: 5303517188042673976}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -634,6 +635,7 @@ MonoBehaviour:
     m_Bits: 64
   DebugObject: {fileID: 0}
   controller: {fileID: 0}
+  audioManager: {fileID: 0}
   gravity: -19.62
   airDrag: 0.997
   Acceleration: 50
@@ -655,3 +657,23 @@ MonoBehaviour:
   lookAtMoveDir: 1
   CurrentLedge: {fileID: 0}
   Interacting: 0
+--- !u!114 &5303517188042673976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882733534584538038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d6ca971b500c044c85d22ec201ec9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundslist:
+  - name: Walking
+    clip: {fileID: 8300000, guid: 1f6337f9fd2494c4cab07c9481fa4ef9, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    spacialBlend: 0
+    loop: 1

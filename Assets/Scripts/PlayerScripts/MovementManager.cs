@@ -23,6 +23,7 @@ public class MovementManager : MonoBehaviour
 
     [HideInInspector] public CharacterController controller;
     [HideInInspector] public MovementEvaluator evaluator;
+    [HideInInspector] public AudioManager audioManager;
 
     [Header("World Settings")]
     public float gravity = -19.62f;
@@ -61,6 +62,8 @@ public class MovementManager : MonoBehaviour
 
     void Start() {
         controller = GetComponent<CharacterController>();
+        audioManager = GetComponent<AudioManager>();
+        audioManager.Init();
 
         canGrabNextLedge = true;
 
