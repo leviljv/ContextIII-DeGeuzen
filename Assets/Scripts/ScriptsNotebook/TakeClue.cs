@@ -11,12 +11,8 @@ public class TakeClue : MonoBehaviour, IInteractable
     GameObject test;
     public bool ClueFound = false;
 
-    public void Interact()
-    {
-        Debug.Log("talking");
-        //noteBook.ToggleClueFound(scriptableObject);
-        if(ClueFound == false)
-        {
+    public void Interact(){
+        if(ClueFound == false){
             test = Instantiate(DragableCluePrefab, notebookToggle);
             test.GetComponent<ClueAnswer>().ClueScriptableObject = (Clue)scriptableObject;
             test.GetComponent<DragableItem>().clue = (Clue)scriptableObject;

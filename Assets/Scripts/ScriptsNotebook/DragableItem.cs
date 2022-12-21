@@ -14,12 +14,8 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
     public RaycastResult raycastResult;
 
     public string destinationTag = "DropArea";
-    private float x;
-    private float y;
-    private float z;
-    private Vector3 pos;
+   
     private Vector3 offset;
-    private Vector3 Position;
     private CanvasGroup canvasGroup;
     private RectTransform rectTransform;
     private WinningCondition winningCondition;
@@ -27,22 +23,9 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
     void Start() {
         rectTransform = GetComponent<RectTransform>();
         winningCondition = GetComponentInParent<WinningCondition>();
-        //rectTransform.localPosition = newPos;
-
-        if (posSet == false){
-            SetRandomPos();
-        }
     }
 
-    public void SetRandomPos() {
-        //Debug.Log("Hyva");
-        x = Random.Range(100, 200);
-        y = Random.Range(-150, -300);
-        z = 2;
-        pos = new Vector3(x, y, z);
-        rectTransform.localPosition = pos;
-        posSet = true;
-    }
+    
 
     void Awake() {
         if (gameObject.GetComponent<CanvasGroup>() == null)
@@ -57,8 +40,8 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
         transform.SetParent(CanvasTransform.transform);
         transform.SetAsLastSibling();
 
-        if (winningCondition.CorrectAnswers.Contains(gameObject.GetComponent<ClueAnswer>().ClueScriptableObject)) {
-            winningCondition.CorrectAnswers.Remove(gameObject.GetComponent<ClueAnswer>().ClueScriptableObject);
+        if (winningCondition.CorrectAnswers.Contains(gameObject.name)) {
+            winningCondition.CorrectAnswers.Remove(gameObject.name);
             Debug.Log("IK ZAT ER AL IN");
         }
         else { 
@@ -85,28 +68,28 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
 
             //Debug.Log(clue.ClueAntwoord + " " + clue.ClueVraag);
 
-            if(raycastResult.gameObject.GetComponent<InventorySlot>().Antwoord.text == clue.ClueAntwoord) {
+            if(raycastResult.gameObject.GetComponentInParent<InventorySlot>().ClueAntwoord == clue.ClueAntwoord) {
                 Debug.Log("IS GOED????");
-                winningCondition.CorrectAnswers.Add(gameObject.GetComponent<ClueAnswer>().ClueScriptableObject);
+                winningCondition.CorrectAnswers.Add(gameObject.name);
                 Debug.Log(winningCondition.CorrectAnswers);
             }
-            else if (raycastResult.gameObject.GetComponent<InventorySlot>().Antwoord.text != clue.ClueAntwoord) {
+            else if (raycastResult.gameObject.GetComponentInParent<InventorySlot>().ClueAntwoord != clue.ClueAntwoord) {
                 Debug.Log("IS NIET GOED!!!");
-                winningCondition.CorrectAnswers.Remove(gameObject.GetComponent<ClueAnswer>().ClueScriptableObject);
+                winningCondition.CorrectAnswers.Remove(gameObject.name);
             }
         }
         else {
             transform.SetParent(raycastResult.gameObject.transform);
 
-            test();
+            RemoveWrongAnswer();
         }
 
         canvasGroup.alpha = 1;
         canvasGroup.blocksRaycasts = true;
     }
 
-    public void test() {
-        winningCondition.CorrectAnswers.Remove(gameObject.GetComponent<ClueAnswer>().ClueScriptableObject);
+    public void RemoveWrongAnswer() {
+        winningCondition.CorrectAnswers.Remove(gameObject.name);
         Debug.Log("NOT GOOD");
     }
 }

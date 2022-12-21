@@ -5,7 +5,7 @@ using UnityEngine;
 public class WinningCondition : MonoBehaviour
 {
     public Canvas endcanvas;
-    public List<Clue> CorrectAnswers = new List<Clue>();
+    public List<string> CorrectAnswers = new List<string>();
     private NoteBook noteBook;
 
     void Start()

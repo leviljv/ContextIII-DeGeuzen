@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 3399454167529196978}
   - component: {fileID: 3399454167529196979}
   - component: {fileID: 7556773307931460653}
+  - component: {fileID: 190298453594460520}
   m_Layer: 5
   m_Name: ClueAnswer
   m_TagString: Untagged
@@ -229,5 +230,20 @@ MonoBehaviour:
   parentAfterDrag: {fileID: 0}
   backupParent: {fileID: 0}
   CanvasTransform: {fileID: 0}
-  destinationTag: DropArea
   posSet: 0
+  destinationTag: DropArea
+--- !u!114 &190298453594460520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3399454167529196977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 718f01b2dbc7b2548ac785c9cdbc0a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClueScriptableObject: {fileID: 0}
+  ShowAnswer: {fileID: 3399454166839721023}
+  Antwoord: 

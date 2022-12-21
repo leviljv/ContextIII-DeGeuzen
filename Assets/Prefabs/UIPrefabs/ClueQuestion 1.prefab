@@ -221,6 +221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7195685396856616138}
   - component: {fileID: 7195685396856615988}
+  - component: {fileID: -4979848775937688613}
   m_Layer: 5
   m_Name: ClueQuestion 1
   m_TagString: Untagged
@@ -258,3 +259,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7195685396856616139}
   m_CullTransparentMesh: 1
+--- !u!114 &-4979848775937688613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7195685396856616139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 254279d29cbe24f42b73f8c706d374fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClueScriptableObject: {fileID: 11400000, guid: e8e4067d7de452d4cb62f2fd5a7fbd5c,
+    type: 2}
+  ClueVraag: {fileID: 7195685396546361672}
+  ClueAntwoord: 

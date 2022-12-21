@@ -5,12 +5,13 @@ using TMPro;
 public class ClueAnswer : MonoBehaviour
 {
     public Clue ClueScriptableObject;
-    public TMP_Text Antwoord;
+    public TMP_Text ShowAnswer;
+    public string Antwoord;
 
     private void Start()
     {
-        Debug.Log("test");
-        Antwoord.text = ClueScriptableObject.ClueAntwoord;
+        Antwoord = ClueScriptableObject.ClueAntwoord;
+        ShowAnswer.text = ClueScriptableObject.ClueAntwoord;
     }
 
     
