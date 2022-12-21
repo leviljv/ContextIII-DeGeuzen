@@ -1,0 +1,98 @@
+
+Hoi Tatum of Levi!
+
+
+Dit is je Cheatsheet!
+
+	Paar ground-rules!
+		Geen lege regel aan het begin!
+		Je kan best wel los zijn met tabs en enters, probeer het wel bij 1 tab en 2 enters te houden, anders gaat ie alsnog huilen.
+
+	Verder, Lekker proberen!
+
+
+	Het is zo simpel als:
+		"$" voor Event Commands
+		"@" voor Options
+		"%" voor Sections
+		"&" om de Skippen
+
+	Hoe ziet dat er dan uit?
+		Nou, zo:
+
+		Voor Normale text: "<NAME>: <SENTENCE>"
+		Voor Event: "$ <EVENT_NAME> <PARAM_VALUE>"
+		Voor Option: "@ <OPTION_TEXT>"
+		Voor Section: "% <IDENTEFIER> <SECTION_NAME>"
+		Voor Skippen: "<NORMAL_SENTENCE>
+					   &"
+
+
+	Ik leg ze even in beter detail uit.
+		Bijvoorbeeld:
+
+		Voor Events heb je een EventManager, die is geimporteerd. Hieraan zitten EventTypes gekoppeld. 
+		Deze vind je bovenaan het script van de Eventmanager. Je moet één van deze precies overtypen.
+		Daarbij kan je elke value erachter zetten. Je hoeft hier geen "EventType" voor te zetten, alleen de naam.
+		
+		Bijv een float "$ SET_TYPE_TIME 0,01". 
+			Floats moeten met een comma en met een 0 ervoor als het een onder de 1 is.
+		Bijv een bool "$ SET_INTERACT_STATE true". 
+			Bools moeten met lowercase, verder is die heel simpel.
+		Bijv een string "$ SET_SPRITE willem_boos". 
+			strings moeten precies zoals je hem kan terug vinden in een lijst en dergelijke, verder is die ook heel simpel. 
+
+
+		Sections zijn stukken dialog waar je makkelijk naar toe kan gaan gebaseerd op de optie die gekozen word.
+		Maar ze kunnen ook als command gerunt worden. Voor opties leg ik zo uit, de rest nu!
+
+		Voor Sections hebben we "jump", "start" en "end", dit zijn de <IDENTIFIERS>.
+			"jump" gebruik je als je naar een section wilt gaan; "% jump SectionOne"
+			"start" gebruik je als start van die section; "% start SectionOne"
+			"end" gebruik je als je aan het einde van die section bent aangekomen; "% end SectionOne"
+
+		Bij alle moet je goed de naam erbij zetten en denk aan CAPS want dat is wel belangrijk.
+		Als je dus "% jump SectionOne" in je line hebt staan, gaat de dialog naar het eerste "% start SectionOne" die hij tegenkomt.
+		Daarom is het ook belangrijk om niet meerdere sections met dezelfde naam te hebben in een file.
+
+		Ik raad aan een section start helemaal onderin te zetten, die je "Breakout" noemt.
+		Dan kan je makkelijk een optie helemaal naar beneden laten gaan, waar hij dan uit de dialog gaat.
+			Dat ziet er dan zo uit "% jump Breakout"
+			en dan heb je HELEMAAL ONDERAAN "% start Breakout"
+			Hier hoef je geen end bij te doen.
+
+
+		Opties zijn ook heel simpel, maar hebben wel een extra dingetje.
+		Een voorbeeld van een optie is;
+			"@ Heb jij hem niet vermoord?"
+				"% jump SectionName"
+			"@ Ik denk dat jij hem vermoord hebt!"
+				"% jump SectionName"
+
+		Deze regels staan onder elkaar, wat ook moet in dit geval.
+		Als je dan op de knop drukt waar "Heb jij hem niet vermoord?" op staat.
+		Dan ga je naar de section "SectionName"
+
+
+		Skippen is ook best simpel, maar daar moet je wel ff weten dat "&" op de regel eronder moet.
+
+
+	Je kan nog een hoop extra dingen
+		Bijv:
+
+		Style!:
+			<b></b> voor Bold
+			<i></i> voor Italic
+			<u></u> voor Underline
+			<color = "colorName"></color> voor kleur
+
+		Maar ook Inline Commands!
+			Deze zijn heel erg als de commands van eerst, maar deze werken in een regel.
+				bijv: "Unknown: Ik praat nu tegen jou $ SET_TYPE_TIME 0,1 $ MAAR $ SET_TYPE_TIME 0,05 $ ik kan ook stoppen!"
+				Wat het in dit geval doet is de snelheid van typen aanpassen naar wat langzamer voor alleen het woord MAAR, daarna word ie weer terug gezet.
+				Hier kan je dus vanalles doen, als je een geluidje wilt afspelen kan dat op dezelfde manier, maar dan met andere paramaters en een andere EventType ofc.
+
+	
+Je kan een voorbeeld vinden in de folder "Resources\DialogFiles\Test 1.txt"
+
+Als je er nog vragen over hebt, stuur gerust een berichtje!

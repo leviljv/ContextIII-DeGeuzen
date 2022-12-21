@@ -1,0 +1,671 @@
+fileFormatVersion: 2
+guid: 334de68b460978c4d8b5c456bda39259
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1576800121153130052
+    second: Balthasar_Idle_0
+  - first:
+      213: -7877022619501498768
+    second: Balthasar_Idle_1
+  - first:
+      213: -3138909854876130697
+    second: Balthasar_Idle_2
+  - first:
+      213: 2261390192412579591
+    second: Balthasar_Idle_3
+  - first:
+      213: -6289879197487426182
+    second: Balthasar_Idle_4
+  - first:
+      213: 538075888651871552
+    second: Balthasar_Idle_5
+  - first:
+      213: -9204931203976786014
+    second: Balthasar_Idle_6
+  - first:
+      213: 6473644563317181832
+    second: Balthasar_Idle_7
+  - first:
+      213: -1509329442647473245
+    second: Balthasar_Idle_8
+  - first:
+      213: -7022276298396317926
+    second: Balthasar_Idle_9
+  - first:
+      213: 3491504322839881425
+    second: Balthasar_Idle_10
+  - first:
+      213: 3321487407567633570
+    second: Balthasar_Idle_11
+  - first:
+      213: 5359539101589279742
+    second: Balthasar_Idle_12
+  - first:
+      213: -1023299982301636972
+    second: Balthasar_Idle_13
+  - first:
+      213: -3362436303106524621
+    second: Balthasar_Idle_14
+  - first:
+      213: -273237088244833404
+    second: Balthasar_Idle_15
+  - first:
+      213: 105886826649283769
+    second: Balthasar_Idle_16
+  - first:
+      213: -4698298515411479967
+    second: Balthasar_Idle_17
+  - first:
+      213: -8921280920274423946
+    second: Balthasar_Idle_18
+  - first:
+      213: 2421706648539666107
+    second: Balthasar_Idle_19
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Balthasar_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2754
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1ffd0e4a41e1ae0800000000000000
+      internalID: -1576800121153130052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 2754
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e65ec69a13fa290800000000000000
+      internalID: -7877022619501498768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 2754
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772a22e1e1a5074d0800000000000000
+      internalID: -3138909854876130697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 2754
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707dd4d0662126f10800000000000000
+      internalID: 2261390192412579591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 2754
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7594a1f13cd5b8a0800000000000000
+      internalID: -6289879197487426182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1836
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0452c4d7b21a77700800000000000000
+      internalID: 538075888651871552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1836
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af0e0df6d3814080800000000000000
+      internalID: -9204931203976786014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1836
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dc8a67e6107d950800000000000000
+      internalID: 6473644563317181832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_8
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 1836
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a385f16ed8cd0be0800000000000000
+      internalID: -1509329442647473245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_9
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 1836
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17417789ecdb8e90800000000000000
+      internalID: -7022276298396317926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 918
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6ac9ecea0547030800000000000000
+      internalID: 3491504322839881425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_11
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 918
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac700ef23b481e20800000000000000
+      internalID: 3321487407567633570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_12
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 918
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef39b06ba68e06a40800000000000000
+      internalID: 5359539101589279742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_13
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 918
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4965f3876128cc1f0800000000000000
+      internalID: -1023299982301636972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_14
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 918
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a357d4ff93651d0800000000000000
+      internalID: -3362436303106524621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48364bfd054453cf0800000000000000
+      internalID: -273237088244833404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_16
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 0
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bce2d0028f287100800000000000000
+      internalID: 105886826649283769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_17
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 0
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1625724946a4cceb0800000000000000
+      internalID: -4698298515411479967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_18
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 0
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fa29d154e313480800000000000000
+      internalID: -8921280920274423946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balthasar_Idle_19
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 0
+        width: 447
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb69868bd51ab9120800000000000000
+      internalID: 2421706648539666107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e9c4068443c73d646959593cade26f7a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Balthasar_Idle_16: 105886826649283769
+      Balthasar_Idle_15: -273237088244833404
+      Balthasar_Idle_12: 5359539101589279742
+      Balthasar_Idle_6: -9204931203976786014
+      Balthasar_Idle_0: -1576800121153130052
+      Balthasar_Idle_11: 3321487407567633570
+      Balthasar_Idle_14: -3362436303106524621
+      Balthasar_Idle_4: -6289879197487426182
+      Balthasar_Idle_7: 6473644563317181832
+      Balthasar_Idle_2: -3138909854876130697
+      Balthasar_Idle_9: -7022276298396317926
+      Balthasar_Idle_3: 2261390192412579591
+      Balthasar_Idle_5: 538075888651871552
+      Balthasar_Idle_10: 3491504322839881425
+      Balthasar_Idle_8: -1509329442647473245
+      Balthasar_Idle_1: -7877022619501498768
+      Balthasar_Idle_13: -1023299982301636972
+      Balthasar_Idle_18: -8921280920274423946
+      Balthasar_Idle_17: -4698298515411479967
+      Balthasar_Idle_19: 2421706648539666107
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
