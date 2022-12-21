@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogFunctionality
 {
-    public DialogSystem Owner;
+    public DialogueSystem Owner;
 
     private Dictionary<string, Sprite> Portraits = new();
 
@@ -28,7 +28,7 @@ public class DialogFunctionality
     }
 
     public void SetTimeBetweenChars(float speed) {
-        Owner.TimeBetweenChars = speed;
+        Owner.currentTimeBetweenChars = speed;
     }
 
     public void SetSprite(string SpriteName) {

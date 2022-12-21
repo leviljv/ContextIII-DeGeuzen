@@ -16,7 +16,6 @@ public class GetUpOnPlatformState : MoveState {
 
         //owner.CurrentLedge = null;
 
-        owner.animator.SetTrigger("GetOntoPlatform");
         IsDone = false;
     }
 

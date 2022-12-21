@@ -20,7 +20,6 @@ public class GrabNextLedgeState : MoveState
         dis = Vector3.Distance(owner.CurrentLedge.transform.position, owner.LedgeCheck.transform.position);
 
         owner.canGrabNextLedge = false;
-        owner.animator.SetTrigger("HangJumpUp");
 
         Debug.Log("Enter!");
     }
@@ -37,9 +36,6 @@ public class GrabNextLedgeState : MoveState
         var offset = owner.CurrentLedge.transform.position - owner.LedgeCheck.transform.position;
         if (offset.magnitude > .01f) {
             owner.velocity = offset.normalized * 3;
-
-            if (offset.magnitude < .2f)
-                owner.animations.HandToObject(owner.CurrentLedge, true);
         }
         else {
             isDone = true;

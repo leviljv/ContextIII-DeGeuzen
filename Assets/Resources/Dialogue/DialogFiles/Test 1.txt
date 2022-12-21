@@ -24,7 +24,7 @@ $ DIALOG_SET_PORTRAIT Cornelis
 
 % start SectionOne
 
-	Unknown: You are $ DIALOG_SET_TYPE_TIME 0,2 $ <b>INDEED</b> $ DIALOG_SET_TYPE_TIME 0,05 $ gay
+	Unknown: You are $ DIALOG_SET_TYPE_TIME 0,2 $ <b>INDEED</b> $ DIALOG_SET_TYPE_TIME 0,01 $ gay
 	Unknown: I am not sorry
 	Unknown: Hope you will be fine
 

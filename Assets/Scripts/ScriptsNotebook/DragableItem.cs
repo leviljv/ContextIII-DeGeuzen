@@ -47,6 +47,7 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
         rectTransform.localPosition = pos;
         posSet = true;
     }
+
     void Awake()
     {
         if (gameObject.GetComponent<CanvasGroup>() == null)
@@ -78,6 +79,7 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
     {
         transform.position = Input.mousePosition;
     }
+
     public void OnPointerDown(PointerEventData eventData)
     {
         offset = transform.position - Input.mousePosition;

@@ -25,14 +25,8 @@ public class GroundedState : MoveState {
         var movedir = owner.SlopeTransform.TransformDirection(input.normalized);
         velocity += movedir * owner.speed;
 
-        if (input.magnitude > 0)
-            owner.animator.SetBool("Walking", true);
-        else
-            owner.animator.SetBool("Walking", false);
-
         //jump 
         if (Input.GetKeyDown(KeyCode.Space)) {
-            owner.animator.SetTrigger("Jump");
             owner.velocity += new Vector3(0, Mathf.Sqrt(owner.jumpHeight * -2 * owner.gravity), 0);
         }
 

@@ -13,16 +13,11 @@ public class AirbornState : MoveState {
     public override void OnEnter() {
         owner.lookAtMoveDir = true;
 
-        owner.animations.ResetIK();
-
-        owner.animator.SetBool("HangingFromEdge", false);
-        owner.animator.SetBool("Falling", true);
         doubleJumps = owner.jumpAmount;
     }
 
     public override void OnExit() {
-        owner.animator.SetBool("Falling", false);
-        owner.animator.SetTrigger("TouchedGround");
+
     }
 
     public override void OnUpdate() {
