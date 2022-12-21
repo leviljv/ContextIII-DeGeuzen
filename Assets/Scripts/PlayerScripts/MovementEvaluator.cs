@@ -46,6 +46,37 @@ public class MovementEvaluator
         return tmp[0].gameObject;
     }
 
+    public GameObject ForwardCast(float rad) {
+        var pos = Camera.main.transform.position + Camera.main.transform.forward * rad;
+
+        List<Collider> tmp = new(Physics.OverlapSphere(pos, rad));
+
+        if (tmp.Count < 1)
+            return null;
+
+        for (int i = tmp.Count - 1; i >= 0; i--) {
+            if (tmp[i].gameObject.layer != 6) {
+                tmp.RemoveAt(i);
+                continue;
+            }
+        }
+
+        if (tmp.Count < 1)
+            return null;
+
+        var closestPoint = tmp[0];
+        foreach (var item in tmp) {
+            if (item == closestPoint)
+                continue;
+
+            if (Vector3.Distance(pos, closestPoint.transform.position) > Vector3.Distance(pos, item.transform.position)) {
+                closestPoint = item;
+            }
+        }
+
+        return closestPoint.gameObject;
+    }
+
     public GameObject SphereCast(Vector3 input, float dis, float rad) {
         if (input.magnitude < .1f)
             return null;
@@ -86,10 +117,12 @@ public class MovementEvaluator
     }
 
     public Vector3 CanGoOntoLedge() {
-        Vector3 pos = new Vector3(owner.LedgeCheck.transform.position.x, owner.LedgeCheck.transform.position.y + .1f, owner.LedgeCheck.transform.position.z);
-        Ray ray = new(pos, owner.transform.forward);
+        Vector3 pos = new Vector3(owner.transform.position.x, owner.LedgeCheck.transform.position.y + .1f, owner.transform.position.z);
+        Ray ray = new(pos, -owner.CurrentLedge.transform.forward);
 
-        if (!Physics.Raycast(ray, out var hit, .1f)) {
+        Debug.DrawRay(pos, -owner.CurrentLedge.transform.forward, Color.green, 100f);
+
+        if (!Physics.Raycast(ray, out var hit, .7f)) {
             return owner.transform.position + owner.transform.forward * 1.2f + new Vector3(0, 2.4f, 0);
         }
 

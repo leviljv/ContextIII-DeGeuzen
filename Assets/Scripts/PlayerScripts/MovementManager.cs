@@ -91,8 +91,8 @@ public class MovementManager : MonoBehaviour
         movementStateMachine.AddState(typeof(AirbornState), airbornState);
         AddTransitionWithPrediquete(airbornState, (x) => { return evaluator.IsGrounded() && !sprinting; }, typeof(GroundedState));
         AddTransitionWithPrediquete(airbornState, (x) => {
-            var tmp = evaluator.SphereCast(new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0), 0, spherecheckRadius);
-            if (tmp != null && canGrabNextLedge) {
+            var tmp = evaluator.ForwardCast(spherecheckRadius);
+            if (tmp != null && canGrabNextLedge && Input.GetKey(KeyCode.W)) {
                 CurrentLedge = tmp;
                 return true;
             }
@@ -102,15 +102,15 @@ public class MovementManager : MonoBehaviour
         var wallLatchState = new LedgeGrabbingState(movementStateMachine);
         movementStateMachine.AddState(typeof(LedgeGrabbingState), wallLatchState);
         AddTransitionWithKey(wallLatchState, KeyCode.C, typeof(AirbornState));
-        AddTransitionWithPrediquete(wallLatchState, (x) => { return Input.GetKey(KeyCode.W) && evaluator.CanGoOntoLedge() != Vector3.zero; }, typeof(GetUpOnPlatformState));
         AddTransitionWithPrediquete(wallLatchState, (x) => {
-            var tmp = evaluator.SphereCast(new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0), 1, spherecheckRadius);
-            if (tmp != null && canGrabNextLedge) {
+            var tmp = evaluator.ForwardCast(spherecheckRadius);
+            if (tmp != null && canGrabNextLedge && Input.GetKey(KeyCode.W)) {
                 CurrentLedge = tmp;
                 return true;
             }
             return false;
         }, typeof(GrabNextLedgeState));
+        AddTransitionWithPrediquete(wallLatchState, (x) => { return Input.GetKey(KeyCode.W) && evaluator.CanGoOntoLedge() != Vector3.zero; }, typeof(GetUpOnPlatformState));
 
         var wallClimbState = new GrabNextLedgeState(movementStateMachine);
         movementStateMachine.AddState(typeof(GrabNextLedgeState), wallClimbState);
