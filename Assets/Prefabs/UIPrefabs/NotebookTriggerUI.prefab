@@ -182,8 +182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'druk op Q voor jouw notitieboek '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 03386c5b65b458b4e80e00309b0c86d6, type: 2}
-  m_sharedMaterial: {fileID: -2931911742229852467, guid: 03386c5b65b458b4e80e00309b0c86d6,
+  m_fontAsset: {fileID: 11400000, guid: 3dca728657e719c4b957e28632a34dc4, type: 2}
+  m_sharedMaterial: {fileID: -4312800550946297033, guid: 3dca728657e719c4b957e28632a34dc4,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

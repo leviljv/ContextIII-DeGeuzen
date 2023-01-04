@@ -5276,7 +5276,7 @@ GameObject:
   - component: {fileID: 81397761260421990}
   - component: {fileID: 81397761260421989}
   - component: {fileID: 81397761260421988}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Prism (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9616,7 +9616,7 @@ GameObject:
   - component: {fileID: 81397761782474927}
   - component: {fileID: 81397761782474926}
   - component: {fileID: 81397761782474925}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Prism (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11013,7 +11013,7 @@ GameObject:
   - component: {fileID: 81397762057095338}
   - component: {fileID: 81397762057095337}
   - component: {fileID: 81397762057095336}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Muren
   m_TagString: Untagged
   m_Icon: {fileID: 0}
