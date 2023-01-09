@@ -9,7 +9,7 @@ public class DialogFunctionality
     private Dictionary<string, Sprite> Portraits = new();
 
     public void Init() {
-        var portraits = Resources.LoadAll<Sprite>("Portraits/");
+        var portraits = Resources.LoadAll<Sprite>("Dialogue/Portraits/");
         if (portraits.Length < 1) {
             Debug.LogError("No Files");
             return;

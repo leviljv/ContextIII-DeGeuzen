@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class BlackBoard
 {
-    public static int CurrentIndex;
+    public static int CurrentIndex = 0;
 
     public static bool SolvedWillem;
     public static bool SolvedKetter;

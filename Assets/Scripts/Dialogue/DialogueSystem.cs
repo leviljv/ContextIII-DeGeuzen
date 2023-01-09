@@ -33,7 +33,7 @@ public class DialogueSystem : MonoBehaviour {
 
     void Awake() {
         funcs.Owner = this;
-        funcs.SetEvents();
+        funcs.Init();
 
         currentTimeBetweenChars = TimeBetweenChars;
 
@@ -229,7 +229,7 @@ public class DialogueSystem : MonoBehaviour {
 
         List<char> charList = new();
 
-        var frontAndBack = text.Split(" ", 2);
+        var frontAndBack = text.Split(": ", 2);
         var name = frontAndBack[0];
         nameText.text = name;
         var sentence = frontAndBack[1];
@@ -249,7 +249,7 @@ public class DialogueSystem : MonoBehaviour {
                 command.Add(sentence[i]);
                 i += 2;
 
-                CallCommand(new string(command.ToArray()).Split(" "));
+                CallCommand(new string(command.ToArray()).Split(": "));
             }
 
             if(sentence[i] == '<') {

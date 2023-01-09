@@ -1,4 +1,5 @@
 $ DIALOG_SET_PORTRAIT CornelisGroenveld
+
 @ Wat is jou opgevallen?
 	% jump GetuigeVraag
 @ Ik weet wie de kerk hebben vernield.
