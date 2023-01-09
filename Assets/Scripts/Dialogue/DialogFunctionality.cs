@@ -32,7 +32,11 @@ public class DialogFunctionality
     }
 
     public void SetSprite(string SpriteName) {
-        if(Portraits.ContainsKey(SpriteName))
+        if (Portraits.ContainsKey(SpriteName)) {
             Owner.Portrait.sprite = Portraits[SpriteName];
+        }
+        else {
+            Debug.LogError("Portrait: " + SpriteName + " Not Present In Dictionairy");
+        }
     }
 }

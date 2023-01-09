@@ -155,7 +155,7 @@ public class DialogueSystem : MonoBehaviour {
         else if (bool.TryParse(command[2], out var boolParse))
             EventManager<bool>.Invoke(ParseEnum<EventType>(command[1]), boolParse);
         else 
-            EventManager<string>.Invoke(ParseEnum<EventType>(command[1]), command[2]);
+            EventManager<string>.Invoke(ParseEnum<EventType>(command[1]), command[2].Trim());
     }
 
     private void DisplayOptions(string[] file) {

@@ -1,9 +1,9 @@
-$ DIALOG_SET_PORTRAIT Cornelis
+$ DIALOG_SET_PORTRAIT SaskiaUylenburg
 
-	Unknown: You are <i>Gay</i>
-	Unknown: I am <i>Gay</i>
-	Unknown: We are <i>Gay</i>
-	Unknown: Yes <i>Gay</i>
+	Unknown Person: You are <i>Gay</i>
+	Unknown Person: I am <i>Gay</i>
+	Unknown Person: We are <i>Gay</i>
+	Unknown Person: Yes <i>Gay</i>
 
 % start OptionSection
 
