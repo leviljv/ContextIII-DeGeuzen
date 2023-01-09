@@ -3,6 +3,8 @@ $ DIALOG_SET_PORTRAIT Rombertus
 	% jump GetuigeVraag
 @ Verdenk jij iemand?
 % jump VerdachtVraag
+@ Ik weet wie de dader is.
+	% jump Antwoord
 
 % start GetuigeVraag
 Rombertus: Eerder vandaag kwam een man genaamd <b>François Guyon</b> langs om de prins om een paspoort te vragen. 
@@ -27,3 +29,16 @@ Rombertus: Je zou toch denken dat je je eigen naam wel zou onthouden…
 % jump Breakout 
 % end VerdachtVraag
 % jump Breakout
+% start Antwoord
+Rombertus: Ik zag u net wat aantekeningen maken in een notitieboek, klopt dat?
+Rombertus: Zou ik die even mogen bekijken?
+Rombertus: Hmm...
+Rombertus: ...
+Rombertus: Dus die François Guyon is eigenlijk iemand anders?
+Rombertus: Natuurlijk... Het is me allemaal opeens heel duidelijk.
+Rombertus: Balthasar Gerards was de moordenaar!
+Rombertus: Bedankt voor uw hulp!
+@ Geen probleem.
+@ Daarom ben ik detective.
+% end Antwoord
+
