@@ -8,12 +8,12 @@ public class InventorySlot : MonoBehaviour
 {
     public Clue ClueScriptableObject;
     public TMP_Text ClueVraag;
-    public string ClueAntwoord;
+    public TMP_Text Antwoord;
 
     private void Start()
     {
         ClueVraag.text = ClueScriptableObject.ClueVraag;
-        ClueAntwoord = ClueScriptableObject.ClueAntwoord;
+        Antwoord.text = ClueScriptableObject.ClueAntwoord;
     }
-    
+
 }

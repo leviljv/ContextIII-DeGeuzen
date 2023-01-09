@@ -4,21 +4,24 @@ using UnityEngine;
 
 public class WinningCondition : MonoBehaviour
 {
-    public Canvas endcanvas;
     public List<string> CorrectAnswers = new List<string>();
-    private NoteBook noteBook;
-
+    private NoteBookV2 noteBook;
+    public int correctAnswersFromLists;
     void Start()
     {
-        noteBook = GetComponent<NoteBook>();
+        noteBook = GetComponent<NoteBookV2>();
+        for (int i = 0; i < noteBook.clueManager.numberOfPages; i++)
+        {
+            Debug.Log("Test");
+            correctAnswersFromLists += noteBook.clueManager.gameObject.transform.GetChild(i).GetComponent<ClueHolder>().ClueList.Count;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(CorrectAnswers.Count >= noteBook.NoteBookClueList.Count)
+        if (CorrectAnswers.Count >= correctAnswersFromLists)
         {
-            endcanvas.gameObject.SetActive(true);
             Debug.Log("YOU WIN");
         }
     }
