@@ -33,7 +33,7 @@ public class DialogueSystem : MonoBehaviour {
 
     void Awake() {
         funcs.Owner = this;
-        funcs.SetEvents();
+        funcs.Init();
 
         currentTimeBetweenChars = TimeBetweenChars;
 
@@ -155,7 +155,7 @@ public class DialogueSystem : MonoBehaviour {
         else if (bool.TryParse(command[2], out var boolParse))
             EventManager<bool>.Invoke(ParseEnum<EventType>(command[1]), boolParse);
         else 
-            EventManager<string>.Invoke(ParseEnum<EventType>(command[1]), command[2]);
+            EventManager<string>.Invoke(ParseEnum<EventType>(command[1]), command[2].Trim());
     }
 
     private void DisplayOptions(string[] file) {
@@ -229,7 +229,7 @@ public class DialogueSystem : MonoBehaviour {
 
         List<char> charList = new();
 
-        var frontAndBack = text.Split(" ", 2);
+        var frontAndBack = text.Split(": ", 2);
         var name = frontAndBack[0];
         nameText.text = name;
         var sentence = frontAndBack[1];
