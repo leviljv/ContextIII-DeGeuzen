@@ -1,0 +1,32 @@
+$ DIALOG_SET_PORTRAIT FrankDeBewaker
+
+Frank de Bewaker: Ik kwam er bij mijn standaard ronde achter dat hij was ontsnapt en heb het meteen verteld aan de heer Cornelis!
+@ Heb je niet iemand gezien tijdens het bewaken?
+	% jump GetuigeVraag
+@ Dus je hebt hem laten ontsnappen?
+	% jump BeschuldigVraag
+% start GetuigeVraag
+
+Frank de Bewaker: Nou ehh..
+Frank de Bewaker: Je hebt geen idee hoe zwaar het is om de hele nacht wakker te blijven!
+Frank de Bewaker: Ik heb al genoeg dingen aan mijn hoofd
+Frank de Bewaker: Ik kan niet de alles en de hele wereld in de gaten houden!
+@ Had je niet maar 1 ketter waar je op moest letten?
+Frank de Bewaker: Nou ehh..
+Frank de Bewaker: Je moet maar eens eerst naar anderen kijken!
+Frank de Bewaker: Ga maar eens met die monnik ondervragen, hij kwam vaak langs.
+@ Oke, bedankt.
+% jump Breakout 
+% end GetuigeVraag
+
+% start BeschuldigVraag
+Frank de Bewaker: Nou ehh..
+Frank de Bewaker: Je hebt geen idee hoe zwaar het is om de hele nacht wakker te blijven!
+Frank de Bewaker: Waarom zou ik hem bevrijden?
+Frank de Bewaker: Ik was ten slotte degene die hem in de gaten moest houden.
+Frank de Bewaker: Men zou mij als eerste verdenken, zo dom ben ik toch niet??
+Frank de Bewaker: Je moet maar eens die monnik ondervragen, hij kwam vaak langs.
+@ Oke, bedankt.
+% jump Breakout 
+% end BeschuldigVraag
+% start Breakout 

@@ -1,0 +1,2 @@
+$ DIALOG_SET_PORTRAIT Empty
+Hmm.. deze tekst staat geschreven met <b>houtskool</b>

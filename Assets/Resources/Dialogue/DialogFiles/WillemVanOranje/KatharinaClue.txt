@@ -1,0 +1,23 @@
+$ DIALOG_SET_PORTRAIT Katharina
+@ Wat was jij aan het doen vlak voor de moord?
+% jump GetuigeVraag
+@ Waar was jij vlak voor de moord?
+	% jump PlaatsVraag
+% start GetuigeVraag
+Katharina: Wij waren gewoon rustig een gezellige <b>lunch</b> aan het houden.
+Katharina: Daarna wilden we naar boven gaan. Ik liep vooraan, Willem liep achter mij.
+Katharina: Daarom heb ik niets gezien, het gebeurde allemaal zo snel achter mijn rug…
+
+@ Bedankt voor de informatie!
+% jump breakout
+% end GetuigeVraag
+
+% start PlaatsVraag
+Katharina: Na onze <b>lunch</b> liepen wij alvast rustig naar boven. 
+Katharina: Willem liep als een echte heer achteraan en liet mij en Rombertus voor. 
+Katharina: Daarom heb ik niets gezien, het gebeurde allemaal zo snel achter mijn rug…
+
+@ Bedankt voor de informatie!
+% jump Breakout
+% end PlaatsVraag
+% start Breakout

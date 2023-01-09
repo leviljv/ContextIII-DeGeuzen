@@ -1,0 +1,34 @@
+$ DIALOG_SET_PORTRAIT CornelisGroenveld
+
+Cornelis: Heeft u de dader al weten op te sporen?
+@ Nee, heeft u hem zelf misschien hebt laten ontsnappen?
+% jump BeschuldigVraag
+@ Ja, ik weet wie de dader was.
+	% jump Antwoord
+
+% start BeschuldigVraag
+Cornelis: Ik haal jou hier om mij te helpen en je denkt dat ik hem zelf heb bevrijd?
+Cornelis: Misschien ben je een slechtere detective dan ik dacht.
+Cornelis: Ik heb zelf het bevel gegeven om hem op te laten pakken en hem bovendien ter dood veroordeeld!
+Cornelis: Filips zorgt er met zijn harde aanpak wel voor dat iedereen hier boos wordt, zelfs ik wordt nu verdacht!
+@ Oke, duidelijk.
+% jump Breakout 
+% end BeschuldigVraag
+
+% start Antwoord
+Cornelis: Fantastisch!
+Cornelis: Ik zag dat u een notitieboekje mee heeft met alle clues die u heeft verzameld.
+Cornelis: Zou ik even mogen kijken?
+Cornelis: Hmmm..
+Cornelis: Wat??
+Cornelis: Mijn eigen vrouw?
+Cornelis: ...
+Cornelis: Nou als zij zo nodig liever met een ketter samen is mogen ze samen de gevangenis in!!
+Cornelis: Bedankt, zonder uw hulp was ik nooit te weten gekomen dat mijn vrouw niet alleen een verrader is, maar ook een ketter!
+Cornelis: Heel erg bedankt voor uw hulp.
+@ Geen probleem.
+@ Daar ben ik detective voor..
+% jump Breakout 
+% end Antwoord
+% start Breakout 
+

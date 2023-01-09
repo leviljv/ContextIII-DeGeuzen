@@ -1,0 +1,37 @@
+$ DIALOG_SET_PORTRAIT MariaGroenveld
+
+Maria: Goededag, prachtig weer vandaag vindt u niet?
+@ Heb jij er misschien wat mee te maken?
+	% jump BeschuldigVraag
+@ Heb jij gisteravond iets geks gezien?
+	% jump GetuigeVraag
+
+% start GetuigeVraag
+Maria: Gisteravond?
+Maria: Uhh...
+Maria: Nou ehh...
+Maria: Ik was uhhh.. aan het koken!! Ja..
+Maria: Ik maakte Jan's- ik bedoel uhh Cornelis' lievelingsgerecht!
+Maria: Mijn man Cornelis.. 
+Maria: haha..
+Maria: Ja, hij is een flinke eter, dus veel voorbereiding nodig! haha...
+Maria: Maarehh...
+Maria: De bewaker kwam gisteravond nog naar mij toe om te vragen of de ketter wel gemist zou worden door iemand, ga hem anders eerst maar even strenger ondervragen!
+@ Oke, duidelijk.
+% jump Breakout
+% end GetuigeVraag
+
+
+% start BeschuldigVraag
+Maria: Verdenk je mij nou?
+@ Ik had nog niet eens gezegd waar het over ging...
+Maria: Oh...
+Maria: Nou ehh...
+Maria: <b>U kunt mij niet zo maar van iets beschuldigen!! </b>
+Maria: <b> Tuurlijk ga ik mijzelf dan verdedigen!! </b>
+Maria: Ik ben de vrouw van Cornelis en wij zijn allebei hartstikke katholiek, wij zouden nooit een ketter helpen!
+Maria: De bewaker kwam gisteravond nog naar mij toe om te vragen of de ketter wel gemist zou worden door iemand, ga hem anders eerst maar even strenger ondervragen!
+@ Oke, bedankt.
+% jump Breakout 
+% end BeschuldigVraag
+% start Breakout 

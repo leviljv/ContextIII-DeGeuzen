@@ -1,0 +1,36 @@
+$ DIALOG_SET_PORTRAIT PeterDeBoer
+
+@ Waar was jij toen de kerk vernield werd?
+% jump GetuigeVraag
+@ Mag ik jouw handen even zien?
+% jump HandVraag
+
+% start GetuigeVraag
+Peter de boer: *hik* ohh hallo!
+Peter de boer: *hik*
+Peter de boer: Waar ik w- *hik* was?
+Peter de boer: Hahahaha! 
+Peter de boer: Jaa... *hik* Was een goeie avond hahaha...
+Peter de boer: Maarehhh.. Ik weet het niet meer zo goed
+@ Je weet het niet meer?
+@ Een slokje wijn te veel misschien?
+Peter de boer: hahahaha!
+Peter de boer: Klein beetje alcohol kan geen k- *hik* kwaad toch?
+% jump Breakout 
+% end GetuigeVraag
+
+% start HandVraag
+Peter de boer: Mijn handen? *hik*
+Peter de boer: J-ja hoor *hik*
+@ Au, dat ziet er pijnlijk uit. Heb je je verwond?
+Peter de boer: Huh?
+Peter de boer: Oh
+Peter de boer: Hahahaha
+Peter de boer: Nee johh voel je niet als je beetje hebt gedronken hah- *hik* ahaha
+Peter de boer: Was het glas? Of steen? Of misschien m- *hik* marmer?
+Peter de boer: Hahahaha
+Peter de boer: Ik weet het niet meer!
+@ Bedankt voor je medewerking.
+@ Succes met je kater!
+% end HandVraag
+

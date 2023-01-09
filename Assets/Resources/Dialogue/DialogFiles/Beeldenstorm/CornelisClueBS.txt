@@ -1,0 +1,21 @@
+$ DIALOG_SET_PORTRAIT CornelisGroenveld
+@ Wat is jou opgevallen?
+	% jump GetuigeVraag
+@ Ik weet wie de kerk hebben vernield.
+	% jump Antwoord
+
+% start GetuigeVraag
+Cornelis Groenveld: Toen ik aankwam bij de kerk was de schade al verricht.
+Cornelis Groenveld: Toen zag ik wat handafdrukken, misschien is het handig om de handen van iedereen te controleren.
+% end GetuigeVraag
+
+% start Antwoord
+Cornelis Groenveld: Geweldig!
+Cornelis Groenveld: Mag ik uw aantekeningen eens zien?
+Cornelis Groenveld: Hmm.. Juist..
+Cornelis Groenveld: De dronken boer en de monnik.
+Cornelis Groenveld: Ontzettend bedankt voor uw hulp.
+Cornelis Groenveld: Door u kunnen deze ketters direct naar de gevangenis worden gestuurd!
+@ Ik doe het graag.
+@ Mijn detective skills staan altijd voor je klaar.
+% end Antwoord

@@ -1,0 +1,37 @@
+$ DIALOG_SET_PORTRAIT Julia
+@ Heb jij iets gezien? 
+% jump GetuigeVraag
+@ Heb jij Peter vermoord?
+% jump BeschuldigVraag
+
+% start GetuigeVraag
+Julia: Iets gezien?
+Julia: Nou, uhhh..
+Julia: Het lichaam ligt letterlijk in mijn man’s werkplaats!
+Julia: Hoe bedoel je heb ik iets gezien?
+Julia: Mijn man en Peter waren altijd samen, vaker dan hij bij was...
+	@ Was je een beetje <b>jaloers</b> op hun vriendschap?
+Julia: Wat? <b>Jaloers??</b> Pfft.. uhh nee?
+Julia: Waarschijnlijk hebben ze gewoon hele erge ruzie gehad ofzo.
+Julia: Dat gebeurt toch eenmaal als je zoveel op elkaars lip zit?
+@ Oke, ik zal het noteren.
+% end GetuigeVraag
+
+% start BeschuldigVraag
+Julia: Wat?
+Julia: Hoe bedoelt u?? Hoe- wat.. 
+Julia: Het lichaam van die vieze boer lag in mijn man’s werkplaats!!
+Julia: Natuurlijk was het mijn man!
+@ Je klinkt erg zeker, ik had verwacht dat je jouw man wel zou verdedigen.
+Julia: Alsof mijn man dat voor mij zou doen.
+Julia: Nee joh, mijn man was veel liever bij Peter.
+Julia: Die twee waren onafscheidelijk.
+Julia: Net alsof zij met elkaar getrouwd waren...
+Julia: Jan was nooit meer bij mij, maar altijd bij Peter!
+@ Klinkt alsof je erg <b>jaloers</b> was op hun vriendschap.
+Julia: Nou ja zeg! Jaloers? Ik?? 
+Julia: Als je zo veel bij iemand in de buurt bent ga je sowieso ruzie krijgen... toch?
+Julia: En soms lopen die ruzies uit tot geweld.
+@ Bedankt voor je medewerking.
+% end Beschuldigvraag
+
