@@ -1,0 +1,6 @@
+$ DIALOG_SET_PORTRAIT Empty
+Notitie: Hmm.. Dit lijkt wel een stuk bladzijde uit iemands dagboek.
+Notitie: Op deze pagina staat de datum van eergister bovenaan geschreven.
+Notitie: De eigenaar is duidelijk een <b>geleerde schrijver</b>, een gewone burger zou dit niet zomaar kunnen.
+Notitie: “De kerk is niet meer wat het was, het lijkt wel een en al marteling en al het woord van God is verloren! Waanzin is het, waanzin!”
+Notitie: De eigenaar van dit dagboek was duidelijk <b>gefrustreerd</b> met de kerk.

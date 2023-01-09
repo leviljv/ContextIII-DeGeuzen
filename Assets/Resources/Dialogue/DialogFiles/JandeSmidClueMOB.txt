@@ -29,4 +29,3 @@ Jan de Smid: Wat? Peter en ik hebben nooit ruzie.
 Jan de Smid: Ik zou sowieso nooit gewelddadig worden, ruzie of geen ruzie!
 	@ Oke, bedankt voor je medewerking.
 % end Beschuldigvraag
-

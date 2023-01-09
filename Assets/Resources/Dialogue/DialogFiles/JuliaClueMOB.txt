@@ -34,4 +34,3 @@ Julia: Als je zo veel bij iemand in de buurt bent ga je sowieso ruzie krijgen...
 Julia: En soms lopen die ruzies uit tot geweld.
 @ Bedankt voor je medewerking.
 % end Beschuldigvraag
-
