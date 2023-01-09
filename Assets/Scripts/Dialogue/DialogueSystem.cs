@@ -164,6 +164,12 @@ public class DialogueSystem : MonoBehaviour {
         List<GameObject> buttons = new();
 
         while (file[index].Trim().ToCharArray()[0] == '@') {
+            var tmp = file[index].Trim().Split(" ");
+            
+            if (tmp[1] == "CONDITION") {
+
+            }
+
             var tmpButton = Instantiate(buttonPrefab, buttonContainer.transform);
             var text = file[index].Trim().Split(" ", 2)[1];
             tmpButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = text;
