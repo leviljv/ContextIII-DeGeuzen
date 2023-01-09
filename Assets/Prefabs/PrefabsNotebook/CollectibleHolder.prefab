@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 6127063818549583996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.7166023, y: 0.82934684, z: 1.3642589}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6127063820028865401}
@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 500.74036, y: -271.13007}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 129.5, y: -100.6}
+  m_SizeDelta: {x: 353.8008, y: 75.8779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6127063818549583985
 CanvasRenderer:
@@ -131,7 +131,6 @@ MonoBehaviour:
   collectible: {fileID: 0}
   image: {fileID: 6127063819893057984}
   title: {fileID: 6127063819801768968}
-  description: {fileID: 0}
 --- !u!1 &6127063819801768982
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +293,7 @@ RectTransform:
   m_GameObject: {fileID: 6127063819893057998}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.9363108, y: 1.5754877, z: 2.1057382}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6127063819511471881}
@@ -302,8 +301,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 360.4574, y: -134.63055}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 9.4, y: -7.5}
+  m_SizeDelta: {x: 116.8756, y: 103.4624}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6127063819893057987
 CanvasRenderer:
@@ -371,7 +370,7 @@ RectTransform:
   m_GameObject: {fileID: 6127063820028865670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.64999, y: 3.6127, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6127063819801768969}

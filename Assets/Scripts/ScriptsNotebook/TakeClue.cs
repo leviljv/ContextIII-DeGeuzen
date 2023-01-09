@@ -4,20 +4,27 @@ using UnityEngine;
 
 public class TakeClue : MonoBehaviour, IInteractable
 {
-    public ScriptableObject scriptableObject;
-    public NoteBook noteBook;
+    public ClueAnswerSO scriptableObject;
     public GameObject DragableCluePrefab;
-    public Transform notebookToggle;
-    GameObject test;
+    public NoteBookV2 noteBook;
+    GameObject tmp;
     public bool ClueFound = false;
+    public int QuestNumber;
 
-    public void Interact(){
-        if(ClueFound == false){
-            test = Instantiate(DragableCluePrefab, notebookToggle);
-            test.GetComponent<ClueAnswer>().ClueScriptableObject = (Clue)scriptableObject;
-            test.GetComponent<DragableItem>().clue = (Clue)scriptableObject;
+    private void Start()
+    {
+        QuestNumber = scriptableObject.QuestNumber;
+    }
+
+    public void Interact()
+    {
+        if (ClueFound == false)
+        {
+            noteBook.clueManager.gameObject.transform.GetChild(QuestNumber).GetComponent<ClueHolder>().ClueAnswerList.Add(scriptableObject);
+            noteBook.clueManager.gameObject.transform.GetChild(QuestNumber).GetComponent<ClueHolder>().SpawnAnswer(scriptableObject);
+
             ClueFound = true;
         }
-            
+
     }
 }
