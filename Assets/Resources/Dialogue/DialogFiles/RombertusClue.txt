@@ -1,10 +1,11 @@
 $ DIALOG_SET_PORTRAIT Rombertus
+
 @ Viel jou iets op eerder vandaag?
 	% jump GetuigeVraag
 @ Verdenk jij iemand?
 % jump VerdachtVraag
 @ Ik weet wie de dader is.
-	% jump Antwoord
+	% % jump if FoundAllClues jump AntwoordGoed : jump AntwoordFout
 
 % start GetuigeVraag
 Rombertus: Eerder vandaag kwam een man genaamd <b>François Guyon</b> langs om de prins om een paspoort te vragen. 
@@ -28,8 +29,25 @@ Rombertus: Je zou toch denken dat je je eigen naam wel zou onthouden…
 @ Bedankt voor de informatie!
 % jump Breakout 
 % end VerdachtVraag
+
+// if NOT all answers in notebook correct + filled in
+% start AntwoordFout
+Rombertus: Ik zag u net wat aantekeningen maken in een notitieboek, klopt dat?
+Rombertus: Zou ik die even mogen bekijken?
+Rombertus: Hmm...
+Rombertus: ...
+Rombertus: Weet u zeker dat dit genoeg bewijs is?
+Rombertus: Misschien moet u nog meer op zoek gaan.
+Rombertus: Of met meer mensen gaan praten om clues te verzamelen.
+Rombertus: Succes!
+@ Oke, duidelijk!
 % jump Breakout
-% start Antwoord
+@ Ga ik doen, tot zo!
+% jump Breakout
+% end AntwoordFout
+
+// if all answers in notebook correct + filled in
+% start AntwoordGoed 
 Rombertus: Ik zag u net wat aantekeningen maken in een notitieboek, klopt dat?
 Rombertus: Zou ik die even mogen bekijken?
 Rombertus: Hmm...
@@ -39,5 +57,9 @@ Rombertus: Natuurlijk... Het is me allemaal opeens heel duidelijk.
 Rombertus: Balthasar Gerards was de moordenaar!
 Rombertus: Bedankt voor uw hulp!
 @ Geen probleem.
+% jump Breakout
 @ Daarom ben ik detective.
-% end Antwoord
+% jump Breakout
+% end AntwoordGoed 
+
+% start Breakout
