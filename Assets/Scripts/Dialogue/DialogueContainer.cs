@@ -7,7 +7,6 @@ public class DialogueContainer : MonoBehaviour
     public List<string> DialogPerIndex = new();
 
     private int currentIndex = 0;
-    public string DialogueName;
 
     private void OnEnable() {
         EventManager<int>.Subscribe(EventType.SET_DIALOG_INDEX, SetIndex);

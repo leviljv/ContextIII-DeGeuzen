@@ -311,7 +311,12 @@ public class DialogueSystem : MonoBehaviour {
             yield return new WaitForSeconds(currentTimeBetweenChars);
         }
 
-        var autoSkip = CheckCommand(currentDialog[index], AutoNextChar);
+        string[] autoSkip = null;
+
+        if (index < currentDialog.Length - 1) {
+            autoSkip = CheckCommand(currentDialog[index], AutoNextChar);
+        }
+
         if (autoSkip != null) {
             index++;
             IsWriting = false;
