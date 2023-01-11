@@ -1,14 +1,18 @@
 $ DIALOG_SET_PORTRAIT CornelisGroenveld
+
 @ Wie heeft Peter de Boer vermoord denk je?
 % jump GetuigeVraag
 @ Heb jij Peter de Boer vermoord?
 % jump BeschuldigVraag
+@ Ik weet wie de boer heeft vermoord.
+	% if FoundAllClues jump AntwoordGoed : jump AntwoordFout
 
 % start GetuigeVraag
 Cornelis Groenveld: Nou dat is toch duidelijk?!
 Cornelis Groenveld: Het moet Jan de Smid geweest zijn.
 Cornelis Groenveld: Het lichaam lag letterlijk in zijn werkplaats!
 @ Oke, duidelijk.
+% jump Breakout
 % end GetuigeVraag
 
 % start BeschuldigVraag
@@ -19,9 +23,25 @@ Cornelis Groenveld: Of hij zou opgehangen worden.
 Cornelis Groenveld: Kortom, hij zou eerlijk veroordeeld worden, ook al is hij slechts een boer.
 Cornelis Groenveld: Waarom zou ik hem ooit zelf vermoorden als ik daar een beul voor heb?!
 @ Bedankt voor je medewerking.
+% jump Breakout
 % end Beschuldigvraag
 
-% start Antwoord
+// if NOT all answers in notebook correct + filled in
+% start AntwoordFout
+Cornelis: Zou ik uw notitieboek even mogen bekijken?
+Cornelis: Hmm...
+Cornelis: ...
+Cornelis: Weet u zeker dat dit al het bewijs is?
+Cornelis: Misschien moet u nog meer op zoek gaan.
+Cornelis: Ga met meer mensen gaan praten om clues te verzamelen.
+Cornelis: Succes!
+@ Oke, duidelijk!
+% jump Breakout
+@ Ga ik doen, tot zo!
+% jump Breakout
+% end AntwoordFout
+
+% start AntwoordGoed
 Cornelis Groenveld: Zo snel al?
 Cornelis Groenveld: Wat fijn!
 Cornelis Groenveld: Mag ik uw notities zien?
@@ -31,5 +51,9 @@ Cornelis Groenveld: Jeetje, dat iemand zo jaloers kan worden van een hechte vrie
 Cornelis Groenveld: In ieder geval nogmaals bedankt.
 Cornelis Groenveld: Door u is ons stadje weer wat veiliger!
 @ Geen probleem.
+% jump Breakout
 @ Je weet mij te vinden als er meer mysteries zijn om op te lossen!
-% end Antwoord
+% jump Breakout
+% end AntwoordGoed
+
+% start Breakout

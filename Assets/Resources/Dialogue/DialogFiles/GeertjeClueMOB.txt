@@ -14,6 +14,7 @@ Geertje: Ze vertelde dat ze Peter niet kon uitstaan.
 Geertje: Dat ze zich ergerde aan hem en zijn relatie met Peter.
 Geertje: Volgens mij zag ze een beetje groen van jaloezie.
 	@ Hmm... Interessant.
+	% jump Breakout
 % end GetuigeVraag
 
 % start BeschuldigVraag
@@ -26,4 +27,7 @@ Geertje: maar ik heb hem niet gezien toen ze terugkwamen.
 Geertje: Jazeker. 
 Geertje: Gisteravond kwamen Jan en mijn man samen terug en hebben ze tot laat nog thuis gedronken.
 	@ Hmmm.. Bedankt voor de informatie.
+	% jump Breakout
 % end Beschuldigvraag
+
+% start Breakout

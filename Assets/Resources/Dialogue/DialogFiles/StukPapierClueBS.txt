@@ -1,4 +1,5 @@
 $ DIALOG_SET_PORTRAIT Empty
+
 Notitie: Hmm.. Dit lijkt wel een stuk bladzijde uit iemands dagboek.
 Notitie: Op deze pagina staat de datum van eergister bovenaan geschreven.
 Notitie: De eigenaar is duidelijk een <b>geleerde schrijver</b>, een gewone burger zou dit niet zomaar kunnen.
