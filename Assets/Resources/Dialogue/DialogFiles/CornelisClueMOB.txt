@@ -1,8 +1,11 @@
 $ DIALOG_SET_PORTRAIT CornelisGroenveld
+
 @ Wie heeft Peter de Boer vermoord denk je?
 % jump GetuigeVraag
 @ Heb jij Peter de Boer vermoord?
 % jump BeschuldigVraag
+@ Ik weet wie de boer heeft vermoord.
+	% if FoundAllClues jump AntwoordGoed : jump AntwoordFout
 
 % start GetuigeVraag
 Cornelis Groenveld: Nou dat is toch duidelijk?!
@@ -21,7 +24,20 @@ Cornelis Groenveld: Waarom zou ik hem ooit zelf vermoorden als ik daar een beul 
 @ Bedankt voor je medewerking.
 % end Beschuldigvraag
 
-% start Antwoord
+// if NOT all answers in notebook correct + filled in
+% start AntwoordFout
+Cornelis: Zou ik uw notitieboek even mogen bekijken?
+Cornelis: Hmm...
+Cornelis: ...
+Cornelis: Weet u zeker dat dit al het bewijs is?
+Cornelis: Misschien moet u nog meer op zoek gaan.
+Cornelis: Ga met meer mensen gaan praten om clues te verzamelen.
+Cornelis: Succes!
+@ Oke, duidelijk!
+@ Ga ik doen, tot zo!
+% end Antwoord
+
+% start AntwoordGoed
 Cornelis Groenveld: Zo snel al?
 Cornelis Groenveld: Wat fijn!
 Cornelis Groenveld: Mag ik uw notities zien?

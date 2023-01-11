@@ -4,7 +4,7 @@ Cornelis: Heeft u de dader al weten op te sporen?
 @ Nee, heeft u hem zelf misschien hebt laten ontsnappen?
 % jump BeschuldigVraag
 @ Ja, ik weet wie de dader was.
-	% jump Antwoord
+	% if FoundAllClues jump AntwoordGoed : jump AntwoordFout
 
 % start BeschuldigVraag
 Cornelis: Ik haal jou hier om mij te helpen en je denkt dat ik hem zelf heb bevrijd?
@@ -15,7 +15,22 @@ Cornelis: Filips zorgt er met zijn harde aanpak wel voor dat iedereen hier boos 
 % jump Breakout 
 % end BeschuldigVraag
 
-% start Antwoord
+// if NOT all answers in notebook correct + filled in
+% start AntwoordFout
+Cornelis: Ik hoorde dat u altijd aantekeningen maakt in een notitieboek, klopt dat?
+Cornelis: Zou ik even mogen kijken?
+Cornelis: Hmm...
+Cornelis: ...
+Cornelis: Weet u zeker dat dit genoeg bewijs is?
+Cornelis: Misschien moet u nog meer op onderzoek uitgaan.
+Cornelis: Ga met meer mensen gaan praten om clues te verzamelen.
+Cornelis: Succes!
+@ Oke, duidelijk!
+@ Ga ik doen, tot zo!
+% end Antwoord
+
+% start AntwoordGoed
+// if all answers in notebook are filled in + correct
 Cornelis: Fantastisch!
 Cornelis: Ik zag dat u een notitieboekje mee heeft met alle clues die u heeft verzameld.
 Cornelis: Zou ik even mogen kijken?

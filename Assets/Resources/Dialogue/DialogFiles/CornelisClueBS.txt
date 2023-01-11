@@ -3,14 +3,28 @@ $ DIALOG_SET_PORTRAIT CornelisGroenveld
 @ Wat is jou opgevallen?
 	% jump GetuigeVraag
 @ Ik weet wie de kerk hebben vernield.
-	% jump Antwoord
+	% if FoundAllClues jump AntwoordGoed : jump AntwoordFout
 
 % start GetuigeVraag
 Cornelis Groenveld: Toen ik aankwam bij de kerk was de schade al verricht.
 Cornelis Groenveld: Toen zag ik wat handafdrukken, misschien is het handig om de handen van iedereen te controleren.
 % end GetuigeVraag
 
-% start Antwoord
+// if NOT all answers in notebook correct + filled in
+% start AntwoordFout
+Cornelis: Zou ik even uw notitieboek mogen bekijken?
+Cornelis: Hmm...
+Cornelis: ...
+Cornelis: Weet u zeker dat dit al het bewijs is?
+Cornelis: Misschien moet u nog meer op onderzoek uitgaan.
+Cornelis: Ga met meer mensen gaan praten om clues te verzamelen.
+Cornelis: Succes!
+@ Oke, duidelijk!
+@ Ga ik doen, tot zo!
+% end Antwoord
+
+% start AntwoordGoed
+// if all answers in notebook correct + filled in
 Cornelis Groenveld: Geweldig!
 Cornelis Groenveld: Mag ik uw aantekeningen eens zien?
 Cornelis Groenveld: Hmm.. Juist..
