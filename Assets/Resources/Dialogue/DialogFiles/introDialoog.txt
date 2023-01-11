@@ -1,7 +1,7 @@
 $ DIALOG_SET_PORTRAIT Rombertus
 
-Romertus: Wat fijn dat u zo snel kon komen. 
-Romertus: Na gehoord te hebben van uw geweldige detectivewerk tijdens de start van de revolutie, vraag ik u om hulp. 
-Romertus: Willem had het vaak over uw fantastische oplossingsvaardigheden. 
-Romertus: Daarom is niemand anders beter geschikt om zijn moord op te lossen.
-Romertus: Help ons om de moordenaar op te sporen zodat hij voor zijn daden zal boeten. 
+Rombertus: Wat fijn dat u zo snel kon komen. 
+Rombertus: Na gehoord te hebben van uw geweldige detectivewerk tijdens de start van de revolutie, vraag ik u om hulp. 
+Rombertus: Willem had het vaak over uw fantastische oplossingsvaardigheden. 
+Rombertus: Daarom is niemand anders beter geschikt om zijn moord op te lossen.
+Rombertus: Help ons om de moordenaar op te sporen zodat hij voor zijn daden zal boeten. 

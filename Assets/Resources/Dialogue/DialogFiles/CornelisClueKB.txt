@@ -27,7 +27,8 @@ Cornelis: Ga met meer mensen gaan praten om clues te verzamelen.
 Cornelis: Succes!
 @ Oke, duidelijk!
 @ Ga ik doen, tot zo!
-% end Antwoord
+% jump Breakout
+% end AntwoordFout
 
 % start AntwoordGoed
 // if all answers in notebook are filled in + correct
@@ -44,5 +45,5 @@ Cornelis: Heel erg bedankt voor uw hulp.
 @ Geen probleem.
 @ Daar ben ik detective voor..
 % jump Breakout 
-% end Antwoord
+% end AntwoordGoed
 % start Breakout 

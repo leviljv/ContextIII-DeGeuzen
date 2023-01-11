@@ -8,6 +8,7 @@ $ DIALOG_SET_PORTRAIT CornelisGroenveld
 % start GetuigeVraag
 Cornelis Groenveld: Toen ik aankwam bij de kerk was de schade al verricht.
 Cornelis Groenveld: Toen zag ik wat handafdrukken, misschien is het handig om de handen van iedereen te controleren.
+% jump Breakout
 % end GetuigeVraag
 
 // if NOT all answers in notebook correct + filled in
@@ -21,7 +22,8 @@ Cornelis: Ga met meer mensen gaan praten om clues te verzamelen.
 Cornelis: Succes!
 @ Oke, duidelijk!
 @ Ga ik doen, tot zo!
-% end Antwoord
+% jump Breakout
+% end AntwoordFout
 
 % start AntwoordGoed
 // if all answers in notebook correct + filled in
@@ -33,4 +35,7 @@ Cornelis Groenveld: Ontzettend bedankt voor uw hulp.
 Cornelis Groenveld: Door u kunnen deze ketters direct naar de gevangenis worden gestuurd!
 @ Ik doe het graag.
 @ Mijn detective skills staan altijd voor je klaar.
-% end Antwoord
+% jump Breakout
+% end AntwoordGoed
+
+% start Breakout

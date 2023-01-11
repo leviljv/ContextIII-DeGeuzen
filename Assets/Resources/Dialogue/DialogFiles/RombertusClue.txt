@@ -29,7 +29,7 @@ Rombertus: Je zou toch denken dat je je eigen naam wel zou onthouden…
 @ Bedankt voor de informatie!
 % jump Breakout 
 % end VerdachtVraag
-% jump Breakout
+
 // if NOT all answers in notebook correct + filled in
 % start AntwoordFout
 Rombertus: Ik zag u net wat aantekeningen maken in een notitieboek, klopt dat?
@@ -41,7 +41,9 @@ Rombertus: Misschien moet u nog meer op zoek gaan.
 Rombertus: Of met meer mensen gaan praten om clues te verzamelen.
 Rombertus: Succes!
 @ Oke, duidelijk!
+% jump Breakout
 @ Ga ik doen, tot zo!
+% jump Breakout
 % end AntwoordFout
 
 // if all answers in notebook correct + filled in
@@ -55,5 +57,9 @@ Rombertus: Natuurlijk... Het is me allemaal opeens heel duidelijk.
 Rombertus: Balthasar Gerards was de moordenaar!
 Rombertus: Bedankt voor uw hulp!
 @ Geen probleem.
+% jump Breakout
 @ Daarom ben ik detective.
+% jump Breakout
 % end AntwoordGoed 
+
+% start Breakout

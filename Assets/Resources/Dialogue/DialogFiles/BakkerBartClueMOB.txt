@@ -10,6 +10,7 @@ Bakker Bart: Ik zag een klein iemand stiekem wegsluipen.
 Bakker Bart: Het was nog donker dus ik zag niet wie het was.
 Bakker Bart: Maar het leek wel alsof ze heel stiekem probeerde te doen.
 @ Hmm.. Interessant.
+% jump Breakout
 % end GetuigeVraag
 
 % start BeschuldigVraag
@@ -23,4 +24,7 @@ Bakker Bart: Hadden we maar meteen alarm geslagen...
 @ Dus Jan was de hele avond bij jou?
 Bakker Bart: Klopt. Mijn vrouw heeft ons ook nog thuis zien komen.
 	@ Oke, bedankt voor je medewerking.
+	% jump Breakout
 % end Beschuldigvraag
+
+% start Breakout

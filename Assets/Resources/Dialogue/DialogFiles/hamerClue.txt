@@ -1,2 +1,3 @@
 $ DIALOG_SET_PORTRAIT Empty
+
 Notitie: Hmmm... Dit is de hamer van Jan de smid, wat doet die hier in de kerk?

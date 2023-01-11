@@ -12,6 +12,7 @@ Cornelis Groenveld: Nou dat is toch duidelijk?!
 Cornelis Groenveld: Het moet Jan de Smid geweest zijn.
 Cornelis Groenveld: Het lichaam lag letterlijk in zijn werkplaats!
 @ Oke, duidelijk.
+% jump Breakout
 % end GetuigeVraag
 
 % start BeschuldigVraag
@@ -22,6 +23,7 @@ Cornelis Groenveld: Of hij zou opgehangen worden.
 Cornelis Groenveld: Kortom, hij zou eerlijk veroordeeld worden, ook al is hij slechts een boer.
 Cornelis Groenveld: Waarom zou ik hem ooit zelf vermoorden als ik daar een beul voor heb?!
 @ Bedankt voor je medewerking.
+% jump Breakout
 % end Beschuldigvraag
 
 // if NOT all answers in notebook correct + filled in
@@ -35,7 +37,8 @@ Cornelis: Ga met meer mensen gaan praten om clues te verzamelen.
 Cornelis: Succes!
 @ Oke, duidelijk!
 @ Ga ik doen, tot zo!
-% end Antwoord
+% jump Breakout
+% end AntwoordFout
 
 % start AntwoordGoed
 Cornelis Groenveld: Zo snel al?
@@ -48,4 +51,7 @@ Cornelis Groenveld: In ieder geval nogmaals bedankt.
 Cornelis Groenveld: Door u is ons stadje weer wat veiliger!
 @ Geen probleem.
 @ Je weet mij te vinden als er meer mysteries zijn om op te lossen!
-% end Antwoord
+% jump Breakout
+% end AntwoordGoed
+
+% start Breakout
