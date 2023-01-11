@@ -1,0 +1,31 @@
+$ DIALOG_SET_PORTRAIT JanDeSmid
+@ Hoe komt het lichaam van Peter de boer in jouw werkplaats?
+% jump VerlaringVraag
+@ Heb jij Peter vermoord?
+% jump BeschuldigVraag
+
+% start GetuigeVraag
+Jan de Smid: Ik weet het niet!
+Jan de Smid: Ik weet niet waarom dit gebeurt...
+Jan de Smid: Hij was mijn vriend...
+Jan de Smid: We zouden nog een avond gaan drinken voordat hij naar de gevangenis moest.
+Jan de Smid: Maar hij kwam niet opdagen.
+Jan de Smid: Ik had het toen al moeten weten.
+Jan de Smid: Ik had toen al meteen moeten weten dat er iets aan de hand was.
+Jan de Smid: Vanochtend had ik de grootste schrik van mijn leven.
+Jan de Smid: Mijn werkplaats, met mijn beste vriend op de grond...
+Jan de Smid: Ik kan het nog steeds niet geloven...
+Jan de Smid: ...
+Jan de Smid: Ik hield echt van hem.
+@ Bedankt voor je medewerking.
+% end GetuigeVraag
+
+% start BeschuldigVraag
+Jan de Smid: Wat? <b> Nee! </b>
+Jan de Smid: Hij was mijn beste vriend!
+Jan de Smid: Ik zou hem nooit wat aandoen.
+	@ Zelfs niet als jullie ruzie hebben?
+Jan de Smid: Wat? Peter en ik hebben nooit ruzie.
+Jan de Smid: Ik zou sowieso nooit gewelddadig worden, ruzie of geen ruzie!
+	@ Oke, bedankt voor je medewerking.
+% end Beschuldigvraag

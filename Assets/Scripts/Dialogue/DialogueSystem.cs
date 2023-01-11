@@ -249,7 +249,7 @@ public class DialogueSystem : MonoBehaviour {
                 command.Add(sentence[i]);
                 i += 2;
 
-                CallCommand(new string(command.ToArray()).Split(" "));
+                CallCommand(new string(command.ToArray()).Split(": "));
             }
 
             if(sentence[i] == '<') {

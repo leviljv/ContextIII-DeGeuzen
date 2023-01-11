@@ -1,0 +1,8 @@
+$ DIALOG_SET_PORTRAIT BalthasarGerards
+
+Francis Guien: Hey! Uhh.. ik ben Francis Guien!
+@ Francis Guien? Bedoelt u François Guyon?
+Francis Guien: Juist, uhh.. Ja dat is mijn naam...
+Francis Guien: Wat? Waarom sta je hier nog?
+Francis Guien: Ik heb niks gehoord of gezien!
+Francis Guien: Oke, doei!

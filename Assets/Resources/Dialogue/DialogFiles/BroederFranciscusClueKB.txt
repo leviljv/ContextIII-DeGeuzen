@@ -1,0 +1,32 @@
+$ DIALOG_SET_PORTRAIT BroederFranciscus
+
+Broeder Franciscus: Goedemorgen, prijs de Heer.
+@ Er is een ketter ontsnapt, heb jij iets gezien?
+	% jump GetuigeVraag
+@ Heb jij de ketter helpen ontsnappen?
+	% jump BeschuldigVraag
+
+% start GetuigeVraag
+Broeder Franciscus: Och die arme man, hopelijk heeft hij nog een beetje geluk zo.
+Broeder Franciscus: Zelf was ik bezig de Mis voor te bereiden, ik was de hele tijd in de kerk.
+Broeder Franciscus: Ik heb dus niks gezien.
+Broeder Franciscus: Maar ik geloof dat zelfs protestanten het niet verdienen om zo wreed behandeld te worden.
+Broeder Franciscus: We zijn allemaal tenslotte mensen.
+Broeder Franciscus: Iedereen met een goed hart zou de arme man helpen, hij deed geen vlieg kwaad.
+Broeder Franciscus: Hij had enkel een Lutherse bijbel in huis.
+@ Oke, bedankt.
+% jump Breakout 
+% end GetuigeVraag
+
+% start BeschuldigVraag
+Broeder Franciscus: Ketter...
+Broeder Franciscus: Wat een naar woord is het ook.
+Broeder Franciscus: Nee, ik heb de arme man niet geholpen.
+Broeder Franciscus: Maar ik geloof dat zelfs protestanten het niet verdienen om zo wreed behandeld te worden.
+Broeder Franciscus: We zijn allemaal tenslotte mensen.
+Broeder Franciscus: Iedereen met een goed hart zou de arme man helpen, hij deed geen vlieg kwaad.
+Broeder Franciscus: Hij had enkel een Lutherse bijbel in huis.
+@ Oke, bedankt.
+% jump Breakout 
+% end BeschuldigVraag
+% start Breakout 

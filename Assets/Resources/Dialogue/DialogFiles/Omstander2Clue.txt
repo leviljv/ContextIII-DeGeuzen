@@ -1,0 +1,7 @@
+$ DIALOG_SET_PORTRAIT Empty
+
+@ Heb jij iets gezien?
+Omstander: Ik zag een man iets gehaast in een van de bosjes gooien
+Omstander: Het leek alsof hij het probeerde te verstoppen.
+@ In de bosjes? Interessant...
+@ Bedankt voor de informatie!
