@@ -164,27 +164,43 @@ public class DialogueSystem : MonoBehaviour {
         List<GameObject> buttons = new();
 
         while (file[index].Trim().ToCharArray()[0] == '@') {
-            var tmp = file[index].Trim().Split(" ");
-            
-            if (tmp[1] == "CONDITION") {
-
-            }
-
             var tmpButton = Instantiate(buttonPrefab, buttonContainer.transform);
             var text = file[index].Trim().Split(" ", 2)[1];
             tmpButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = text;
             tmpButton.GetComponent<Button>().onClick.AddListener(() => RemoveOptions());
 
             index++;
-            
-            if (CheckCommand(file[index], SectionChar) != null) {
-                if (file[index].Trim().Split(" ")[1] == "jump") {
-                    string sectionName = file[index].Trim().Split(" ")[2];
-                    tmpButton.GetComponent<Button>().onClick.AddListener(() => JumpToSection(sectionName));
-                    index++;
-                }
-            }
 
+            string SectionName = "";
+
+            if (CheckCommand(file[index], SectionChar) != null) {
+                var tmp = file[index].Trim().Split(" ");
+
+                if (tmp[1] != "jump")
+                    Debug.LogError("Command after % has to be 'jump' for options");
+
+                if (tmp[2] == "if") {
+                    if (BlackBoard.instance.SettingsWithValue.ContainsKey(tmp[3])) {
+                        if (BlackBoard.instance.SettingsWithValue[tmp[3]]) {
+                            SectionName = tmp[4];
+                        }
+                        else {
+                            SectionName = tmp[6];
+                        }
+                    }
+                    else {
+                        Debug.LogError("Condition: " + tmp[3] + " does not Exist.");
+                        SectionName = tmp[6];
+                    }
+                }
+                else
+                    SectionName = tmp[2];
+            }
+            
+            if(SectionName != "")
+                tmpButton.GetComponent<Button>().onClick.AddListener(() => JumpToSection(SectionName));
+
+            index++;
             buttons.Add(tmpButton);
         }
         
@@ -249,7 +265,7 @@ public class DialogueSystem : MonoBehaviour {
                 command.Add(sentence[i]);
                 i += 2;
 
-                CallCommand(new string(command.ToArray()).Split(": "));
+                CallCommand(new string(command.ToArray()).Split(" "));
             }
 
             if(sentence[i] == '<') {
