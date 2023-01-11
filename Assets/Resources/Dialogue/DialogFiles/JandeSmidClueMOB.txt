@@ -4,7 +4,7 @@ $ DIALOG_SET_PORTRAIT JanDeSmid
 @ Heb jij Peter vermoord?
 % jump BeschuldigVraag
 
-% start GetuigeVraag
+% start VerlaringVraag
 Jan de Smid: Ik weet het niet!
 Jan de Smid: Ik weet niet waarom dit gebeurt...
 Jan de Smid: Hij was mijn vriend...
@@ -19,7 +19,7 @@ Jan de Smid: ...
 Jan de Smid: Ik hield echt van hem.
 @ Bedankt voor je medewerking.
 % jump Breakout
-% end GetuigeVraag
+% end VerlaringVraag
 
 % start BeschuldigVraag
 Jan de Smid: Wat? <b> Nee! </b>

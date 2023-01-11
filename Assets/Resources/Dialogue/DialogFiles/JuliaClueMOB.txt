@@ -9,7 +9,7 @@ Julia: Iets gezien?
 Julia: Nou, uhhh..
 Julia: Het lichaam ligt letterlijk in mijn man’s werkplaats!
 Julia: Hoe bedoel je heb ik iets gezien?
-Julia: Mijn man en Peter waren altijd samen, vaker dan hij bij was...
+Julia: Mijn man en Peter waren altijd samen, vaker dan hij bij mij was...
 	@ Was je een beetje <b>jaloers</b> op hun vriendschap?
 Julia: Wat? <b>Jaloers??</b> Pfft.. uhh nee?
 Julia: Waarschijnlijk hebben ze gewoon hele erge ruzie gehad ofzo.
