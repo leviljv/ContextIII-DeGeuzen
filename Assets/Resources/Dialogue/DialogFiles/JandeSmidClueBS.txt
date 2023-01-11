@@ -22,6 +22,7 @@ Jan de Smid: Pfftt! U bent een minder goeie detective dan ik dacht
 Jan de Smid: Natuurlijk zijn ze ruw! Ik ben een SMID. 
 Jan de Smid: Ik gebruik mijn handen dag in dag uit tijdens mijn werk!
 @ Sorry
+% jump Breakout
 @ Bedankt voor je medewerking.
 Jan de Smid: Nou doeiii ik ga weer aan de slag!
 % jump Breakout

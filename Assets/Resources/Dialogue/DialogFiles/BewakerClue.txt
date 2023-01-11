@@ -3,4 +3,8 @@ $ DIALOG_SET_PORTRAIT Empty
 @ Heb jij iets gezien?
 De andere bewakers renden net links de tuinen uit. Ik blijf hier wachten om de andere burgers te beschermen.
 @ Oke, bedankt.
+% jump Breakout
 @ Goed zo, hou het in de gaten!
+% jump Breakout
+
+% start Breakout

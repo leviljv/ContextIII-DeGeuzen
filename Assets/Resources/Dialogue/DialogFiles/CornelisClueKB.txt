@@ -26,6 +26,7 @@ Cornelis: Misschien moet u nog meer op onderzoek uitgaan.
 Cornelis: Ga met meer mensen gaan praten om clues te verzamelen.
 Cornelis: Succes!
 @ Oke, duidelijk!
+% jump Breakout
 @ Ga ik doen, tot zo!
 % jump Breakout
 % end AntwoordFout
@@ -43,6 +44,7 @@ Cornelis: Nou als zij zo nodig liever met een ketter samen is mogen ze samen de 
 Cornelis: Bedankt, zonder uw hulp was ik nooit te weten gekomen dat mijn vrouw niet alleen een verrader is, maar ook een ketter!
 Cornelis: Heel erg bedankt voor uw hulp.
 @ Geen probleem.
+% jump Breakout
 @ Daar ben ik detective voor..
 % jump Breakout 
 % end AntwoordGoed

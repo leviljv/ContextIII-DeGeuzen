@@ -36,6 +36,7 @@ Cornelis: Misschien moet u nog meer op zoek gaan.
 Cornelis: Ga met meer mensen gaan praten om clues te verzamelen.
 Cornelis: Succes!
 @ Oke, duidelijk!
+% jump Breakout
 @ Ga ik doen, tot zo!
 % jump Breakout
 % end AntwoordFout
@@ -50,6 +51,7 @@ Cornelis Groenveld: Jeetje, dat iemand zo jaloers kan worden van een hechte vrie
 Cornelis Groenveld: In ieder geval nogmaals bedankt.
 Cornelis Groenveld: Door u is ons stadje weer wat veiliger!
 @ Geen probleem.
+% jump Breakout
 @ Je weet mij te vinden als er meer mysteries zijn om op te lossen!
 % jump Breakout
 % end AntwoordGoed

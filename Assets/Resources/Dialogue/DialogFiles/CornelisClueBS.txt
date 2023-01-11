@@ -21,6 +21,7 @@ Cornelis: Misschien moet u nog meer op onderzoek uitgaan.
 Cornelis: Ga met meer mensen gaan praten om clues te verzamelen.
 Cornelis: Succes!
 @ Oke, duidelijk!
+% jump Breakout
 @ Ga ik doen, tot zo!
 % jump Breakout
 % end AntwoordFout
@@ -33,7 +34,8 @@ Cornelis Groenveld: Hmm.. Juist..
 Cornelis Groenveld: De dronken boer en de monnik.
 Cornelis Groenveld: Ontzettend bedankt voor uw hulp.
 Cornelis Groenveld: Door u kunnen deze ketters direct naar de gevangenis worden gestuurd!
-@ Ik doe het graag.
+@ Ik doe het graag.\
+% jump Breakout
 @ Mijn detective skills staan altijd voor je klaar.
 % jump Breakout
 % end AntwoordGoed
