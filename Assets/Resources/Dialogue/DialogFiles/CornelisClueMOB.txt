@@ -8,9 +8,8 @@ $ DIALOG_SET_PORTRAIT CornelisGroenveld
 	% if FoundAllClues jump AntwoordGoed : jump AntwoordFout
 
 % start GetuigeVraag
-Cornelis Groenveld: Nou dat is toch duidelijk?!
-Cornelis Groenveld: Het moet Jan de Smid geweest zijn.
-Cornelis Groenveld: Het lichaam lag letterlijk in zijn werkplaats!
+Cornelis Groenveld: Nou ik hoor dat alle burgers de smid verdenken.
+Cornelis Groenveld: Het lichaam lag wel in zijn werkplaats...
 @ Oke, duidelijk.
 % jump Breakout
 % end GetuigeVraag

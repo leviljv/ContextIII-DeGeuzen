@@ -23,7 +23,7 @@ Cornelis: Hmm...
 Cornelis: ...
 Cornelis: Weet u zeker dat dit genoeg bewijs is?
 Cornelis: Misschien moet u nog meer op onderzoek uitgaan.
-Cornelis: Ga met meer mensen gaan praten om clues te verzamelen.
+Cornelis: Ga met meer mensen praten om aanwijzingen te verzamelen.
 Cornelis: Succes!
 @ Oke, duidelijk!
 % jump Breakout
@@ -34,7 +34,7 @@ Cornelis: Succes!
 % start AntwoordGoed
 // if all answers in notebook are filled in + correct
 Cornelis: Fantastisch!
-Cornelis: Ik zag dat u een notitieboekje mee heeft met alle clues die u heeft verzameld.
+Cornelis: Ik zag dat u een notitieboekje mee heeft met alle aanwijzingen die u heeft verzameld.
 Cornelis: Zou ik even mogen kijken?
 Cornelis: Hmmm..
 Cornelis: Wat??
