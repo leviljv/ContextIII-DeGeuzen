@@ -1,4 +1,4 @@
-$ DIALOG_SET_PORTRAIT SaskiaUylenburg
+$ DIALOG_SET_PORTRAIT Katharina
 
 	Unknown Person: You are <i>Gay</i>
 	Unknown Person: I am <i>Gay</i>
