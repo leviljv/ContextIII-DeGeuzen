@@ -18,7 +18,24 @@ public class BlackBoard : MonoBehaviour
 
     public List<string> settings = new();
 
-    private Dictionary<string, bool> SettingsWithValue = new();
+    [HideInInspector] public Dictionary<string, bool> SettingsWithValue = new();
 
+    private void OnEnable() {
+        EventManager<string>.Subscribe(EventType.SET_SETTING, ToggleSetting);
+        EventManager.Subscribe(EventType.UP_GLOBAL_INDEX, UpIndex);
+    }
+    private void OnDisable() {
+        EventManager<string>.Unsubscribe(EventType.SET_SETTING, ToggleSetting);
+        EventManager.Unsubscribe(EventType.UP_GLOBAL_INDEX, UpIndex);
+    }
 
+    public void ToggleSetting(string settingName) {
+        if (SettingsWithValue.ContainsKey(settingName)) {
+            SettingsWithValue[settingName] = true;
+        }
+    }
+
+    public void UpIndex() {
+        CurrentIndex++;
+    }
 }

@@ -13,7 +13,7 @@ $ DIALOG_SET_PORTRAIT Katharina
 @ Am I Gay?
 	% jump SectionOne
 @ Why am I Gay?
-	% jump SectionTwo
+	% jump if FoundAllClues SectionTwo : SectionThree
 @ So we are Both Gay?
 	% jump SectionThree
 @ Damn Gay, no Questions

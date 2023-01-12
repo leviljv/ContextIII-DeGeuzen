@@ -252,7 +252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIndex: 0
-  settings: []
+  settings:
+  - FoundAllClues
 --- !u!1 &439868640
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +600,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogPerIndex:
   - Test 1
-  DialogueName: 
 --- !u!65 &1308829700
 BoxCollider:
   m_ObjectHideFlags: 0
