@@ -2,9 +2,11 @@ $ DIALOG_SET_PORTRAIT BroederFranciscus
 
 Broeder Franciscus: Goedemorgen, prijs de Heer.
 @ Er is een ketter ontsnapt, heb jij iets gezien?
-	% jump GetuigeVraag
+% jump GetuigeVraag
 @ Heb jij de ketter helpen ontsnappen?
-	% jump BeschuldigVraag
+% jump BeschuldigVraag
+@ Laat maar
+% jump NeverMind
 
 % start GetuigeVraag
 Broeder Franciscus: Och die arme man, hopelijk heeft hij nog een beetje geluk zo.
@@ -29,4 +31,10 @@ Broeder Franciscus: Hij had enkel een Lutherse bijbel in huis.
 @ Oke, bedankt.
 % jump Breakout 
 % end BeschuldigVraag
+
+% start NeverMind
+Broeder Franciscus: Oke, fijne dag!
+% jump Breakout
+% end NeverMind
+
 % start Breakout 

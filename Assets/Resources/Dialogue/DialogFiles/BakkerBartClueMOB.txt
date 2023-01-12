@@ -3,6 +3,8 @@ $ DIALOG_SET_PORTRAIT BakkerBart
 % jump GetuigeVraag
 @ Heb jij Peter vermoord?
 % jump BeschuldigVraag
+@ Laat maar
+% jump NeverMind
 
 % start GetuigeVraag
 Bakker Bart: Toen ik vanochtend mijn deeg ging voorbereiden, zag ik wel iets.
@@ -23,8 +25,13 @@ Bakker Bart: Dit was al best vreemd, normaal gesproken slaat Peter nooit een dri
 Bakker Bart: Hadden we maar meteen alarm geslagen...
 @ Dus Jan was de hele avond bij jou?
 Bakker Bart: Klopt. Mijn vrouw heeft ons ook nog thuis zien komen.
-	@ Oke, bedankt voor je medewerking.
-	% jump Breakout
+@ Oke, bedankt voor je medewerking.
+% jump Breakout
 % end Beschuldigvraag
+
+% start NeverMind
+Bakker Bart: Oke, tot later!
+% jump Breakout
+% end NeverMind
 
 % start Breakout

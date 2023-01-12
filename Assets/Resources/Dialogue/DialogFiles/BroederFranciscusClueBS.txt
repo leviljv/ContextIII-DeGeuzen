@@ -1,8 +1,12 @@
 $ DIALOG_SET_PORTRAIT BroederFranciscus
+
+Broeder Franciscus: ...
 @ Is jou iets opgevallen?
 % jump GetuigeVraag
 @ Mag ik jouw handen even zien?
 % jump HandVraag
+@ Laat maar
+% jump NeverMind
 
 % start GetuigeVraag
 Broeder Franciscus: Wat mij is opgevallen?
@@ -21,4 +25,10 @@ Broeder Franciscus: Misschien tijdens het schrijven gebeurd, mijn excuus.
 Broeder Franciscus: Ik zal ze gelijk even wassen.
 % jump Breakout
 % end HandVraag
+
+% start NeverMind
+Broeder Franciscus: Oke, fijne dag!
+% jump Breakout
+% end NeverMind
+
 % start Breakout

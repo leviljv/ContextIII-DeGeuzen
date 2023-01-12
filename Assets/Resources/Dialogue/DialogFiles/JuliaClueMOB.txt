@@ -3,6 +3,8 @@ $ DIALOG_SET_PORTRAIT Julia
 % jump GetuigeVraag
 @ Heb jij Peter vermoord?
 % jump BeschuldigVraag
+@ Laat maar
+% jump NeverMind
 
 % start GetuigeVraag
 Julia: Iets gezien?
@@ -10,7 +12,7 @@ Julia: Nou, uhhh..
 Julia: Het lichaam ligt letterlijk in mijn man’s werkplaats!
 Julia: Hoe bedoel je heb ik iets gezien?
 Julia: Mijn man en Peter waren altijd samen, vaker dan hij bij mij was...
-	@ Was je een beetje <b>jaloers</b> op hun vriendschap?
+@ Was je een beetje <b>jaloers</b> op hun vriendschap?
 Julia: Wat? <b>Jaloers??</b> Pfft.. uhh nee?
 Julia: Waarschijnlijk hebben ze gewoon hele erge ruzie gehad ofzo.
 Julia: Dat gebeurt toch eenmaal als je zoveel op elkaars lip zit?
@@ -36,5 +38,10 @@ Julia: En soms lopen die ruzies uit tot geweld.
 @ Bedankt voor je medewerking.
 % jump Breakout
 % end Beschuldigvraag
+
+% start NeverMind
+Julia: Oke dan, tot later!
+% jump Breakout
+% end NeverMind
 
 % start Breakout
