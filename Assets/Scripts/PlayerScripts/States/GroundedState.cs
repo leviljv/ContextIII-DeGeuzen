@@ -44,6 +44,7 @@ public class GroundedState : MoveState {
         }
 
         owner.velocity = Vector3.MoveTowards(owner.velocity, velocity, owner.Acceleration * Time.deltaTime);
+        owner.LastGroundedPos = owner.transform.position + new Vector3(0, .2f, 0);
 
         base.OnUpdate();
     }
