@@ -2,10 +2,12 @@ $ DIALOG_SET_PORTRAIT FrankDeBewaker
 
 Frank de Bewaker: Ik kwam er bij mijn standaard ronde achter dat hij was ontsnapt en heb het meteen verteld aan de heer Cornelis!
 @ Heb je niet iemand gezien tijdens het bewaken?
-	% jump GetuigeVraag
+% jump GetuigeVraag
 @ Dus je hebt hem laten ontsnappen?
-	% jump BeschuldigVraag
+% jump BeschuldigVraag
 % start GetuigeVraag
+@ Laat maar
+% jump NeverMind
 
 Frank de Bewaker: Nou ehh..
 Frank de Bewaker: Je hebt geen idee hoe zwaar het is om de hele nacht wakker te blijven!
@@ -29,5 +31,10 @@ Frank de Bewaker: Je moet maar eens die monnik ondervragen, hij kwam vaak langs.
 @ Oke, bedankt.
 % jump Breakout 
 % end BeschuldigVraag
+
+% start NeverMind
+Frank de Bewaker: Huh? Oke...
+% jump Breakout
+% end NeverMind
 
 % start Breakout 

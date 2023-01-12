@@ -1,9 +1,13 @@
 $ DIALOG_SET_PORTRAIT CornelisGroenveld
 
+Cornelis Groenveld: Onze kerk.. nu moet alles verbiuwd worden...
+
 @ Wat is jou opgevallen?
-	% jump GetuigeVraag
+% jump GetuigeVraag
 @ Ik weet wie de kerk hebben vernield.
-	% if FoundAllClues jump AntwoordGoed : jump AntwoordFout
+% if FoundAllClues jump AntwoordGoed : jump AntwoordFout
+@ Laat maar
+% jump NeverMind
 
 % start GetuigeVraag
 Cornelis Groenveld: Toen ik aankwam bij de kerk was de schade al verricht.
@@ -11,7 +15,7 @@ Cornelis Groenveld: Toen zag ik wat handafdrukken, misschien is het handig om de
 % jump Breakout
 % end GetuigeVraag
 
-// if NOT all answers in notebook correct + filled in
+
 % start AntwoordFout
 Cornelis: Zou ik even uw notitieboek mogen bekijken?
 Cornelis: Hmm...
@@ -27,17 +31,22 @@ Cornelis: Succes!
 % end AntwoordFout
 
 % start AntwoordGoed
-// if all answers in notebook correct + filled in
+
 Cornelis Groenveld: Geweldig!
 Cornelis Groenveld: Mag ik uw aantekeningen eens zien?
 Cornelis Groenveld: Hmm.. Juist..
 Cornelis Groenveld: De dronken boer en de monnik.
 Cornelis Groenveld: Ontzettend bedankt voor uw hulp.
 Cornelis Groenveld: Door u kunnen deze ketters direct naar de gevangenis worden gestuurd!
-@ Ik doe het graag.\
+@ Ik doe het graag.
 % jump Breakout
 @ Mijn detective skills staan altijd voor je klaar.
 % jump Breakout
 % end AntwoordGoed
+
+% start NeverMind
+Cornelis Groenveld: Oke, geen probleem.
+% jump Breakout
+% end NeverMind
 
 % start Breakout

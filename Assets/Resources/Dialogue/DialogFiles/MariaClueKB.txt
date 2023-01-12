@@ -2,9 +2,11 @@ $ DIALOG_SET_PORTRAIT MariaGroenveld
 
 Maria: Goededag, prachtig weer vandaag vindt u niet?
 @ Heb jij er misschien wat mee te maken?
-	% jump BeschuldigVraag
+% jump BeschuldigVraag
 @ Heb jij gisteravond iets geks gezien?
-	% jump GetuigeVraag
+% jump GetuigeVraag
+@ Laat maar
+% jump NeverMind
 
 % start GetuigeVraag
 Maria: Gisteravond?
@@ -34,5 +36,10 @@ Maria: De bewaker kwam gisteravond nog naar mij toe om te vragen of de ketter we
 @ Oke, bedankt.
 % jump Breakout 
 % end BeschuldigVraag
+
+% start NeverMind
+Maria: Prima, tot ziens.
+% jump Breakout
+% end NeverMind
 
 % start Breakout 

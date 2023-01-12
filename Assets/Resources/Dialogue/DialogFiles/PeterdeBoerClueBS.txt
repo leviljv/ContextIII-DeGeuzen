@@ -4,6 +4,8 @@ $ DIALOG_SET_PORTRAIT PeterDeBoer
 % jump GetuigeVraag
 @ Mag ik jouw handen even zien?
 % jump HandVraag
+@ Laat maar
+% jump NeverMind
 
 % start GetuigeVraag
 Peter de boer: *hik* ohh hallo!
@@ -35,4 +37,10 @@ Peter de boer: Ik weet het niet meer!
 @ Succes met je kater!
 % jump Breakout
 % end HandVraag
+
+% start NeverMind
+Peter de boer: D-Doei!! Hahaha...
+% jump Breakout
+% end NeverMind
+
 % start Breakout

@@ -3,7 +3,7 @@ $ DIALOG_SET_PORTRAIT Katharina
 @ Wat was jij aan het doen vlak voor de moord?
 % jump GetuigeVraag
 @ Waar was jij vlak voor de moord?
-	% jump PlaatsVraag
+% jump PlaatsVraag
 % start GetuigeVraag
 Katharina: Wij waren gewoon rustig een gezellige <b>lunch</b> aan het houden.
 Katharina: Daarna wilden we naar boven gaan. Ik liep vooraan, Willem liep achter mij.

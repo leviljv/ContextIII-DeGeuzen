@@ -3,6 +3,8 @@ $ DIALOG_SET_PORTRAIT JanDeSmid
 % jump VerlaringVraag
 @ Heb jij Peter vermoord?
 % jump BeschuldigVraag
+@ Laat maar
+% jump NeverMind
 
 % start VerlaringVraag
 Jan de Smid: Ik weet het niet!
@@ -25,11 +27,16 @@ Jan de Smid: Ik hield echt van hem.
 Jan de Smid: Wat? <b> Nee! </b>
 Jan de Smid: Hij was mijn beste vriend!
 Jan de Smid: Ik zou hem nooit wat aandoen.
-	@ Zelfs niet als jullie ruzie hebben?
+@ Zelfs niet als jullie ruzie hebben?
 Jan de Smid: Wat? Peter en ik hebben nooit ruzie.
 Jan de Smid: Ik zou sowieso nooit gewelddadig worden, ruzie of geen ruzie!
-	@ Oke, bedankt voor je medewerking.
-	% jump Breakout
+@ Oke, bedankt voor je medewerking.
+% jump Breakout
 % end Beschuldigvraag
+
+% start NeverMind
+Jan de Smid: Oke, ik ga weer aan het werk.
+% jump Breakout
+% end NeverMind
 
 % start Breakout

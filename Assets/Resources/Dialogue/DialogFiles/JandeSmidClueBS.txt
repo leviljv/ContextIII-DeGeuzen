@@ -3,6 +3,8 @@ $ DIALOG_SET_PORTRAIT JanDeSmid
 % jump GetuigeVraag
 @ Mag ik jouw handen even zien?
 % jump HandVraag
+@ Laat maar
+% jump NeverMind
 
 % start GetuigeVraag
 Jan de Smid: Waar ik was?
@@ -27,5 +29,10 @@ Jan de Smid: Ik gebruik mijn handen dag in dag uit tijdens mijn werk!
 Jan de Smid: Nou doeiii ik ga weer aan de slag!
 % jump Breakout
 % end HandVraag
+
+% start NeverMind
+Jan de Smid: Oke, ik ga weer aan het werk.
+% jump Breakout
+% end NeverMind
 
 % start Breakout

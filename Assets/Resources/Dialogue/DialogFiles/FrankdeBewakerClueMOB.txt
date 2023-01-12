@@ -3,6 +3,8 @@ $ DIALOG_SET_PORTRAIT FrankDeBewaker
 % jump GetuigeVraag
 @ Heb jij Peter de Boer vermoord?
 % jump BeschuldigVraag
+@ Laat maar
+% jump NeverMind
 
 % start GetuigeVraag
 Frank de Bewaker: Wie?
@@ -26,5 +28,10 @@ Frank de Bewaker: Hoe durf je mij te beschuldigen..
 @ Bedankt voor je medewerking.
 % jump Breakout
 % end Beschuldigvraag
+
+% start NeverMind
+Frank de Bewaker: Huh? Oke...
+% jump Breakout
+% end NeverMind
 
 % start Breakout
