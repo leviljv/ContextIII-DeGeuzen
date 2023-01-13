@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class NoteBookV2 : MonoBehaviour
 {
+    public static NoteBookV2 instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public Transform ToggleParent;
     public ClueManager clueManager;
     public CollectibleManager collectibleManager;
     public CodexManager codexManager;
+    public GameObject clueAnswerPrefab;
 
+
+    public List<ClueAnswerSO> test = new List<ClueAnswerSO>();
     public int CollectibleListEntries = 0;
     public int CollectibleChildNumber = 0;
 
