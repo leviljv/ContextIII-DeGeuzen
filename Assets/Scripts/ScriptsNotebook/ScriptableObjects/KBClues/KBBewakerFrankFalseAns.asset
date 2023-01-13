@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: KBBewakerFrankFalseAns
   m_EditorClassIdentifier: 
   ClueAntwoord: Verdacht
-  QuestNumber: 0
+  QuestNumber: 1
