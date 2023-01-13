@@ -8,9 +8,10 @@ public enum EventType {
     DIALOG_SET_TYPE_TIME,
     DIALOG_SET_PORTRAIT,
     SET_INTERACTION_STATE,
-    SET_DIALOG_INDEX,
+    SET_GLOBAL_INDEX,
     SET_SETTING,
-    UP_GLOBAL_INDEX
+    UP_GLOBAL_INDEX,
+    LOWER_GLOBAL_INDEX
 }
 
 public static class EventManager {

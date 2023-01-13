@@ -18,6 +18,7 @@ public class MovementManager : MonoBehaviour
     public Transform SlopeTransform;
     public Transform YRotationParent;
     public LayerMask GroundLayer;
+    public LayerMask WaterLayer;
     public LayerMask EdgeLayer;
     public GameObject DebugObject;
 
@@ -50,6 +51,7 @@ public class MovementManager : MonoBehaviour
     [HideInInspector] public bool canGrabNextLedge = true;
     [HideInInspector] public bool lookAtMoveDir = true;
     [HideInInspector] public GameObject CurrentLedge = null;
+    [HideInInspector] public Vector3 LastGroundedPos;
 
     [HideInInspector] public bool Interacting;
 

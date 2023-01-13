@@ -898,6 +898,9 @@ MonoBehaviour:
   GroundLayer:
     serializedVersion: 2
     m_Bits: 8
+  WaterLayer:
+    serializedVersion: 2
+    m_Bits: 16
   EdgeLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -924,6 +927,7 @@ MonoBehaviour:
   canGrabNextLedge: 1
   lookAtMoveDir: 1
   CurrentLedge: {fileID: 0}
+  LastGroundedPos: {x: 0, y: 0, z: 0}
   Interacting: 0
 --- !u!114 &5303517188042673976
 MonoBehaviour:

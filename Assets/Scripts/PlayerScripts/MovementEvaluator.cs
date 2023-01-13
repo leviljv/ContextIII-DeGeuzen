@@ -19,6 +19,10 @@ public class MovementEvaluator
             return true;
         }
 
+        if(Physics.CheckSphere(owner.transform.position + new Vector3(0, .2f, 0), .5f, owner.WaterLayer)) {
+            owner.transform.position = owner.LastGroundedPos;
+        }
+
         return false;
     }
 

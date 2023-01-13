@@ -23,10 +23,12 @@ public class BlackBoard : MonoBehaviour
     private void OnEnable() {
         EventManager<string>.Subscribe(EventType.SET_SETTING, ToggleSetting);
         EventManager.Subscribe(EventType.UP_GLOBAL_INDEX, UpIndex);
+        EventManager.Subscribe(EventType.LOWER_GLOBAL_INDEX, DownIndex);
     }
     private void OnDisable() {
         EventManager<string>.Unsubscribe(EventType.SET_SETTING, ToggleSetting);
         EventManager.Unsubscribe(EventType.UP_GLOBAL_INDEX, UpIndex);
+        EventManager.Unsubscribe(EventType.LOWER_GLOBAL_INDEX, DownIndex);
     }
 
     public void ToggleSetting(string settingName) {
@@ -37,5 +39,13 @@ public class BlackBoard : MonoBehaviour
 
     public void UpIndex() {
         CurrentIndex++;
+
+        EventManager<int>.Invoke(EventType.SET_GLOBAL_INDEX, CurrentIndex);
+    }
+
+    public void DownIndex() {
+        CurrentIndex--;
+
+        EventManager<int>.Invoke(EventType.SET_GLOBAL_INDEX, CurrentIndex);
     }
 }

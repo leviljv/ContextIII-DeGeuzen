@@ -347,7 +347,7 @@ public class DialogueSystem : MonoBehaviour {
 
         List<char> charList = new();
 
-        var frontAndBack = text.Split(" ", 2);
+        var frontAndBack = text.Split(": ", 2);
         var name = frontAndBack[0];
         nameText.text = name;
         var sentence = frontAndBack[1];
