@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class NoteBookV2 : MonoBehaviour
 {
+    public static NoteBookV2 instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+
     public Transform ToggleParent;
     public ClueManager clueManager;
     public CollectibleManager collectibleManager;
     public CodexManager codexManager;
+    public GameObject clueAnswerPrefab;
 
+
+    public List<ClueAnswerSO> test = new List<ClueAnswerSO>();
     public int CollectibleListEntries = 0;
     public int CollectibleChildNumber = 0;
 
@@ -37,12 +46,14 @@ public class NoteBookV2 : MonoBehaviour
         {
             ToggleParent.gameObject.SetActive(true);
             BookActive = true;
+            EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, true);
         }
 
         else if (Input.GetKeyDown(KeyCode.Q) && BookActive == true)
         {
             ToggleParent.gameObject.SetActive(false);
             BookActive = false;
+            EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, false);
         }
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow) && BookActive == true)

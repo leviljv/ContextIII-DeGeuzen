@@ -209,8 +209,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -479,8 +479,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8, y: -243}
-  m_SizeDelta: {x: 41.5494, y: 30}
+  m_AnchoredPosition: {x: 161.51392, y: -440.08704}
+  m_SizeDelta: {x: 74.5763, y: 55.0341}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &765043960
 MonoBehaviour:
@@ -586,7 +586,7 @@ GameObject:
   m_Component:
   - component: {fileID: 960317315}
   - component: {fileID: 960317317}
-  - component: {fileID: 960317316}
+  - component: {fileID: 960317318}
   m_Layer: 5
   m_Name: bg
   m_TagString: Untagged
@@ -603,7 +603,7 @@ RectTransform:
   m_GameObject: {fileID: 960317314}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.6270456, y: 6.1012344, z: 3.9734511}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1862742623}
@@ -611,10 +611,18 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9, y: 2}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -9, y: 144}
+  m_SizeDelta: {x: 786.1281, y: 1532.8765}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &960317316
+--- !u!222 &960317317
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960317314}
+  m_CullTransparentMesh: 1
+--- !u!114 &960317318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -623,7 +631,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 960317314}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -634,21 +642,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 630424b1d1fa65446940e97622ef7d34, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &960317317
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 960317314}
-  m_CullTransparentMesh: 1
+  m_Sprite: {fileID: 21300000, guid: 2b5f428b9c5545e469f33a06ed9a16c6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1239741918
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,7 +679,7 @@ RectTransform:
   m_GameObject: {fileID: 1239741918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7.5527906, y: 6.5071, z: 6.5071}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1862742623}
@@ -684,8 +687,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -9, y: -853.05}
+  m_SizeDelta: {x: 2560.1, y: 3147.126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1239741920
 MonoBehaviour:
@@ -709,7 +712,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 6e81593b249c0d844bea0ee06222f9f5, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -760,8 +763,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 2}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -12.637497, y: -44.350235}
+  m_SizeDelta: {x: 519.9464, y: 872.822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1296655555
 MonoBehaviour:
@@ -785,27 +788,27 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Geachte detective,
 
-    
 
-    Na gehoord te hebben van uw geweldige
-    oplossingsvaardigheden na de tragische dood van Willem van Oranje, vraag ik u
-    om hulp. Gisteravond is er een ketter ontsnapt die ter dood veroordeeld was.
-    Een van de bewakers had hem gevonden met opengebroken boeien. Hij heeft dus duidelijk
-    hulp gehad, maar van wie?
 
-    
+    Na gehoord te hebben van uw geweldige oplossingsvaardigheden
+    na de tragische dood van Willem van Oranje, vraag ik u om hulp. Gisteravond is
+    er een ketter ontsnapt die ter dood veroordeeld was. Een van de bewakers had
+    hem gevonden met opengebroken boeien. Hij heeft dus duidelijk hulp gehad, maar
+    van wie?
 
-    Ik heb uw hulp nodig om de dader en de
-    ketter te vinden, voordat Koning Filips ons allemaal zal straffen.
 
-    
 
-    Met
-    vriendelijke groet,
+    Ik heb uw hulp nodig om de dader en de ketter te vinden, voordat
+    Koning Filips ons allemaal zal straffen.
 
-    
 
-    Cornelis Groenveld
+
+    Met vriendelijke groet,
+
+
+
+    Cornelis
+    Groenveld
 
 '
   m_isRightToLeft: 0
@@ -835,10 +838,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 28.9
+  m_fontSizeBase: 0
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -871,7 +874,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -31.129547, y: -196.3678, z: -16.7612, w: -138.1051}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -934,10 +937,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 2560, y: 1440}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -962,7 +965,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 31
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

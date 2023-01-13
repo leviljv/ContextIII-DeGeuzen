@@ -11,7 +11,9 @@ public enum EventType {
     SET_GLOBAL_INDEX,
     SET_SETTING,
     UP_GLOBAL_INDEX,
-    LOWER_GLOBAL_INDEX
+    LOWER_GLOBAL_INDEX,
+    DIALOG_GIVE_CLUE
+
 }
 
 public static class EventManager {
