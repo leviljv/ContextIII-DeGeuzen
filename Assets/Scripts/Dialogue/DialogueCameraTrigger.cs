@@ -21,7 +21,8 @@ public class DialogueCameraTrigger : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.forward, out var hit, 10f)) {
             var hitContainer = hit.transform.GetComponent<DialogueContainer>();
             if (hitContainer) {
-                return hitContainer.GetDialog();
+                if(hitContainer.GetDialog() != null || hitContainer.GetDialog() != "")
+                    return hitContainer.GetDialog();
             }
         }
         return null;
