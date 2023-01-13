@@ -5430,42 +5430,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1906307348830865428, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 115.2908
-      objectReference: {fileID: 0}
-    - target: {fileID: 1906307348830865428, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 101.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 1906307348830865428, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 464.55798
-      objectReference: {fileID: 0}
-    - target: {fileID: 1906307348830865429, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_Name
-      value: ButtonRight
-      objectReference: {fileID: 0}
-    - target: {fileID: 1906307348830865430, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1906307348830865430, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3412040fa10c9294fac1aeb41d51df41,
-        type: 3}
-    - target: {fileID: 1906307348830865431, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PageRight
-      objectReference: {fileID: 0}
     - target: {fileID: 1906307349029091329, guid: 27f384a481055bf4cb768279da369ed8,
         type: 3}
       propertyPath: m_Name
@@ -5525,42 +5489,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1906307350580411154, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 114.9005
-      objectReference: {fileID: 0}
-    - target: {fileID: 1906307350580411154, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 111.0228
-      objectReference: {fileID: 0}
-    - target: {fileID: 1906307350580411154, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1906307350580411155, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_Name
-      value: ButtonLeft
-      objectReference: {fileID: 0}
-    - target: {fileID: 1906307350580411156, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1906307350580411156, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3412040fa10c9294fac1aeb41d51df41,
-        type: 3}
-    - target: {fileID: 1906307350580411157, guid: 27f384a481055bf4cb768279da369ed8,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PageLeft
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27f384a481055bf4cb768279da369ed8, type: 3}
