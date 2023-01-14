@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: d14bdd3d5563020429791758e969f418
+timeCreated: 1498922820
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: barrel1
+    100002: barrel2
+    100004: barrels
+    100006: box
+    100008: box2
+    100010: box3
+    100012: box4
+    100014: boxes
+    100016: boxes2
+    100018: //RootNode
+    100020: flag_top
+    100022: gun1
+    100024: gun2
+    100026: gun3
+    100028: gun4
+    100030: gun5
+    100032: gun6
+    100034: ropes
+    100036: ropes_main
+    100038: sailes.001
+    100040: sailes.002
+    100042: sailes.003
+    100044: ship
+    400000: barrel1
+    400002: barrel2
+    400004: barrels
+    400006: box
+    400008: box2
+    400010: box3
+    400012: box4
+    400014: boxes
+    400016: boxes2
+    400018: //RootNode
+    400020: flag_top
+    400022: gun1
+    400024: gun2
+    400026: gun3
+    400028: gun4
+    400030: gun5
+    400032: gun6
+    400034: ropes
+    400036: ropes_main
+    400038: sailes.001
+    400040: sailes.002
+    400042: sailes.003
+    400044: ship
+    2300000: barrel1
+    2300002: barrel2
+    2300004: barrels
+    2300006: box
+    2300008: box2
+    2300010: box3
+    2300012: box4
+    2300014: boxes
+    2300016: boxes2
+    2300018: flag_top
+    2300020: gun1
+    2300022: gun2
+    2300024: gun3
+    2300026: gun4
+    2300028: gun5
+    2300030: gun6
+    2300032: ropes
+    2300034: ropes_main
+    2300036: sailes.001
+    2300038: sailes.002
+    2300040: sailes.003
+    2300042: ship
+    3300000: barrel1
+    3300002: barrel2
+    3300004: barrels
+    3300006: box
+    3300008: box2
+    3300010: box3
+    3300012: box4
+    3300014: boxes
+    3300016: boxes2
+    3300018: flag_top
+    3300020: gun1
+    3300022: gun2
+    3300024: gun3
+    3300026: gun4
+    3300028: gun5
+    3300030: gun6
+    3300032: ropes
+    3300034: ropes_main
+    3300036: sailes.001
+    3300038: sailes.002
+    3300040: sailes.003
+    3300042: ship
+    4300000: box4
+    4300002: box3
+    4300004: box2
+    4300006: boxes2
+    4300008: box
+    4300010: barrels
+    4300012: boxes
+    4300014: barrel2
+    4300016: barrel1
+    4300018: gun6
+    4300020: gun5
+    4300022: gun4
+    4300024: gun3
+    4300026: gun2
+    4300028: gun1
+    4300030: flag_top
+    4300032: ropes_main
+    4300034: sailes.003
+    4300036: sailes.001
+    4300038: sailes.002
+    4300040: ropes
+    4300042: ship
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -144,8 +144,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tijd van de moord
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3dca728657e719c4b957e28632a34dc4, type: 2}
+  m_sharedMaterial: {fileID: -4312800550946297033, guid: 3dca728657e719c4b957e28632a34dc4,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -169,7 +170,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.05
+  m_fontSize: 18.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -274,4 +275,4 @@ MonoBehaviour:
   ClueScriptableObject: {fileID: 11400000, guid: e8e4067d7de452d4cb62f2fd5a7fbd5c,
     type: 2}
   ClueVraag: {fileID: 7195685396546361672}
-  ClueAntwoord: 
+  Antwoord: {fileID: 0}
