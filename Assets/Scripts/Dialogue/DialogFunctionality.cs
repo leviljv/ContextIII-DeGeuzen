@@ -51,7 +51,7 @@ public class DialogFunctionality
         if (Clues.ContainsKey(ClueName))
         {
             var pickedClue = Clues[ClueName];
-            NoteBookV2.instance.test.Add(pickedClue);
+            NoteBookV2.instance.SetClue(pickedClue);
         }
         else
         {

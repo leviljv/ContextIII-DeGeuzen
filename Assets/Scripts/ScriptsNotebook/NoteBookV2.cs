@@ -40,6 +40,16 @@ public class NoteBookV2 : MonoBehaviour
         ActivateBook();
     }
 
+    public void SetClue(ClueAnswerSO clueAnswer)
+    {
+        int QuestNumber = clueAnswer.QuestNumber;
+        if (!clueManager.gameObject.transform.GetChild(QuestNumber).GetComponent<ClueHolder>().ClueAnswerList.Contains(clueAnswer))
+        {
+            clueManager.gameObject.transform.GetChild(QuestNumber).GetComponent<ClueHolder>().ClueAnswerList.Add(clueAnswer);
+            clueManager.gameObject.transform.GetChild(QuestNumber).GetComponent<ClueHolder>().SpawnAnswer(clueAnswer);
+        }
+    }
+
     public void ActivateBook()
     {
         if (Input.GetKeyDown(KeyCode.Q) && BookActive == false)
