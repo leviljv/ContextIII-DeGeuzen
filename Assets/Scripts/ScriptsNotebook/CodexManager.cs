@@ -54,7 +54,9 @@ public class CodexManager : MonoBehaviour
         }
         else
         {
-            collectibleManager.gameObject.transform.GetChild(clueManager.numberOfPages - 1).gameObject.SetActive(true);
+            noteBookV2.codexActive = false;
+            collectibleManager.gameObject.transform.GetChild(collectibleManager.numberOfPages - 1).gameObject.SetActive(true);
+            gameObject.SetActive(false);
             SwitchToCollectible();
         }
 
@@ -63,8 +65,6 @@ public class CodexManager : MonoBehaviour
     public void SwitchToCollectible()
     {
         noteBookV2.collectibleActive = true;
-        noteBookV2.codexActive = false;
         collectibleManager.gameObject.SetActive(true);
-        gameObject.SetActive(false);
     }
 }
