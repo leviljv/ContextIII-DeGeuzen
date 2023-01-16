@@ -16,6 +16,8 @@ Broeder Franciscus: Maar ik geloof dat zelfs protestanten het niet verdienen om 
 Broeder Franciscus: We zijn allemaal tenslotte mensen.
 Broeder Franciscus: Iedereen met een goed hart zou de arme man helpen, hij deed geen vlieg kwaad.
 Broeder Franciscus: Hij had enkel een Lutherse bijbel in huis.
+$ DIALOG_GIVE_CLUE KBBroederFranciscusAns
+$ DIALOG_GIVE_CLUE KBBroederFranciscusFalseAns
 @ Oke, bedankt.
 % jump Breakout 
 % end GetuigeVraag
@@ -29,6 +31,8 @@ Broeder Franciscus: We zijn allemaal tenslotte mensen.
 Broeder Franciscus: Iedereen met een goed hart zou de arme man helpen, hij deed geen vlieg kwaad.
 Broeder Franciscus: Hij had enkel een Lutherse bijbel in huis.
 @ Oke, bedankt.
+$ DIALOG_GIVE_CLUE KBBroederFranciscusAns
+$ DIALOG_GIVE_CLUE KBBroederFranciscusFalseAns
 % jump Breakout 
 % end BeschuldigVraag
 

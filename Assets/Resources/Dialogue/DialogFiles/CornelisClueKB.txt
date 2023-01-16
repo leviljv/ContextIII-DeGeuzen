@@ -14,6 +14,8 @@ Cornelis: Misschien ben je een slechtere detective dan ik dacht.
 Cornelis: Ik heb zelf het bevel gegeven om hem op te laten pakken en hem bovendien ter dood veroordeeld!
 Cornelis: Filips zorgt er met zijn harde aanpak wel voor dat iedereen hier boos wordt, zelfs ik wordt nu verdacht!
 @ Oke, duidelijk.
+$ DIALOG_GIVE_CLUE KBCornelisAns
+$ DIALOG_GIVE_CLUE KBCornelisFalseAns
 % jump Breakout 
 % end BeschuldigVraag
 

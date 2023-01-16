@@ -10,6 +10,7 @@ Katharina: Daarna wilden we naar boven gaan. Ik liep vooraan, Willem liep achter
 Katharina: Daarom heb ik niets gezien, het gebeurde allemaal zo snel achter mijn rug…
 
 @ Bedankt voor de informatie!
+$ DIALOG_GIVE_CLUE WillemClueVoorafAns
 % jump breakout
 % end GetuigeVraag
 
@@ -19,6 +20,7 @@ Katharina: Willem liep als een echte heer achteraan en liet mij en Rombertus voo
 Katharina: Daarom heb ik niets gezien, het gebeurde allemaal zo snel achter mijn rug…
 
 @ Bedankt voor de informatie!
+$ DIALOG_GIVE_CLUE WillemClueVoorafAns
 % jump Breakout
 % end PlaatsVraag
 
