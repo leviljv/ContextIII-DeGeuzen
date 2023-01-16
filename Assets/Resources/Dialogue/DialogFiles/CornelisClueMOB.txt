@@ -11,6 +11,8 @@ $ DIALOG_SET_PORTRAIT CornelisGroenveld
 Cornelis Groenveld: Nou ik hoor dat alle burgers de smid verdenken.
 Cornelis Groenveld: Het lichaam lag wel in zijn werkplaats...
 @ Oke, duidelijk.
+$ DIALOG_GIVE_CLUE MOBCornelisAns
+$ DIALOG_GIVE_CLUE MOBCornelisFalseAns
 % jump Breakout
 % end GetuigeVraag
 @ Laat maar
@@ -24,6 +26,8 @@ Cornelis Groenveld: Of hij zou opgehangen worden.
 Cornelis Groenveld: Kortom, hij zou eerlijk veroordeeld worden, ook al is hij slechts een boer.
 Cornelis Groenveld: Waarom zou ik hem ooit zelf vermoorden als ik daar een beul voor heb?!
 @ Bedankt voor je medewerking.
+$ DIALOG_GIVE_CLUE MOBCornelisAns
+$ DIALOG_GIVE_CLUE MOBCornelisFalseAns
 % jump Breakout
 % end Beschuldigvraag
 

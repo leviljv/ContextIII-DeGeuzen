@@ -11,6 +11,8 @@ Jan de Smid: Waar ik was?
 Jan de Smid: Nou ja zeg, gewoon aan het werk!
 Jan de Smid: Ik was gister nog met mijn vrouw Julia in de kerk om te bidden.
 Jan de Smid: Wij zijn beiden goede katholieken!
+$ DIALOG_GIVE_CLUE BSJandeSmidAns
+$ DIALOG_GIVE_CLUE BSJandeSmidFalseAns
 % jump Breakout
 % end GetuigeVraag
 
@@ -27,6 +29,8 @@ Jan de Smid: Ik gebruik mijn handen dag in dag uit tijdens mijn werk!
 % jump Breakout
 @ Bedankt voor je medewerking.
 Jan de Smid: Nou doeiii ik ga weer aan de slag!
+$ DIALOG_GIVE_CLUE BSJandeSmidAns
+$ DIALOG_GIVE_CLUE BSJandeSmidFalseAns
 % jump Breakout
 % end HandVraag
 

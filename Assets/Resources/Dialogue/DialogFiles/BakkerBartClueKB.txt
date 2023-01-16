@@ -15,6 +15,8 @@ Bakker Bart: Ik was voor de zon op was mijn deeg al aan het voorbereiden, het wa
 Bakker Bart: Ik heb niemand gezien.
 Bakker Bart: Maar hij was een goede vriend van mij, ik weet bijvoorbeeld dat <b>Maria</b> stiekem een oogje op hem had.
 @ Oke, bedankt.
+$ DIALOG_GIVE_CLUE KBBakkerBartAns
+$ DIALOG_GIVE_CLUE KBBakkerBartFalseAns
 % jump Breakout
 
 % end GetuigeVraag
@@ -26,6 +28,8 @@ Bakker Bart: Tuurlijk ben ik blij dat hij vrij is, maar dat betekent niet dat ik
 Bakker Bart: Ik ben ten slotte een goede katholiek.
 Bakker Bart: Kijk eerst maar naar anderen, <b>Maria</b> had bijvoorbeeld volgens mij stiekem een oogje op hem.
 @ Oke, bedankt.
+$ DIALOG_GIVE_CLUE KBBakkerBartAns
+$ DIALOG_GIVE_CLUE KBBakkerBartFalseAns
 % jump Breakout
 % end BeschuldigVraag
 
