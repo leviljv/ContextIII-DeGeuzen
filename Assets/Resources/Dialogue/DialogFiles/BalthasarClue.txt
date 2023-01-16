@@ -9,3 +9,4 @@ Francis Guien: Juist, uhh.. Ja dat is mijn naam...
 Francis Guien: Wat? Waarom sta je hier nog?
 Francis Guien: Ik heb niks gehoord of gezien!
 Francis Guien: Oke, doei!
+$ DIALOG_GIVE_CLUE WillemClueMoordenaarAns

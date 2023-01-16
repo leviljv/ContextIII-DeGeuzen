@@ -23,7 +23,6 @@ Rombertus: Eerder vandaag kwam een man genaamd <b> François Guyon</b> langs om 
 Rombertus: Ik kende hem niet en hij leek nerveus. 
 Rombertus: Toen ik vroeg of hij zijn naam wilde spellen, moest hij heel lang nadenken en spelde het zelfs twee keer verkeerd. 
 Rombertus: Je zou toch denken dat je je eigen naam wel zou onthouden…
-
 @ Hmm.. interessant…
 % jump Breakout
 @ Bedankt voor de informatie!

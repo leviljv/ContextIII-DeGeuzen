@@ -7,5 +7,6 @@ Knecht: Volgens mij zijn daardoor de <b>wijzers stil gaan staan</b> op het momen
 @ Tegelijk met de knal? Interessant...
 % jump Breakout
 @ Bedankt voor de informatie!
+$ DIALOG_GIVE_CLUE WillemClueTijdAns
 % jump Breakout
 % start Breakout

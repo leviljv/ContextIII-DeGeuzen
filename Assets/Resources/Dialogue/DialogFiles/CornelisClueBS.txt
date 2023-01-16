@@ -1,6 +1,6 @@
 $ DIALOG_SET_PORTRAIT CornelisGroenveld
 
-Cornelis Groenveld: Onze kerk.. nu moet alles verbiuwd worden...
+Cornelis Groenveld: Onze kerk.. nu moet alles verbouwd worden...
 
 @ Wat is jou opgevallen?
 % jump GetuigeVraag
@@ -12,6 +12,8 @@ Cornelis Groenveld: Onze kerk.. nu moet alles verbiuwd worden...
 % start GetuigeVraag
 Cornelis Groenveld: Toen ik aankwam bij de kerk was de schade al verricht.
 Cornelis Groenveld: Toen zag ik wat handafdrukken, misschien is het handig om de handen van iedereen te controleren.
+$ DIALOG_GIVE_CLUE BSCornelisAns
+$ DIALOG_GIVE_CLUE BSCornelisFalseAns
 % jump Breakout
 % end GetuigeVraag
 
