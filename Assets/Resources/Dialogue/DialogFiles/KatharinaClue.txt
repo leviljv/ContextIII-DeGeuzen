@@ -8,9 +8,8 @@ $ DIALOG_SET_PORTRAIT Katharina
 Katharina: Wij waren gewoon rustig een gezellige <b>lunch</b> aan het houden.
 Katharina: Daarna wilden we naar boven gaan. Ik liep vooraan, Willem liep achter mij.
 Katharina: Daarom heb ik niets gezien, het gebeurde allemaal zo snel achter mijn rug…
-
-@ Bedankt voor de informatie!
 $ DIALOG_GIVE_CLUE WillemClueVoorafAns
+@ Bedankt voor de informatie!
 % jump breakout
 % end GetuigeVraag
 
@@ -18,9 +17,8 @@ $ DIALOG_GIVE_CLUE WillemClueVoorafAns
 Katharina: Na onze <b>lunch</b> liepen wij alvast rustig naar boven. 
 Katharina: Willem liep als een echte heer achteraan en liet mij en Rombertus voor. 
 Katharina: Daarom heb ik niets gezien, het gebeurde allemaal zo snel achter mijn rug…
-
-@ Bedankt voor de informatie!
 $ DIALOG_GIVE_CLUE WillemClueVoorafAns
+@ Bedankt voor de informatie!
 % jump Breakout
 % end PlaatsVraag
 

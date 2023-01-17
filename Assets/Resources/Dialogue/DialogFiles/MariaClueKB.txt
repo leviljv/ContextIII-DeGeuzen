@@ -19,9 +19,9 @@ Maria: haha..
 Maria: Ja, hij is een flinke eter, dus veel voorbereiding nodig! haha...
 Maria: Maarehh...
 Maria: De bewaker kwam gisteravond nog naar mij toe om te vragen of de ketter wel gemist zou worden door iemand, ga hem anders eerst maar even strenger ondervragen!
-@ Oke, duidelijk.
 $ DIALOG_GIVE_CLUE KBMariaAns
 $ DIALOG_GIVE_CLUE KBMariaFalseAns
+@ Oke, duidelijk.
 % jump Breakout
 % end GetuigeVraag
 
@@ -35,9 +35,9 @@ Maria: <b>U kunt mij niet zo maar van iets beschuldigen!! </b>
 Maria: <b> Tuurlijk ga ik mijzelf dan verdedigen!! </b>
 Maria: Ik ben de vrouw van Cornelis en wij zijn allebei hartstikke katholiek, wij zouden nooit een ketter helpen!
 Maria: De bewaker kwam gisteravond nog naar mij toe om te vragen of de ketter wel gemist zou worden door iemand, ga hem anders eerst maar even strenger ondervragen!
-@ Oke, bedankt.
 $ DIALOG_GIVE_CLUE KBMariaAns
 $ DIALOG_GIVE_CLUE KBMariaFalseAns
+@ Oke, bedankt.
 % jump Breakout 
 % end BeschuldigVraag
 
