@@ -15,8 +15,7 @@ public class CompassBar : MonoBehaviour
 
     private float compassUnit;
     private List<QuestMarker> questMarkers = new List<QuestMarker>();
-
-    public QuestMarker test;
+    public List<QuestMarker> questMarkerLocations = new List<QuestMarker>();
     
 
     // Start is called before the first frame update
@@ -24,7 +23,10 @@ public class CompassBar : MonoBehaviour
     {
         compassUnit = compassBarTransform.rect.width / 360f;
 
-        AddQuestMarker(test);
+        foreach (QuestMarker marker in questMarkerLocations)
+        {
+            AddQuestMarker(marker);
+        }
         
     }
 

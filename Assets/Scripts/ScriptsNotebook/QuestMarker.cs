@@ -7,7 +7,7 @@ public class QuestMarker : MonoBehaviour
 {
 
     public Sprite icon;
-    public Image image;
+    [HideInInspector]public Image image;
 
     public Vector2 position
     {
