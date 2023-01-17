@@ -43,15 +43,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaClipping: 0
-    - _DissolveAmount: 0.53
+    - _AlphaClipping: 0.107
+    - _DissolveAmount: 0.9
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
     - _MainColor: {r: 0, g: 1, b: 1, a: 1}
     - _MaskAlpha: {r: 1, g: 1, b: 1, a: 1}
-    - _Noisemove01: {r: -1.1, g: 0, b: 0, a: 0}
-    - _Noisemove02: {r: -0.94, g: -0.25, b: 0, a: 0}
+    - _Noisemove01: {r: -0.24, g: 0, b: 0, a: 0}
+    - _Noisemove02: {r: -0.46, g: -0.25, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &4538477822895106029
 MonoBehaviour:
