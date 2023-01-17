@@ -5,3 +5,4 @@ Rombertus: Na gehoord te hebben van uw geweldige detectivewerk tijdens de start 
 Rombertus: Willem had het vaak over uw fantastische oplossingsvaardigheden. 
 Rombertus: Daarom is niemand anders beter geschikt om zijn moord op te lossen.
 Rombertus: Help ons om de moordenaar op te sporen zodat hij voor zijn daden zal boeten. 
+$ NEXT_SCENE

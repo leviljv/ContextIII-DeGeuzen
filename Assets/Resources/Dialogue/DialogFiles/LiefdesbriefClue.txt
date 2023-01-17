@@ -1,0 +1,7 @@
+$ DIALOG_SET_PORTRAIT Empty
+
+Notitie: Hmm... Dit lijkt wel een liefdesbrief.
+Notitie: "Lieve Hendrick.." Hendrick? 
+Notitie: Dat is de naam van de ketter die ontsnapt is.
+Notitie: Onderaan staat "Kusjes, Maria"
+Notitie: Interessant...

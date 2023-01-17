@@ -17,6 +17,8 @@ Frank de Bewaker: Ik kan niet de alles en de hele wereld in de gaten houden!
 Frank de Bewaker: Nou ehh..
 Frank de Bewaker: Je moet maar eens eerst naar anderen kijken!
 Frank de Bewaker: Ga maar eens met die monnik ondervragen, hij kwam vaak langs.
+$ DIALOG_GIVE_CLUE KBBewakerFrankAns
+$ DIALOG_GIVE_CLUE KBBewakerFrankFalseAns
 @ Oke, bedankt.
 % jump Breakout 
 % end GetuigeVraag
@@ -28,6 +30,8 @@ Frank de Bewaker: Waarom zou ik hem bevrijden?
 Frank de Bewaker: Ik was ten slotte degene die hem in de gaten moest houden.
 Frank de Bewaker: Men zou mij als eerste verdenken, zo dom ben ik toch niet??
 Frank de Bewaker: Je moet maar eens die monnik ondervragen, hij kwam vaak langs.
+$ DIALOG_GIVE_CLUE KBBewakerFrankAns
+$ DIALOG_GIVE_CLUE KBBewakerFrankFalseAns
 @ Oke, bedankt.
 % jump Breakout 
 % end BeschuldigVraag

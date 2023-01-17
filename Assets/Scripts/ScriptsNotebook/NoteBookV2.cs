@@ -66,11 +66,11 @@ public class NoteBookV2 : MonoBehaviour
             EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, false);
         }
 
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow) && BookActive == true)
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && BookActive == true)
         {
             PageLeft();
         }
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow) && BookActive == true)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && BookActive == true)
         {
             PageRight();
         }

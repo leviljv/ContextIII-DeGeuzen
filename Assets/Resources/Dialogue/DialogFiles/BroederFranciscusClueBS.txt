@@ -13,6 +13,8 @@ Broeder Franciscus: Wat mij is opgevallen?
 Broeder Franciscus: De martelingen gaan te ver. 
 Broeder Franciscus: We zijn allemaal mensen, maar we gaan steeds verder weg van het woord van God
 Broeder Franciscus: Kunnen we ons weer als goede mensen gaan gedragen? Elkaar respecteren en voor elkaar zorgen?
+$ DIALOG_GIVE_CLUE BSBroederFranciscusAns
+$ DIALOG_GIVE_CLUE BSBroederFranciscusFalseAns
 % jump Breakout 
 % end GetuigeVraag
 
@@ -23,6 +25,8 @@ Broeder Franciscus: Tuurlijk, ze zijn wel een beetje vies.
 Broeder Franciscus: Oh ja, geen idee hoe dat erop is gekomen.
 Broeder Franciscus: Misschien tijdens het schrijven gebeurd, mijn excuus. 
 Broeder Franciscus: Ik zal ze gelijk even wassen.
+$ DIALOG_GIVE_CLUE BSBroederFranciscusAns
+$ DIALOG_GIVE_CLUE BSBroederFranciscusFalseAns
 % jump Breakout
 % end HandVraag
 
