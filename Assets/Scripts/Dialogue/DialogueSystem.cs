@@ -150,6 +150,9 @@ public class DialogueSystem : MonoBehaviour {
     }
 
     private void CallCommand(string[] command) {
+        if(command.Length < 3)
+            EventManager.Invoke(ParseEnum<EventType>(command[1]));
+
         if (float.TryParse(command[2], out var floatParse))
             EventManager<float>.Invoke(ParseEnum<EventType>(command[1]), floatParse);
         else if (bool.TryParse(command[2], out var boolParse))

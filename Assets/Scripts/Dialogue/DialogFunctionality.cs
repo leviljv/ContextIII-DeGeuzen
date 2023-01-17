@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogFunctionality
 {
@@ -31,6 +32,7 @@ public class DialogFunctionality
         EventManager<float>.Subscribe(EventType.DIALOG_SET_TYPE_TIME, SetTimeBetweenChars);
         EventManager<string>.Subscribe(EventType.DIALOG_SET_PORTRAIT, SetSprite);
         EventManager<string>.Subscribe(EventType.DIALOG_GIVE_CLUE, GiveClue);
+        EventManager.Subscribe(EventType.NEXT_SCENE, NextScene);
     }
 
     public void SetTimeBetweenChars(float speed) {
@@ -57,5 +59,9 @@ public class DialogFunctionality
         {
             Debug.LogError("Clue: " + ClueName + " Not Present In Dictionairy");
         }
+    }
+
+    public void NextScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
