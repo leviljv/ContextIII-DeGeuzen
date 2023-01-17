@@ -11,9 +11,9 @@ Bakker Bart: Toen ik vanochtend mijn deeg ging voorbereiden, zag ik wel iets.
 Bakker Bart: Ik zag een klein iemand stiekem wegsluipen.
 Bakker Bart: Het was nog donker dus ik zag niet wie het was.
 Bakker Bart: Maar het leek wel alsof ze heel stiekem probeerde te doen.
-@ Hmm.. Interessant.
 $ DIALOG_GIVE_CLUE MOBBakkerBartAns
 $ DIALOG_GIVE_CLUE MOBBakkerBartFalseAns
+@ Hmm.. Interessant.
 % jump Breakout
 % end GetuigeVraag
 

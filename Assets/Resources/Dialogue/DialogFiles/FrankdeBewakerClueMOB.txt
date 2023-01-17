@@ -15,9 +15,9 @@ Frank de Bewaker: We gingen zo vaak met z’n drieën drinken...
 Frank de Bewaker: Ik snap er niks van, ze leken juist zo hecht samen...
 Frank de Bewaker: Hij zal boeten in hel!!
 Frank de Bewaker: Dan kan Peter in rust resten. Hij verdiende dit niet.
-@ Oke, genoteerd.
 $ DIALOG_GIVE_CLUE MOBBewakerFrankAns
 $ DIALOG_GIVE_CLUE MOBBewakerFrankFalseAns
+@ Oke, genoteerd.
 % jump Breakout
 % end GetuigeVraag
 
@@ -27,9 +27,9 @@ Frank de Bewaker: Ja hallo? Wat denk jij wel niet??
 Frank de Bewaker: Peter was mijn <b> vriend </b>.
 Frank de Bewaker: Ik zou hem nooit zo erg kwaad doen!
 Frank de Bewaker: Hoe durf je mij te beschuldigen..
-@ Bedankt voor je medewerking.
 $ DIALOG_GIVE_CLUE MOBBewakerFrankAns
 $ DIALOG_GIVE_CLUE MOBBewakerFrankFalseAns
+@ Bedankt voor je medewerking.
 % jump Breakout
 % end Beschuldigvraag
 
