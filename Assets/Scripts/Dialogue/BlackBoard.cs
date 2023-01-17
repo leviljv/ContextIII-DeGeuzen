@@ -17,6 +17,7 @@ public class BlackBoard : MonoBehaviour
     public int CurrentIndex;
 
     public List<string> settings = new();
+    public Settings GlobalSettings;
 
     [HideInInspector] public Dictionary<string, bool> SettingsWithValue = new();
 
@@ -48,4 +49,11 @@ public class BlackBoard : MonoBehaviour
 
         EventManager<int>.Invoke(EventType.SET_GLOBAL_INDEX, CurrentIndex);
     }
+}
+
+[System.Serializable]
+public struct Settings{
+    public bool BloodShown;
+    public bool QuestMarkersShown;
+    public bool Fullscreen;
 }
