@@ -11,7 +11,7 @@ Cornelis Groenveld: Onze kerk.. nu moet alles verbouwd worden...
 
 % start GetuigeVraag
 Cornelis Groenveld: Toen ik aankwam bij de kerk was de schade al verricht.
-Cornelis Groenveld: Toen zag ik wat handafdrukken, misschien is het handig om de handen van iedereen te controleren.
+Cornelis Groenveld: Ik zag wel wat handafdrukken, misschien is het handig om de handen van iedereen te controleren.
 $ DIALOG_GIVE_CLUE BSCornelisAns
 $ DIALOG_GIVE_CLUE BSCornelisFalseAns
 % jump Breakout
