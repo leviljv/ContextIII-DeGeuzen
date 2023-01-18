@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class TakeCollectible : MonoBehaviour, IInteractable
 {
-    public NoteBookV2 noteBook;
+    //public NoteBookV2 noteBook;
 
     public void Interact()
     {
-        if (noteBook.CollectiblesFound < 5)
+        if (NoteBookV2.instance.CollectiblesFound < 5)
         {
-            noteBook.CollectiblesFound++;
+            NoteBookV2.instance.CollectiblesFound++;
         }
-        else if (noteBook.CollectiblesFound == 5)
+        else if (NoteBookV2.instance.CollectiblesFound == 5)
         {
-            noteBook.aaah.Test();
-            noteBook.CollectibleChildNumber++;
-            noteBook.CollectiblesFound = 0;
+            NoteBookV2.instance.aaah.Test();
+            NoteBookV2.instance.CollectibleChildNumber++;
+            NoteBookV2.instance.CollectiblesFound = 0;
         }
         Destroy(gameObject);
     }
