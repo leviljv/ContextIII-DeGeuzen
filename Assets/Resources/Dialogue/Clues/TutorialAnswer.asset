@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99937ec9dcd3b7349b961a554fa7327a, type: 3}
   m_Name: TutorialAnswer
   m_EditorClassIdentifier: 
-  ClueAntwoord: Willem van Oranje
+  ClueAntwoord: Onbekend
   QuestNumber: 0
