@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5897612245169724159}
   - component: {fileID: 7907994355920018831}
   - component: {fileID: 4143902593902988905}
+  - component: {fileID: -90819789033944613}
   m_Layer: 5
   m_Name: DragableClue
   m_TagString: DragableObject
@@ -92,12 +93,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce00c46d2fd2c3d42ae041c10ee46c36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clue: {fileID: 0}
+  clue: {fileID: 11400000, guid: 1b286fa41cf4bf14c928b9dea5930597, type: 2}
   parentAfterDrag: {fileID: 0}
   backupParent: {fileID: 0}
   CanvasTransform: {fileID: 0}
   destinationTag: DropArea
   posSet: 0
+  handHold: {fileID: 2800000, guid: f8ef7d1ca6569f14eab6ac6e61c028f6, type: 3}
+  handOpen: {fileID: 2800000, guid: 8d35ca1eff050984db1b0d1cd5d8c07e, type: 3}
+  handWijs: {fileID: 2800000, guid: 21c8ede8beeef5f4392df09717793c17, type: 3}
 --- !u!114 &7907994355920018831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,8 +134,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 718f01b2dbc7b2548ac785c9cdbc0a06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClueScriptableObject: {fileID: 0}
+  ClueScriptableObject: {fileID: 11400000, guid: 1b286fa41cf4bf14c928b9dea5930597,
+    type: 2}
   Antwoord: {fileID: 5897612246054391915}
+--- !u!65 &-90819789033944613
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5897612245169724157}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5897612246054391913
 GameObject:
   m_ObjectHideFlags: 0

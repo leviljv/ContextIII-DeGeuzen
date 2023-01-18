@@ -29,7 +29,8 @@ public class DialogueContainer : MonoBehaviour
         else
             positionIndex = index;
 
-        transform.position = PositionsPerIndex[positionIndex].position;
+        if (PositionsPerIndex[positionIndex] != null)
+            transform.position = PositionsPerIndex[positionIndex].position;
     }
 
     public string GetDialog() {

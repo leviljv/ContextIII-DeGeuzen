@@ -27,7 +27,6 @@ $ DIALOG_SET_PORTRAIT Katharina
 	Unknown: You are $ DIALOG_SET_TYPE_TIME 0,2 $ <b>INDEED</b> $ DIALOG_SET_TYPE_TIME 0,01 $ gay
 	Unknown: I am not sorry
 	Unknown: Hope you will be fine
-$ DIALOG_GIVE_CLUE Gays
 
 	% jump OptionSection
 % end SectionOne

@@ -88,6 +88,7 @@ public class DialogueSystem : MonoBehaviour {
             mainText.text = "";
             nameText.text = "";
             index = 0;
+            RemoveOptions();
             DialogueSystemObject.SetActive(false);
             EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, false);
             return;
@@ -249,6 +250,14 @@ public class DialogueSystem : MonoBehaviour {
         List<char> charList = new();
 
         var frontAndBack = text.Split(": ", 2);
+
+        if (frontAndBack.Length < 2) {
+            index++;
+            NextLine();
+            IsWriting = false;
+            yield return null;
+        }
+
         var name = frontAndBack[0];
         nameText.text = name;
         var sentence = frontAndBack[1];
@@ -351,6 +360,14 @@ public class DialogueSystem : MonoBehaviour {
         List<char> charList = new();
 
         var frontAndBack = text.Split(": ", 2);
+
+        if (frontAndBack.Length < 2) {
+            index++;
+            NextLine();
+            IsWriting = false;
+            return;
+        }
+
         var name = frontAndBack[0];
         nameText.text = name;
         var sentence = frontAndBack[1];
