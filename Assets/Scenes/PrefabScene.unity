@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -813,7 +813,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b097b9e07b73d4b96031b010b3f567, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteBook: {fileID: 78464474}
 --- !u!114 &288421743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1246,6 +1245,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 711583995}
     m_Modifications:
+    - target: {fileID: 458012395959163690, guid: e920d8f4e7d65a24996e2f5361409493,
+        type: 3}
+      propertyPath: settings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458012395959163690, guid: e920d8f4e7d65a24996e2f5361409493,
+        type: 3}
+      propertyPath: settings.Array.data[0]
+      value: FoundAllClues
+      objectReference: {fileID: 0}
     - target: {fileID: 2528269160929860132, guid: e920d8f4e7d65a24996e2f5361409493,
         type: 3}
       propertyPath: m_Name
@@ -2493,7 +2502,6 @@ GameObject:
   - component: {fileID: 711583994}
   - component: {fileID: 711583993}
   - component: {fileID: 711583992}
-  - component: {fileID: 711583996}
   m_Layer: 5
   m_Name: Dialog
   m_TagString: Untagged
@@ -2583,25 +2591,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &711583996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 711583991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5f3ba0ab8bdcec44bfa3489a3acd9b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentIndex: 0
-  settings:
-  - FoundAllClues
-  GlobalSettings:
-    BloodShown: 0
-    QuestMarkersShown: 0
-    Fullscreen: 0
 --- !u!1 &813431572
 GameObject:
   m_ObjectHideFlags: 0

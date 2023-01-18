@@ -151,12 +151,11 @@ public class DialogueSystem : MonoBehaviour {
     }
 
     private void CallCommand(string[] command) {
-        if(command.Length < 3) {
-            EventManager.Invoke(ParseEnum<EventType>(command[1].ToUpper()));
-            return;
-        }
+        Debug.Log("Calling Event");
 
-        if (float.TryParse(command[2].ToLower(), out var floatParse))
+        if(command.Length < 3) 
+            EventManager.Invoke(ParseEnum<EventType>(command[1].ToUpper()));
+        else if (float.TryParse(command[2].ToLower(), out var floatParse))
             EventManager<float>.Invoke(ParseEnum<EventType>(command[1].ToUpper()), floatParse);
         else if (bool.TryParse(command[2].ToLower(), out var boolParse))
             EventManager<bool>.Invoke(ParseEnum<EventType>(command[1].ToUpper()), boolParse);
