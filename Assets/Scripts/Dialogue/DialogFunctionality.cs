@@ -48,15 +48,12 @@ public class DialogFunctionality
         }
     }
 
-    public void GiveClue(string ClueName)
-    {
-        if (Clues.ContainsKey(ClueName))
-        {
+    public void GiveClue(string ClueName) {
+        if (Clues.ContainsKey(ClueName)) {
             var pickedClue = Clues[ClueName];
             NoteBookV2.instance.SetClue(pickedClue);
         }
-        else
-        {
+        else {
             Debug.LogError("Clue: " + ClueName + " Not Present In Dictionairy");
         }
     }
