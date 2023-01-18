@@ -1,6 +1,5 @@
 $ DIALOG_SET_PORTRAIT Empty
 
-@ Wat was jij aan het doen vlak voor de moord?
 @ Heb jij iets gezien dat kan helpen?
 Knecht: Ik was aan het schoonmaken in de binnenkomsthal, toen ik zo erg schrok van een knal dat ik per ongeluk de klok liet vallen. 
 Knecht: Volgens mij zijn daardoor de <b>wijzers stil gaan staan</b> op het moment van de knal.

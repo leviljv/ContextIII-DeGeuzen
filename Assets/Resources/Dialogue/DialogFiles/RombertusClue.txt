@@ -1,17 +1,18 @@
 $ DIALOG_SET_PORTRAIT Rombertus
 
+Rombertus: Wat een gruwelijke dag... 
+
 @ Viel jou iets op eerder vandaag?
-	% jump GetuigeVraag
+% jump GetuigeVraag
 @ Verdenk jij iemand?
 % jump VerdachtVraag
 @ Ik weet wie de dader is.
-	% % jump if FoundAllClues jump AntwoordGoed : jump AntwoordFout
+% jump if FoundAllClues AntwoordGoed : AntwoordFout
 
 % start GetuigeVraag
 Rombertus: Eerder vandaag kwam een man genaamd <b>François Guyon</b> langs om de prins om een paspoort te vragen. 
 Rombertus: Ik kende hem niet en hij leek nerveus. 
 Rombertus: Het leek wel alsof hij ergens was waar hij niet hoorde te zijn…
-
 @ Hmm.. interessant…
 % jump Breakout
 @ Bedankt voor de informatie!
