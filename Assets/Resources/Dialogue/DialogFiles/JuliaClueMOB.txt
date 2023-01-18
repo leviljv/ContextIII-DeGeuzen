@@ -7,6 +7,8 @@ $ DIALOG_SET_PORTRAIT Julia
 % jump NeverMind
 
 % start GetuigeVraag
+$ DIALOG_GIVE_CLUE MOBJuliaAns
+$ DIALOG_GIVE_CLUE MOBJuliaFalseAns
 Julia: Iets gezien?
 Julia: Nou, uhhh..
 Julia: Het lichaam ligt letterlijk in mijn man’s werkplaats!
@@ -16,13 +18,13 @@ Julia: Mijn man en Peter waren altijd samen, vaker dan hij bij mij was...
 Julia: Wat? <b>Jaloers??</b> Pfft.. uhh nee?
 Julia: Waarschijnlijk hebben ze gewoon hele erge ruzie gehad ofzo.
 Julia: Dat gebeurt toch eenmaal als je zoveel op elkaars lip zit?
-$ DIALOG_GIVE_CLUE MOBJuliaAns
-$ DIALOG_GIVE_CLUE MOBJuliaFalseAns
 @ Oke, ik zal het noteren.
 % jump Breakout
 % end GetuigeVraag
 
 % start BeschuldigVraag
+$ DIALOG_GIVE_CLUE MOBJuliaAns
+$ DIALOG_GIVE_CLUE MOBJuliaFalseAns
 Julia: Wat?
 Julia: Hoe bedoelt u?? Hoe- wat.. 
 Julia: Het lichaam van die vieze boer lag in mijn man’s werkplaats!!
@@ -37,8 +39,6 @@ Julia: Jan was nooit meer bij mij, maar altijd bij Peter!
 Julia: Nou ja zeg! Jaloers? Ik?? 
 Julia: Als je zo veel bij iemand in de buurt bent ga je sowieso ruzie krijgen... toch?
 Julia: En soms lopen die ruzies uit tot geweld.
-$ DIALOG_GIVE_CLUE MOBJuliaAns
-$ DIALOG_GIVE_CLUE MOBJuliaFalseAns
 @ Bedankt voor je medewerking.
 % jump Breakout
 % end Beschuldigvraag
