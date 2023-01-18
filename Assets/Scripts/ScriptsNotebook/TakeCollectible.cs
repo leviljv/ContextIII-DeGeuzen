@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class TakeCollectible : MonoBehaviour, IInteractable
 {
-    public Collectible scriptableObject;
     public NoteBookV2 noteBook;
-
 
     public void Interact()
     {
