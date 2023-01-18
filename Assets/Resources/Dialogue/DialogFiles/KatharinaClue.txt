@@ -1,6 +1,8 @@
 $ DIALOG_SET_PORTRAIT Katharina
 
 Katharina: ...
+&
+
 @ Wat was jij aan het doen vlak voor de moord?
 % jump GetuigeVraag
 @ Waar was jij vlak voor de moord?

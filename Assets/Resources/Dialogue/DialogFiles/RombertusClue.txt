@@ -60,9 +60,13 @@ Rombertus: Zijn naam was eigenlijk Balthasar Gerards.
 Rombertus: Balthasar Gerards was de moordenaar!
 Rombertus: Bedankt voor uw hulp!
 @ Geen probleem.
-% jump Breakout
+% jump Done
 @ Daarom ben ik detective.
-% jump Breakout
+% jump Done
 % end AntwoordGoed 
+
+% start Done
+$ NEXT_SCENE
+% end Done
 
 % start Breakout

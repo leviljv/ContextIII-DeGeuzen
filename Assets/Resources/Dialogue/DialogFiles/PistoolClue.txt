@@ -1,4 +1,4 @@
 $ DIALOG_SET_PORTRAIT Empty
 
 $ DIALOG_GIVE_CLUE WillemClueMoordwapenAns
-Notitie: Hmmm... een redspistool. Wat doet die hier?
+Notitie: Hmmm... een radspistool. Wat doet die hier?
