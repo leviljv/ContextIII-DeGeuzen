@@ -40,9 +40,9 @@ public class WinningCondition : MonoBehaviour
                 obj.GetComponent<Image>().color = Color.green;
                 Destroy(obj.GetComponent<DragableItem>());
             }
-            EventManager.Invoke(EventType.UP_GLOBAL_INDEX);
             Debug.Log("YOU WIN");
             Win = true;
+            EventManager.Invoke(EventType.UP_GLOBAL_INDEX);
         }
     }
 }

@@ -7,9 +7,10 @@ using UnityEngine.UI;
 public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPointerDownHandler, IPointerUpHandler
 {
     public ClueAnswerSO clue;
-    public Transform parentAfterDrag;
-    public Transform backupParent;
-    public Canvas CanvasTransform;
+    [HideInInspector]public Transform parentAfterDrag;
+    [HideInInspector]public Transform backupParent;
+    [HideInInspector]public Canvas CanvasTransform;
+    [HideInInspector]public bool posSet = false;
     private WinningCondition winningCondition;
     Vector3 offset;
     CanvasGroup canvasGroup;
@@ -19,9 +20,16 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
     float z;
     Vector3 pos;
     RectTransform rectTransform;
-    public bool posSet = false;
     //public Vector3 newPos;
     Vector3 Position;
+
+    
+    public Texture2D handHold;
+    public Texture2D handOpen;
+    public Texture2D handWijs;
+    private CursorMode cursorMode = CursorMode.Auto;
+    private Vector2 hotSpot = Vector2.zero;
+
     public RaycastResult raycastResult;
     void Start()
     {
@@ -57,6 +65,7 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
 
     }
 
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         transform.SetParent(CanvasTransform.transform);
@@ -66,6 +75,7 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = Input.mousePosition;
+        Cursor.SetCursor(handHold, hotSpot, cursorMode);
     }
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -76,6 +86,7 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        Cursor.SetCursor(handWijs, hotSpot, cursorMode);
         //gameObject.transform.position = newPos;
         RaycastResult raycastResult = eventData.pointerCurrentRaycast;
         var tmp = raycastResult;
