@@ -11,6 +11,7 @@ public class WinningCondition : MonoBehaviour
     private ClueHolder clueHolder;
     public int index;
     public int correctAnswersFromLists;
+    private bool Win = false;
     void Start()
     {
         noteBook = GetComponentInParent<NoteBookV2>();
@@ -32,14 +33,16 @@ public class WinningCondition : MonoBehaviour
         }
 
 
-        if (clueHolder.ClueList.Count == CorrectAnswers.Count)
+        if (clueHolder.ClueList.Count == CorrectAnswers.Count && Win == false)
         {
             foreach (GameObject obj in CorrectGameObjects)
             {
                 obj.GetComponent<Image>().color = Color.green;
                 Destroy(obj.GetComponent<DragableItem>());
             }
+            EventManager.Invoke(EventType.UP_GLOBAL_INDEX);
             Debug.Log("YOU WIN");
+            Win = true;
         }
     }
 }

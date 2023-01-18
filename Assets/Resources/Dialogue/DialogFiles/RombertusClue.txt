@@ -5,7 +5,7 @@ $ DIALOG_SET_PORTRAIT Rombertus
 @ Verdenk jij iemand?
 % jump VerdachtVraag
 @ Ik weet wie de dader is.
-	% % jump if FoundAllClues jump AntwoordGoed : jump AntwoordFout
+	% jump if FoundAllClues jump AntwoordGoed : jump AntwoordFout
 
 % start GetuigeVraag
 Rombertus: Eerder vandaag kwam een man genaamd <b>François Guyon</b> langs om de prins om een paspoort te vragen. 
