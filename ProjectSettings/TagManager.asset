@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - DragableObject
+  - DropArea
   layers:
   - Default
   - TransparentFX
@@ -41,4 +42,67 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: sorting test
+    uniqueID: 3589672485
+    locked: 0
+  - name: 1
+    uniqueID: 1907820867
+    locked: 0
+  - name: 2
+    uniqueID: 476977145
+    locked: 0
+  - name: 3
+    uniqueID: 3089643291
+    locked: 0
+  - name: 4
+    uniqueID: 3665316963
+    locked: 0
+  - name: 5
+    uniqueID: 79074809
+    locked: 0
+  - name: 6
+    uniqueID: 3483105849
+    locked: 0
+  - name: 7
+    uniqueID: 874858537
+    locked: 0
+  - name: 8
+    uniqueID: 1882488245
+    locked: 0
+  - name: 9
+    uniqueID: 3746703541
+    locked: 0
+  - name: 10
+    uniqueID: 1384606233
+    locked: 0
+  - name: 11
+    uniqueID: 3411465819
+    locked: 0
+  - name: 12
+    uniqueID: 4229854381
+    locked: 0
+  - name: 13
+    uniqueID: 748816161
+    locked: 0
+  - name: 14
+    uniqueID: 3622101657
+    locked: 0
+  - name: 15
+    uniqueID: 2425730795
+    locked: 0
+  - name: 16
+    uniqueID: 175374585
+    locked: 0
+  - name: 17
+    uniqueID: 2985462335
+    locked: 0
+  - name: 18
+    uniqueID: 3323745291
+    locked: 0
+  - name: 19
+    uniqueID: 2711532409
+    locked: 0
+  - name: 20
+    uniqueID: 1608675321
     locked: 0
