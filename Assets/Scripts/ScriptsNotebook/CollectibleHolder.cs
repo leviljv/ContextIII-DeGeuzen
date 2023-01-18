@@ -4,28 +4,18 @@ using UnityEngine;
 
 public class CollectibleHolder : MonoBehaviour
 {
-    public List<Collectible> CollectibleList = new List<Collectible>();
+    public List<GameObject> CollectibleList = new List<GameObject>();
     public GameObject CollectiblePrefab;
     private List<GameObject> SpawnedPrefabs = new List<GameObject>();
+    public int index = 0;
     //public Transform PrefabSpawnLocation;
 
-    public void OnEnable()
+    public void Test()
     {
-        foreach (Collectible coll in CollectibleList)
-        {
-            CollectiblePrefab.GetComponent<CollectibleDisplay>().collectible = coll;
-
-            var tmp = Instantiate(CollectiblePrefab, gameObject.transform);
-
-            SpawnedPrefabs.Add(tmp); 
-        }
+        Debug.Log("VINK");
+        CollectibleList[index].GetComponent<SetVinkje>().ActivateVinkje();
+        index++;
     }
 
-    public void OnDisable()
-    {
-        foreach (GameObject prefab in SpawnedPrefabs)
-        {
-            Destroy(prefab);
-        }
-    }
+    
 }

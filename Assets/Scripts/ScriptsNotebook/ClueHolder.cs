@@ -10,8 +10,6 @@ public class ClueHolder : MonoBehaviour
     public GameObject AnswerPrefab;
     private List<GameObject> SpawnedPrefabs = new List<GameObject>();
 
-    //public Transform PrefabSpawnLocation;
-
     private void Start()
     {
         foreach (Clue clue in ClueList)
@@ -31,14 +29,5 @@ public class ClueHolder : MonoBehaviour
         AnswerPrefab.GetComponent<ClueAnswer>().ClueScriptableObject = (ClueAnswerSO)answer;
         var tmp = Instantiate(AnswerPrefab, gameObject.transform);
     }
-
-
-    //private void OnDisable()
-    //{
-    //    foreach (GameObject prefab in SpawnedPrefabs)
-    //    {
-    //        Destroy(prefab);
-    //    }
-    //}
 
 }

@@ -30,37 +30,16 @@ public class CollectibleManager : MonoBehaviour
 
     public void GoToNextCollectiblePage()
     {
-        if (currentCollectiblePage != numberOfPages - 1)
-        {
-            Debug.Log("Collectible next page");
-
-            currentCollectiblePage++;
-            gameObject.transform.GetChild(currentCollectiblePage).gameObject.SetActive(true);
-            gameObject.transform.GetChild(currentCollectiblePage - 1).gameObject.SetActive(false);
-        }
-        else
-        {
-            Debug.Log("Gotta go to codex");
-            gameObject.transform.GetChild(currentCollectiblePage).gameObject.SetActive(false);
-            SwitchToCodex();
-        }
+        Debug.Log("Gotta go to codex");
+        gameObject.transform.GetChild(currentCollectiblePage).gameObject.SetActive(false);
+        SwitchToCodex();
     }
 
     public void GoToPrevCollectiblePage()
     {
-        if(currentCollectiblePage > 0)
-        {
-            currentCollectiblePage--;
-            gameObject.transform.GetChild(currentCollectiblePage).gameObject.SetActive(true);
-            gameObject.transform.GetChild(currentCollectiblePage + 1).gameObject.SetActive(false);
-        }
-        else
-        {
-            noteBookV2.collectibleActive = false;
-            clueManager.gameObject.transform.GetChild(clueManager.numberOfPages -1).gameObject.SetActive(true);
-            gameObject.SetActive(false);
-        }
-        
+        noteBookV2.collectibleActive = false;
+        clueManager.gameObject.transform.GetChild(clueManager.numberOfPages -1).gameObject.SetActive(true);
+        gameObject.SetActive(false);
     }
 
     public void SwitchToCodex()
