@@ -18,19 +18,21 @@ public class DialogueContainer : MonoBehaviour
     }
 
     private void SetIndex(int index) {
-        if (index > DialogPerIndex.Count - 1)
-            dialogIndex = DialogPerIndex.Count - 1;
-        else
-            dialogIndex = index;
-
-        if (index > PositionsPerIndex.Count - 1) {
-            positionIndex = PositionsPerIndex.Count - 1;
+        if(DialogPerIndex.Count > 0) {
+            if (index > DialogPerIndex.Count - 1)
+                dialogIndex = DialogPerIndex.Count - 1;
+            else
+                dialogIndex = index;
         }
-        else
-            positionIndex = index;
 
-        if (PositionsPerIndex.Count - 1 >= positionIndex)
+        if (PositionsPerIndex.Count > 0) {
+            if (index > PositionsPerIndex.Count - 1)
+                positionIndex = PositionsPerIndex.Count - 1;
+            else
+                positionIndex = index;
+
             transform.position = PositionsPerIndex[positionIndex].position;
+        }
     }
 
     public string GetDialog() {
