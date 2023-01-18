@@ -7004,7 +7004,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6742867554225798232, guid: baef8ec8d0e3e0641a15a6d0c4b17a3e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: baef8ec8d0e3e0641a15a6d0c4b17a3e, type: 3}
 --- !u!43 &722810551
 Mesh:
@@ -17309,6 +17310,26 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 719427459}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1985165066
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985165063}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fabc06c5cd4844242a48cb51171a3aa9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1988030970 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5897612245169724157, guid: e36677d56a1821f4aa91316fdc3cec86,
@@ -21102,6 +21123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec997029f0b69c940aecc7e77cc54547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bookUI: {fileID: 1985165063}
   ToggleParent: {fileID: 1906307350786676620}
   clueManager: {fileID: 1906307350753797021}
   collectibleManager: {fileID: 1906307350801595132}

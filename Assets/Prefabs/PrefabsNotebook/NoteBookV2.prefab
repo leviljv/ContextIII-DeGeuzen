@@ -514,6 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec997029f0b69c940aecc7e77cc54547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bookUI: {fileID: 5261130037733529517, guid: baef8ec8d0e3e0641a15a6d0c4b17a3e, type: 3}
   ToggleParent: {fileID: 1906307349097159989}
   clueManager: {fileID: 1906307348995598628}
   collectibleManager: {fileID: 1906307349082189893}

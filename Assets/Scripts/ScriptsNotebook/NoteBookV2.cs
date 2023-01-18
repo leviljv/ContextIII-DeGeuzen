@@ -9,6 +9,7 @@ public class NoteBookV2 : MonoBehaviour
     {
         instance = this;
     }
+    public GameObject bookUI;
 
     public Transform ToggleParent;
     public ClueManager clueManager;
@@ -33,6 +34,7 @@ public class NoteBookV2 : MonoBehaviour
         ToggleParent.gameObject.SetActive(false);
         collectibleActive = false;
         codexActive = false;
+        bookUI.SetActive(false);
     }
 
     // Update is called once per frame
@@ -48,9 +50,22 @@ public class NoteBookV2 : MonoBehaviour
         {
             clueManager.gameObject.transform.GetChild(QuestNumber).GetComponent<ClueHolder>().ClueAnswerList.Add(clueAnswer);
             clueManager.gameObject.transform.GetChild(QuestNumber).GetComponent<ClueHolder>().SpawnAnswer(clueAnswer);
+            bookUI.SetActive(true);
+            ZetCoroutineAan();
         }
     }
 
+    //sorry jogchum
+    void ZetCoroutineAan()
+    {
+        StartCoroutine(HideBookUI());
+    }
+    IEnumerator HideBookUI()
+    {
+        yield return new WaitForSeconds(1);
+        bookUI.SetActive(false);
+        StopCoroutine(HideBookUI());
+    }
     public void ActivateBook()
     {
         if (Input.GetKeyDown(KeyCode.Q) && BookActive == false)
