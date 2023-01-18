@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c04d19c20c9c11144b2d5003d4534fc0, type: 3}
   m_Name: WillemClueAanleiding
   m_EditorClassIdentifier: 
-  ClueVraag: 'Wat was de reden van de moord? '
+  ClueVraag: Reden van de moord
   ClueAntwoord: Vogelvrijbrief
