@@ -27,7 +27,7 @@ public class ClimbingTutorial : MonoBehaviour
     {
         if(other.CompareTag("Player") && !alreadyShownTutorial)
         {
-            //idealiter: stop de speler zodat ie niet kan bewegen
+            EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, true);
             alreadyShownTutorial = true;
             StartCoroutine(ShowTutorialScroll());
         }
@@ -38,6 +38,7 @@ public class ClimbingTutorial : MonoBehaviour
     {
         scrollUI.SetActive(true);
         yield return new WaitForSeconds(secondsToShowScroll);
+        EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, false);
         scrollUI.SetActive(false);
     }
 }
