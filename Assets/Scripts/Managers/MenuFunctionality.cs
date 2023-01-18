@@ -48,16 +48,16 @@ public class MenuFunctionality : MonoBehaviour
     }
 
     public void ToggleQuestMarkers() {
-        ShowBlood = !ShowBlood;
+        ShowMarkers = !ShowMarkers;
 
-        BloodCheck.SetActive(ShowBlood);
+        MarkerCheck.SetActive(ShowMarkers);
         SetSettings();
     }
 
     public void ToggleBlood() {
-        ShowMarkers = !ShowMarkers;
+        ShowBlood = !ShowBlood;
 
-        MarkerCheck.SetActive(ShowMarkers);
+        BloodCheck.SetActive(ShowBlood);
         SetSettings();
     }
 
