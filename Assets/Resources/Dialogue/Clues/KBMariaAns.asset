@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: KBMariaAns
   m_EditorClassIdentifier: 
   ClueAntwoord: Verdacht
-  QuestNumber: 1
+  QuestNumber: 0
