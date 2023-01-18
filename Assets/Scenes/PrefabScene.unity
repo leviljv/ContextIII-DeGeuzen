@@ -2597,7 +2597,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIndex: 0
-  settings: []
+  settings:
+  - FoundAllClues
+  GlobalSettings:
+    BloodShown: 0
+    QuestMarkersShown: 0
+    Fullscreen: 0
 --- !u!1 &813431572
 GameObject:
   m_ObjectHideFlags: 0
@@ -3348,6 +3353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useStaticBillboarding: 1
+  dis: 0
 --- !u!114 &1141641340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4478,6 +4484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useStaticBillboarding: 1
+  dis: 0
 --- !u!1 &1687236162 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3861199251192118, guid: 3b13b5a45293d624b887d3ac9ec90708,
