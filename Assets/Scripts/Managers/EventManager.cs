@@ -13,7 +13,8 @@ public enum EventType {
     UP_GLOBAL_INDEX,
     LOWER_GLOBAL_INDEX,
     DIALOG_GIVE_CLUE,
-    NEXT_SCENE
+    NEXT_SCENE,
+    COLLETABLE_FOUND
 }
 
 public static class EventManager {

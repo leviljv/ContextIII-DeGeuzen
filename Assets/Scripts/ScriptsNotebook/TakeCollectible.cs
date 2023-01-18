@@ -18,7 +18,9 @@ public class TakeCollectible : MonoBehaviour, IInteractable
             NoteBookV2.instance.CollectibleChildNumber++;
             NoteBookV2.instance.CollectiblesFound = 0;
         }
+
+        EventManager.Invoke(EventType.COLLETABLE_FOUND);
+
         Destroy(gameObject);
     }
-
 }

@@ -31,7 +31,7 @@ Transform:
   m_LocalScale: {x: 0.12496, y: 0.12496, z: 0.12496}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3800567616912317718}
+  m_Father: {fileID: 6280257433214919444}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: -90}
 --- !u!33 &3800567616136241704
@@ -129,7 +129,7 @@ Transform:
   m_LocalScale: {x: 0.12496, y: 0.12496, z: 0.124960005}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3800567616912317718}
+  m_Father: {fileID: 6280257433214919444}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 450, y: 0, z: -90}
 --- !u!33 &3800567616589587354
@@ -204,9 +204,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3800567616912317718}
+  - component: {fileID: 6280257433214919444}
   - component: {fileID: 3021147361735391101}
   - component: {fileID: 8686401478243805978}
+  - component: {fileID: -2309814672897198861}
+  - component: {fileID: 8645105005498808735}
   m_Layer: 0
   m_Name: Collectible
   m_TagString: Untagged
@@ -214,15 +216,15 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3800567616912317718
-Transform:
+--- !u!224 &6280257433214919444
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3800567616912317717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.486791, y: 0.728, z: -4.940305}
+  m_LocalPosition: {x: 0, y: 0, z: -4.940305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -232,6 +234,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 11.486791, y: 0.728}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!136 &3021147361735391101
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -258,6 +265,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb1a7f33dcf6e342a2a3b81d860da1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2309814672897198861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800567616912317717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b097b9e07b73d4b96031b010b3f567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteBook: {fileID: 0}
+--- !u!114 &8645105005498808735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800567616912317717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c870a7aa94cb9c4aa8ed46e7b528aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoToDisplay: Druk op E om op te pakken!
 --- !u!1 &4979691204045480402
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,7 +321,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3800567616912317718}
+  m_Father: {fileID: 6280257433214919444}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &5427430977251146046
