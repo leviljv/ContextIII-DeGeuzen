@@ -14,11 +14,12 @@ public class NoteBookV2 : MonoBehaviour
     public ClueManager clueManager;
     public CollectibleManager collectibleManager;
     public CodexManager codexManager;
+    public CollectibleHolder aaah;
     public GameObject clueAnswerPrefab;
 
 
     public List<ClueAnswerSO> test = new List<ClueAnswerSO>();
-    public int CollectibleListEntries = 0;
+    public int CollectiblesFound = 0;
     public int CollectibleChildNumber = 0;
 
     [HideInInspector] public bool BookActive = false;

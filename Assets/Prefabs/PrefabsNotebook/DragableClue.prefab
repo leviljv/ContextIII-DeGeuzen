@@ -31,7 +31,7 @@ RectTransform:
   m_GameObject: {fileID: 5897612245169724157}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.8472512, y: 0.35199687, z: 0.6361576}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5897612246054391914}
@@ -41,7 +41,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 39.07345, y: 92.04671}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 243.5646, y: 41.677}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5897612245169724153
 CanvasRenderer:
@@ -97,8 +97,8 @@ MonoBehaviour:
   parentAfterDrag: {fileID: 0}
   backupParent: {fileID: 0}
   CanvasTransform: {fileID: 0}
-  destinationTag: DropArea
   posSet: 0
+  destinationTag: DropArea
   handHold: {fileID: 2800000, guid: f8ef7d1ca6569f14eab6ac6e61c028f6, type: 3}
   handOpen: {fileID: 2800000, guid: 8d35ca1eff050984db1b0d1cd5d8c07e, type: 3}
   handWijs: {fileID: 2800000, guid: 21c8ede8beeef5f4392df09717793c17, type: 3}
@@ -177,7 +177,7 @@ RectTransform:
   m_GameObject: {fileID: 5897612246054391913}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1999516, y: 2.134756, z: 1.438292}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5897612245169724158}
@@ -186,7 +186,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 1}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 216.8241, y: 28.6897}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5897612246054391908
 CanvasRenderer:
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27
+  m_fontSize: 21.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -282,7 +282,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -122.17096, y: 6.923609, z: -123.43814, w: 6.0582294}
+  m_margin: {x: -1.59906, y: 0.7549076, z: -0.6230469, w: -1.2321758}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
