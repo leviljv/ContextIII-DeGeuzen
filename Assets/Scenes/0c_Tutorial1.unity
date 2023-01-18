@@ -112128,7 +112128,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: TutorialRombertus
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1468390052856344677, guid: 435e51646cdae1f45b5a240247551ef8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 435e51646cdae1f45b5a240247551ef8, type: 3}
 --- !u!114 &8844059513901149120
 MonoBehaviour:
