@@ -29,7 +29,7 @@ public class DialogueContainer : MonoBehaviour
         else
             positionIndex = index;
 
-        if (PositionsPerIndex[positionIndex] != null)
+        if (PositionsPerIndex.Count - 1 >= positionIndex)
             transform.position = PositionsPerIndex[positionIndex].position;
     }
 
