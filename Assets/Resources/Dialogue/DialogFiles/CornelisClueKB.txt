@@ -1,5 +1,6 @@
 $ DIALOG_SET_PORTRAIT CornelisGroenveld
 
+% start OptionSection
 Cornelis: Heeft u de dader al weten op te sporen?
 @ Nee, heeft u hem zelf misschien hebt laten ontsnappen?
 % jump BeschuldigVraag
@@ -7,14 +8,15 @@ Cornelis: Heeft u de dader al weten op te sporen?
 % if FoundAllClues jump AntwoordGoed : jump AntwoordFout
 @ Laat maar
 % jump NeverMind
+% end OptionSection
 
 % start BeschuldigVraag
+$ DIALOG_GIVE_CLUE KBCornelisAns
+$ DIALOG_GIVE_CLUE KBCornelisFalseAns
 Cornelis: Ik haal jou hier om mij te helpen en je denkt dat ik hem zelf heb bevrijd?
 Cornelis: Misschien ben je een slechtere detective dan ik dacht.
 Cornelis: Ik heb zelf het bevel gegeven om hem op te laten pakken en hem bovendien ter dood veroordeeld!
 Cornelis: Filips zorgt er met zijn harde aanpak wel voor dat iedereen hier boos wordt, zelfs ik wordt nu verdacht!
-$ DIALOG_GIVE_CLUE KBCornelisAns
-$ DIALOG_GIVE_CLUE KBCornelisFalseAns
 @ Oke, duidelijk.
 % jump Breakout 
 % end BeschuldigVraag

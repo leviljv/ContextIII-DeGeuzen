@@ -7,6 +7,8 @@ $ DIALOG_SET_PORTRAIT JanDeSmid
 % jump NeverMind
 
 % start VerlaringVraag
+$ DIALOG_GIVE_CLUE MOBJandeSmidAns
+$ DIALOG_GIVE_CLUE MOBJandeSmidFalseAns
 Jan de Smid: Ik weet het niet!
 Jan de Smid: Ik weet niet waarom dit gebeurt...
 Jan de Smid: Hij was mijn vriend...
@@ -19,21 +21,19 @@ Jan de Smid: Mijn werkplaats, met mijn beste vriend op de grond...
 Jan de Smid: Ik kan het nog steeds niet geloven...
 Jan de Smid: ...
 Jan de Smid: Ik hield echt van hem.
-$ DIALOG_GIVE_CLUE MOBJandeSmidAns
-$ DIALOG_GIVE_CLUE MOBJandeSmidFalseAns
 @ Bedankt voor je medewerking.
 % jump Breakout
 % end VerlaringVraag
 
 % start BeschuldigVraag
+$ DIALOG_GIVE_CLUE MOBJandeSmidAns
+$ DIALOG_GIVE_CLUE MOBJandeSmidFalseAns
 Jan de Smid: Wat? <b> Nee! </b>
 Jan de Smid: Hij was mijn beste vriend!
 Jan de Smid: Ik zou hem nooit wat aandoen.
 @ Zelfs niet als jullie ruzie hebben?
 Jan de Smid: Wat? Peter en ik hebben nooit ruzie.
 Jan de Smid: Ik zou sowieso nooit gewelddadig worden, ruzie of geen ruzie!
-$ DIALOG_GIVE_CLUE MOBJandeSmidAns
-$ DIALOG_GIVE_CLUE MOBJandeSmidFalseAns
 @ Oke, bedankt voor je medewerking.
 % jump Breakout
 % end Beschuldigvraag

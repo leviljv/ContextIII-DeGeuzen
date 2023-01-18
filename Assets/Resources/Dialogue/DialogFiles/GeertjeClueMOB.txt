@@ -7,6 +7,8 @@ $ DIALOG_SET_PORTRAIT Geertje
 % jump NeverMind
 
 % start GetuigeVraag
+$ DIALOG_GIVE_CLUE MOBGeertjeAns
+$ DIALOG_GIVE_CLUE MOBGeertjeFalseAns
 Geertje: Iets verdachts?
 Geertje: Hmm... Eens denken...
 Geertje: Oh! Mijn buurvrouw, Julia zei laatst wel iets opmerkelijks...
@@ -15,13 +17,13 @@ Geertje: Ja! Die Julia.
 Geertje: Ze vertelde dat ze Peter niet kon uitstaan.
 Geertje: Dat ze zich ergerde aan hem en zijn relatie met Peter.
 Geertje: Volgens mij zag ze een beetje groen van jaloezie.
-$ DIALOG_GIVE_CLUE MOBGeertjeAns
-$ DIALOG_GIVE_CLUE MOBGeertjeFalseAns
 @ Hmm... Interessant.
 % jump Breakout
 % end GetuigeVraag
 
 % start BeschuldigVraag
+$ DIALOG_GIVE_CLUE MOBGeertjeAns
+$ DIALOG_GIVE_CLUE MOBGeertjeFalseAns
 Geertje: Ik? Och nee..
 Geertje: Ik kende de man amper. 
 Geertje: Ik zag hem wel af en toe als hij met mijn man en mijn buurman ging drinken.
@@ -30,8 +32,6 @@ Geertje: maar ik heb hem niet gezien toen ze terugkwamen.
 @ Toen ze terugkwamen?
 Geertje: Jazeker. 
 Geertje: Gisteravond kwamen Jan en mijn man samen terug en hebben ze tot laat nog thuis gedronken.
-$ DIALOG_GIVE_CLUE MOBGeertjeAns
-$ DIALOG_GIVE_CLUE MOBGeertjeFalseAns
 @ Hmmm.. Bedankt voor de informatie.
 % jump Breakout
 % end Beschuldigvraag

@@ -2,18 +2,20 @@ $ DIALOG_SET_PORTRAIT CornelisGroenveld
 
 Cornelis Groenveld: Onze kerk.. nu moet alles verbouwd worden...
 
+% start OptionSection
 @ Wat is jou opgevallen?
 % jump GetuigeVraag
 @ Ik weet wie de kerk hebben vernield.
 % if FoundAllClues jump AntwoordGoed : jump AntwoordFout
 @ Laat maar
 % jump NeverMind
+% end OptionSection
 
 % start GetuigeVraag
-Cornelis Groenveld: Toen ik aankwam bij de kerk was de schade al verricht.
-Cornelis Groenveld: Ik zag wel wat handafdrukken, misschien is het handig om de handen van iedereen te controleren.
 $ DIALOG_GIVE_CLUE BSCornelisAns
 $ DIALOG_GIVE_CLUE BSCornelisFalseAns
+Cornelis Groenveld: Toen ik aankwam bij de kerk was de schade al verricht.
+Cornelis Groenveld: Ik zag wel wat handafdrukken, misschien is het handig om de handen van iedereen te controleren.
 % jump Breakout
 % end GetuigeVraag
 
