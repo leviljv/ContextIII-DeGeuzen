@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Codex : ScriptableObject
 {
-    public new string word;
+    public string word;
     public string description;
 
     // Start is called before the first frame update
