@@ -6,15 +6,23 @@ public class DialogueContainer : MonoBehaviour
 {
     public List<string> DialogPerIndex = new();
     public List<Transform> PositionsPerIndex = new();
+    public List<bool> ShowMarkerPerIndex = new();
+
+    private GameObject Marker;
 
     private int dialogIndex = 0;
     private int positionIndex = 0;
+    private int markerIndex = 0;
 
     private void OnEnable() {
         EventManager<int>.Subscribe(EventType.SET_GLOBAL_INDEX, SetIndex);
     }
     private void OnDisable() {
         EventManager<int>.Unsubscribe(EventType.SET_GLOBAL_INDEX, SetIndex);
+    }
+
+    private void Start() {
+        Marker = transform.GetChild(transform.childCount - 1).gameObject;
     }
 
     private void SetIndex(int index) {
@@ -32,6 +40,15 @@ public class DialogueContainer : MonoBehaviour
                 positionIndex = index;
 
             transform.position = PositionsPerIndex[positionIndex].position;
+        }
+
+        if (ShowMarkerPerIndex.Count > 0) {
+            if (index > ShowMarkerPerIndex.Count - 1)
+                markerIndex = ShowMarkerPerIndex.Count - 1;
+            else
+                markerIndex = index;
+
+            Marker.SetActive(ShowMarkerPerIndex[markerIndex]);
         }
     }
 
