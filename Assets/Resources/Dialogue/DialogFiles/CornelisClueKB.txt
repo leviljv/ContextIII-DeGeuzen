@@ -49,15 +49,20 @@ Cornelis: ...
 Cornelis: Nou als zij zo nodig liever met een ketter samen is mogen ze samen de gevangenis in!!
 Cornelis: Bedankt, zonder uw hulp was ik nooit te weten gekomen dat mijn vrouw niet alleen een verrader is, maar ook een ketter!
 Cornelis: Heel erg bedankt voor uw hulp.
-@ Geen probleem.
-% jump Breakout
-@ Daar ben ik detective voor..
-% jump Breakout 
+Cornelis: Kom met me mee naar de markt, dan trakteer ik u op de specialiteit van de stad!
+@ Is goed, ik kom eraan.
+% jump Klaar
+@ Oke, op naar de markt!
+% jump Klaar 
 % end AntwoordGoed
 
 % start NeverMind
 Cornelis Groenveld: Oke, geen probleem.
 % jump Breakout
 % end NeverMind
+
+% start Klaar
+$ UP_GLOBAL_INDEX
+% end Klaar
 
 % start Breakout 

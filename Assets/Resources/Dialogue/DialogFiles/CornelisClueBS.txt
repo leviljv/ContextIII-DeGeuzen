@@ -42,15 +42,21 @@ Cornelis Groenveld: Hmm.. Juist..
 Cornelis Groenveld: De dronken boer en de monnik.
 Cornelis Groenveld: Ontzettend bedankt voor uw hulp.
 Cornelis Groenveld: Door u kunnen deze ketters direct naar de gevangenis worden gestuurd!
-@ Ik doe het graag.
-% jump Breakout
-@ Mijn detective skills staan altijd voor je klaar.
-% jump Breakout
+Cornelis Groenveld: Kom met mij mee naar de bakker, laten we een lekkernij halen om te vieren!
+@ Ik kom eraan.
+% jump Klaar
+@ Klinkt goed, ik heb honger!
+% jump Klaar
 % end AntwoordGoed
 
 % start NeverMind
 Cornelis Groenveld: Oke, geen probleem.
 % jump Breakout
 % end NeverMind
+
+% start Klaar
+$ UP_GLOBAL_INDEX
+% end Klaar
+
 
 % start Breakout

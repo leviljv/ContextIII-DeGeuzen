@@ -5,7 +5,6 @@ Frank de Bewaker: Ik kwam er bij mijn standaard ronde achter dat hij was ontsnap
 % jump GetuigeVraag
 @ Dus je hebt hem laten ontsnappen?
 % jump BeschuldigVraag
-% start GetuigeVraag
 @ Laat maar
 % jump NeverMind
 

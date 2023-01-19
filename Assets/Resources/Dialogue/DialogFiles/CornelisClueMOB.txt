@@ -57,15 +57,19 @@ Cornelis Groenveld: Het was dus niet de smid maar zijn vrouw??
 Cornelis Groenveld: Jeetje, dat iemand zo jaloers kan worden van een hechte vriendschap...
 Cornelis Groenveld: In ieder geval nogmaals bedankt.
 Cornelis Groenveld: Door u is ons stadje weer wat veiliger!
-@ Geen probleem, daar ben ik voor!
-% jump Breakout
+@ Geen probleem, daar ben ik detective voor!
+% jump Klaar
 @ Je weet mij te vinden als er meer mysteries zijn om op te lossen!
-% jump Breakout
+% jump Klaar
 % end AntwoordGoed
 
 % start NeverMind
 Cornelis Groenveld: Oke, geen probleem.
 % jump Breakout
 % end NeverMind
+
+% start Klaar
+$ NEXT_SCENE
+% end Klaar
 
 % start Breakout
