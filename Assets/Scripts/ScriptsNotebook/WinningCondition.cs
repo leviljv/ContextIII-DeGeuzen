@@ -43,7 +43,7 @@ public class WinningCondition : MonoBehaviour
             }
             Debug.Log("YOU WIN");
             Win = true;
-            EventManager.Invoke(EventType.UP_GLOBAL_INDEX);
+            //EventManager.Invoke(EventType.UP_GLOBAL_INDEX);
             EventManager<string>.Invoke(EventType.SET_SETTING, "FoundAllClues");
         }
     }
