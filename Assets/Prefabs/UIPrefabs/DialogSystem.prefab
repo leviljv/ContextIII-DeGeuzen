@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 2528269160929860134}
   - component: {fileID: 458012395959163690}
   - component: {fileID: 2351179940882153785}
+  - component: {fileID: 3574480057169110667}
   m_Layer: 5
   m_Name: DialogSystem
   m_TagString: Untagged
@@ -218,6 +219,7 @@ MonoBehaviour:
   buttonPanel: {fileID: 2528269160741986012}
   buttonPrefab: {fileID: 3874490211210969929, guid: 9b76cf0270016c74b825fab17197e84f,
     type: 3}
+  Amanager: {fileID: 3574480057169110667}
   CommandChar: 36
   OptionChar: 64
   SectionChar: 37
@@ -254,6 +256,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d99178fb5e3ce740b13c93b0070db47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3574480057169110667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2528269160929860132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d6ca971b500c044c85d22ec201ec9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundslist:
+  - name: 1
+    clip: {fileID: 8300000, guid: 4b1838fc90a77d740901bd17f09ff1f7, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    spacialBlend: 0
+    loop: 0
+  - name: 2
+    clip: {fileID: 8300000, guid: fc3db67c05bb69043aa0e1f5592b08d7, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    spacialBlend: 0
+    loop: 0
+  - name: 3
+    clip: {fileID: 8300000, guid: 5f177854d09b6e841aebe3e3e5e1d9e4, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    spacialBlend: 0
+    loop: 0
+  - name: 4
+    clip: {fileID: 8300000, guid: e0fa97f76a2bf4e49ac7738030f5570c, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    spacialBlend: 0
+    loop: 0
 --- !u!1 &2528269160992584166
 GameObject:
   m_ObjectHideFlags: 0

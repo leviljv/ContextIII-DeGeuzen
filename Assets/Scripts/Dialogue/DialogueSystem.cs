@@ -14,6 +14,7 @@ public class DialogueSystem : MonoBehaviour {
     public GameObject buttonContainer;
     public GameObject buttonPanel;
     public GameObject buttonPrefab;
+    public AudioManager Amanager;
 
     [Header("CommandSettings")]
     public char CommandChar;
@@ -318,8 +319,8 @@ public class DialogueSystem : MonoBehaviour {
                     Final.AddRange(tmp);
                     Final.AddRange(stylePartTwo);
 
-                    mainText.text = new string(Final.ToArray());
-                    //Do Typewriter Noise
+                    mainText.text = new string(Final.ToArray()); 
+                    TyperwriterNoise();
 
                     yield return new WaitForSeconds(currentTimeBetweenChars);
                 }
@@ -334,7 +335,7 @@ public class DialogueSystem : MonoBehaviour {
 
             charList.Add(sentence[i]);
             mainText.text = new string(charList.ToArray());
-            //Do Typewriter Noise
+            TyperwriterNoise();
 
             yield return new WaitForSeconds(currentTimeBetweenChars);
         }
@@ -410,6 +411,12 @@ public class DialogueSystem : MonoBehaviour {
         }
 
         IsWriting = false;
+    }
+
+    private void TyperwriterNoise() {
+        var tmp = UnityEngine.Random.Range(1, 5);
+
+        Amanager.PlayAudio(tmp.ToString());
     }
 
     private T ParseEnum<T>(string value) {
