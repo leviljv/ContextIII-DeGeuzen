@@ -11,7 +11,7 @@ public class CompassBar : MonoBehaviour
     public RectTransform southTransform;
     public GameObject player;
 
-    public Transform camera;
+    public Transform playerCamera;
 
     private float compassUnit;
     private List<QuestMarker> questMarkers = new List<QuestMarker>();
@@ -44,8 +44,8 @@ public class CompassBar : MonoBehaviour
 
     private void SetMarkerPosition(RectTransform markerTransform, Vector3 worldPosition)
     {
-        Vector3 directionToTarget = worldPosition - camera.position;
-        float angle = Vector2.SignedAngle(new Vector2(directionToTarget.x, directionToTarget.z), new Vector2(camera.transform.forward.x, camera.transform.forward.z));
+        Vector3 directionToTarget = worldPosition - playerCamera.position;
+        float angle = Vector2.SignedAngle(new Vector2(directionToTarget.x, directionToTarget.z), new Vector2(playerCamera.transform.forward.x, playerCamera.transform.forward.z));
         float compassPositionX = Mathf.Clamp(2 * angle / Camera.main.fieldOfView, -1, 1);
         markerTransform.anchoredPosition = new Vector2(compassBarTransform.rect.width / 2 * compassPositionX, 0);
     }
