@@ -1,6 +1,8 @@
 $ DIALOG_SET_PORTRAIT Empty
 
 Knecht: ...
+&
+
 $ DIALOG_GIVE_CLUE WillemClueTijdAns
 @ Heb jij iets gezien dat kan helpen?
 Knecht: Ik was aan het schoonmaken in de binnenkomsthal, toen ik zo erg schrok van een knal dat ik per ongeluk de klok liet vallen. 

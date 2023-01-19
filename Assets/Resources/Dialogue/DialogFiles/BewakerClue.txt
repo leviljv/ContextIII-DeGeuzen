@@ -1,6 +1,8 @@
 $ DIALOG_SET_PORTRAIT Empty
 
 Bewaker: ...
+&
+
 @ Heb jij iets gezien?
 Bewaker: De andere bewakers renden net links de tuinen uit. 
 Bewaker: De andere bewakers renden net links de tuinen uit. 

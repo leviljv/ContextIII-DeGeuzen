@@ -1,6 +1,8 @@
 $ DIALOG_SET_PORTRAIT Empty
 
 Omstander: ...
+&
+
 @ Heb jij iets gezien?
 Omstander: Ik zag een man iets gehaast in een van de bosjes gooien
 Omstander: Het leek alsof hij het probeerde te verstoppen.
