@@ -12,6 +12,7 @@ public class InteractionState : MoveState
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
 
+        owner.velocity = new Vector3(0, 0, 0);
         owner.YRotationParent.GetComponent<CameraLookaround>().enabled = false;
     }
 

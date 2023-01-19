@@ -15,7 +15,8 @@ public class GroundedState : MoveState {
     }
 
     public override void OnExit() {
-
+        owner.audioManager.PlayLoopedAudio("Walking", false);
+        Toggle = false;
     }
 
     public override void OnUpdate() {

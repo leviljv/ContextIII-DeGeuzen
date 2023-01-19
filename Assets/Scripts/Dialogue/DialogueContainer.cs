@@ -22,7 +22,8 @@ public class DialogueContainer : MonoBehaviour
     }
 
     private void Start() {
-        Marker = transform.GetChild(transform.childCount - 1).gameObject;
+        if(transform.childCount > 0)
+            Marker = transform.GetChild(transform.childCount - 1).gameObject;
     }
 
     private void SetIndex(int index) {

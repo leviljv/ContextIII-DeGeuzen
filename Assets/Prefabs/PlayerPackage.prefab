@@ -986,6 +986,7 @@ MonoBehaviour:
   Visuals: {fileID: 3882733533423111850}
   GroundCheck: {fileID: 3882733532938751476}
   LedgeCheck: {fileID: 3882733533622470084}
+  CameraFollow: {fileID: 3882733533958704757}
   SlopeTransform: {fileID: 3882733534015077979}
   YRotationParent: {fileID: 3882733533581434702}
   GroundLayer:

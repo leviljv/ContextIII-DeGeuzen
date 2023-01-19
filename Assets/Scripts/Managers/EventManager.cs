@@ -5,6 +5,7 @@ using UnityEngine;
 public enum EventType {
     EMPTY,
     ON_DIALOG_STARTED,
+    ON_DIALOG_ENDED,
     DIALOG_SET_TYPE_TIME,
     DIALOG_SET_PORTRAIT,
     SET_INTERACTION_STATE,

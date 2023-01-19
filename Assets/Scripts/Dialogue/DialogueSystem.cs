@@ -91,6 +91,7 @@ public class DialogueSystem : MonoBehaviour {
             RemoveOptions();
             DialogueSystemObject.SetActive(false);
             EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, false);
+            EventManager.Invoke(EventType.ON_DIALOG_ENDED);
             return;
         }
 
