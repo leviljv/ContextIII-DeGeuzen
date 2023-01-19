@@ -5,7 +5,7 @@ using UnityEngine;
 public class ToggleOnIndex : MonoBehaviour
 {
     public int ActiveAtIndex;
-    private GameObject toggle;
+    public GameObject toggle;
 
     private void OnEnable() {
         EventManager<int>.Subscribe(EventType.SET_GLOBAL_INDEX, CheckIndex);
