@@ -3,11 +3,11 @@ $ DIALOG_SET_PORTRAIT CornelisGroenveld
 % start OptionSection
 Cornelis: Heeft u de dader al weten op te sporen?
 @ Nee, heeft u hem zelf misschien hebt laten ontsnappen?
-% jump BeschuldigVraag
+	% jump BeschuldigVraag
 @ Ja, ik weet wie de dader was.
-% if FoundAllClues jump AntwoordGoed : jump AntwoordFout
+	% jump if FoundAllClues AntwoordGoed : AntwoordFout
 @ Laat maar
-% jump NeverMind
+	% jump NeverMind
 % end OptionSection
 
 % start BeschuldigVraag
@@ -38,7 +38,6 @@ Cornelis: Succes!
 % end AntwoordFout
 
 % start AntwoordGoed
-
 Cornelis: Fantastisch!
 Cornelis: Ik zag dat u een notitieboekje mee heeft met alle aanwijzingen die u heeft verzameld.
 Cornelis: Zou ik even mogen kijken?
