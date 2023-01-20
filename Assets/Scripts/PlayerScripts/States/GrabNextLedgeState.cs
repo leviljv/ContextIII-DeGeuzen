@@ -33,7 +33,7 @@ public class GrabNextLedgeState : MoveState
     public override void OnUpdate() {
         var offset = owner.CurrentLedge.transform.position - owner.LedgeCheck.transform.position;
         if (offset.magnitude > .01f) {
-            owner.velocity = offset.normalized * 3;
+            owner.velocity = offset.normalized * 2;
         }
         else {
             isDone = true;
