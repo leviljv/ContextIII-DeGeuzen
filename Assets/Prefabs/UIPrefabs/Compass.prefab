@@ -339,8 +339,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 14058805208fc2141bf1fc329d5e4e8b, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: a67774c0aebcd0844a6283c42d74293d, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 2
 --- !u!114 &5244654610841699377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,7 +367,7 @@ MonoBehaviour:
   northTransform: {fileID: 5244654610258135455}
   southTransform: {fileID: 5244654610471131209}
   player: {fileID: 0}
-  camera: {fileID: 0}
+  playerCamera: {fileID: 0}
   questMarkerLocations:
   - {fileID: 0}
   - {fileID: 0}
