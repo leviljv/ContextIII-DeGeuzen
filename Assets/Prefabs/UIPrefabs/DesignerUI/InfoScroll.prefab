@@ -386,6 +386,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Tutorial, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 6621807572258073327, guid: 14bedca2f1dc8784b8e59316644bcdab,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a72eab45fd3aed043899dffe08fe156d,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14bedca2f1dc8784b8e59316644bcdab, type: 3}
 --- !u!224 &716870455204775471 stripped
