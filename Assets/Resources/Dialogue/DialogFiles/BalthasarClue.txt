@@ -2,11 +2,15 @@ $ DIALOG_SET_PORTRAIT BalthasarGerards
 
 Francis Guien: Hey! Uhh.. wat moet je?
 @ Wie bent u? Heeft u iets gezien van de moord?
-Francis Guien: Uhh.. ik ben Balthasar Gerards- Nee wacht ik ben helemaal niet Balthasar Gerards
+% jump Door
+% wait
+& start Door
 Francis Guien: Uhh.. ik ben Balthasar Gerards- Nee wacht ik ben helemaal niet Balthasar Gerards
 Francis Guien: Ik ben Francis Guien!
 @ Francis Guien? Bedoelt u François Guyon?
-Francis Guien: Juist, uhh.. Ja dat is mijn naam...
+% jump Antwoord
+% wait
+& start Antwoord
 Francis Guien: Juist, uhh.. Ja dat is mijn naam...
 Francis Guien: Wat? Waarom sta je hier nog?
 Francis Guien: Ik heb niks gehoord of gezien!
