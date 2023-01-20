@@ -128,6 +128,19 @@ public class MovementManager : MonoBehaviour
             }
             return false;
         }, typeof(SprintingState));
+        AddTransitionWithPrediquete(groundedState, (x) => {
+            var tmp = evaluator.CollectableNearby();
+            if (tmp != null)
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    tmp.GetComponent<IInteractable>().Interact();
+                    return false;
+                }
+            }
+            return false;
+        }, typeof(InteractionState));
+        AddTransitionWithPrediquete(groundedState, (x) => { return Interacting; }, typeof(InteractionState));
 
         var slidingState = new SlidingState(movementStateMachine);
         movementStateMachine.AddState(typeof(SlidingState), slidingState);
@@ -156,6 +169,19 @@ public class MovementManager : MonoBehaviour
         AddTransitionWithPrediquete(sprintingState, (x) => { return !evaluator.IsGrounded(); }, typeof(AirbornState));
         AddTransitionWithPrediquete(sprintingState, (x) => { if (Input.GetAxisRaw("Vertical") <= 0) { sprinting = false; return true; } return false; }, typeof(GroundedState));
         AddTransitionWithPrediquete(sprintingState, (x) => { if (Input.GetKeyDown(KeyCode.LeftShift)) { sprinting = false; return true; } return false; }, typeof(GroundedState));
+        AddTransitionWithPrediquete(groundedState, (x) => {
+            var tmp = evaluator.CollectableNearby();
+            if (tmp != null)
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    tmp.GetComponent<IInteractable>().Interact();
+                    return false;
+                }
+            }
+            return false;
+        }, typeof(InteractionState));
+        AddTransitionWithPrediquete(groundedState, (x) => { return Interacting; }, typeof(InteractionState));
 
         var wallLatchState = new LedgeGrabbingState(movementStateMachine);
         movementStateMachine.AddState(typeof(LedgeGrabbingState), wallLatchState);
@@ -186,6 +212,8 @@ public class MovementManager : MonoBehaviour
     }
 
     void Update() {
+        Debug.Log(movementStateMachine.currentState);
+
         movementStateMachine.OnUpdate();
 
         SlopeTransform.rotation = Quaternion.FromToRotation(SlopeTransform.up, evaluator.GetSlopeNormal()) * SlopeTransform.rotation;

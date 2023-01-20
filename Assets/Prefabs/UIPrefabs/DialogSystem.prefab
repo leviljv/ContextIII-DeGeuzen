@@ -363,7 +363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Willem van Oranje
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3dca728657e719c4b957e28632a34dc4, type: 2}
   m_sharedMaterial: {fileID: -4312800550946297033, guid: 3dca728657e719c4b957e28632a34dc4,
@@ -499,8 +499,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Text goes here, hello there! This is test text. \nIt also skips to the
-    next line nicely. "
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3dca728657e719c4b957e28632a34dc4, type: 2}
   m_sharedMaterial: {fileID: -4312800550946297033, guid: 3dca728657e719c4b957e28632a34dc4,
@@ -712,7 +711,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 674d16e4f2eafdf44b0a3a24f5a5842b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 299e60af68bd2cd42bfcfa16581b0cbc, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

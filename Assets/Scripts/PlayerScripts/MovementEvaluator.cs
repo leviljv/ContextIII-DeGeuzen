@@ -121,7 +121,7 @@ public class MovementEvaluator
     }
 
     public Vector3 CanGoOntoLedge() {
-        Vector3 pos = new Vector3(owner.transform.position.x, owner.LedgeCheck.transform.position.y + .1f, owner.transform.position.z);
+        Vector3 pos = new Vector3(owner.transform.position.x, owner.LedgeCheck.transform.position.y + .2f, owner.transform.position.z);
         Ray ray = new(pos, -owner.CurrentLedge.transform.forward);
 
         Debug.DrawRay(pos, -owner.CurrentLedge.transform.forward, Color.green, 100f);
