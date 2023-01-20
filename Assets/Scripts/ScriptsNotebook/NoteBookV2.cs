@@ -17,7 +17,7 @@ public class NoteBookV2 : MonoBehaviour
     public CodexManager codexManager;
     public CollectibleHolder aaah;
     public GameObject clueAnswerPrefab;
-
+    public AudioManager AManager;
 
     public List<ClueAnswerSO> test = new List<ClueAnswerSO>();
     public int CollectiblesFound = 0;
@@ -27,17 +27,15 @@ public class NoteBookV2 : MonoBehaviour
     public bool collectibleActive;
     public bool codexActive;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         ToggleParent.gameObject.SetActive(false);
         collectibleActive = false;
         codexActive = false;
         bookUI.SetActive(false);
+        AManager.Init();
     }
 
-    // Update is called once per frame
     void Update()
     {
         ActivateBook();
@@ -66,10 +64,12 @@ public class NoteBookV2 : MonoBehaviour
         bookUI.SetActive(false);
         StopCoroutine(HideBookUI());
     }
+
     public void ActivateBook()
     {
         if (Input.GetKeyDown(KeyCode.Q) && BookActive == false)
         {
+            AManager.PlayAudio("Open");
             ToggleParent.gameObject.SetActive(true);
             BookActive = true;
             EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, true);
@@ -77,6 +77,7 @@ public class NoteBookV2 : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.Q) && BookActive == true)
         {
+            AManager.PlayAudio("Close");
             ToggleParent.gameObject.SetActive(false);
             BookActive = false;
             EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, false);
@@ -84,10 +85,12 @@ public class NoteBookV2 : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftArrow) && BookActive == true)
         {
+            AManager.PlayAudio("Flip");
             PageLeft();
         }
         if (Input.GetKeyDown(KeyCode.RightArrow) && BookActive == true)
         {
+            AManager.PlayAudio("Flip");
             PageRight();
         }
     }
@@ -104,7 +107,6 @@ public class NoteBookV2 : MonoBehaviour
         }
         else if (collectibleActive == false && codexActive == true)
             codexManager.GoToNextCodexPage();
-
     }
 
     public void PageLeft()
