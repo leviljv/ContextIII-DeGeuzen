@@ -479,6 +479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1906307349029091330}
   - component: {fileID: 1906307349029091331}
+  - component: {fileID: 5456915476369305147}
   m_Layer: 0
   m_Name: NoteBookV2
   m_TagString: Untagged
@@ -514,6 +515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec997029f0b69c940aecc7e77cc54547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bookFlip: {fileID: 0}
   bookUI: {fileID: 5261130037733529517, guid: baef8ec8d0e3e0641a15a6d0c4b17a3e, type: 3}
   ToggleParent: {fileID: 1906307349097159989}
   clueManager: {fileID: 1906307348995598628}
@@ -522,6 +524,7 @@ MonoBehaviour:
   aaah: {fileID: 1906307350303524699}
   clueAnswerPrefab: {fileID: 5897612245169724157, guid: e36677d56a1821f4aa91316fdc3cec86,
     type: 3}
+  AManager: {fileID: 5456915476369305147}
   test:
   - {fileID: 0}
   CollectiblesFound: 0
@@ -529,6 +532,40 @@ MonoBehaviour:
   BookActive: 0
   collectibleActive: 0
   codexActive: 0
+--- !u!114 &5456915476369305147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906307349029091329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d6ca971b500c044c85d22ec201ec9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundslist:
+  - name: Open
+    clip: {fileID: 8300000, guid: b54aa1e6468d85742b4ef7c119e9ba70, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    spacialBlend: 0
+    loop: 0
+  - name: Close
+    clip: {fileID: 8300000, guid: 512c2dabc3d49fa40ac0e45b2e57fba7, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    spacialBlend: 0
+    loop: 0
+  - name: Flip
+    clip: {fileID: 8300000, guid: a19e7da3e2f4bff4e83a126d51de9395, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    spacialBlend: 0
+    loop: 0
 --- !u!1 &1906307349082189890
 GameObject:
   m_ObjectHideFlags: 0
