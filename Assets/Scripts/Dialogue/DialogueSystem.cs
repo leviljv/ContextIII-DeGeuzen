@@ -49,9 +49,11 @@ public class DialogueSystem : MonoBehaviour {
 
     private void OnEnable() {
         EventManager<string>.Subscribe(EventType.ON_DIALOG_STARTED, SetDialog);
+        EventManager.Subscribe(EventType.RESET_DIALOG, ResetDialog);
     }
     private void OnDisable() {
         EventManager<string>.Unsubscribe(EventType.ON_DIALOG_STARTED, SetDialog);
+        EventManager.Unsubscribe(EventType.RESET_DIALOG, ResetDialog);
     }
 
     private string[] PrepFile(TextAsset file) {
@@ -76,6 +78,18 @@ public class DialogueSystem : MonoBehaviour {
             Debug.LogError("No File named " + DialogName + " found!");
     }
 
+    public void ResetDialog() {
+        StopAllCoroutines();
+        currentDialog = null;
+        mainText.text = "";
+        nameText.text = "";
+        index = 0;
+        RemoveOptions();
+        DialogueSystemObject.SetActive(false);
+        EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, false);
+        EventManager.Invoke(EventType.ON_DIALOG_ENDED);
+    }
+
     private void NextLine() {
         if (currentDialog == null)
             return;
@@ -86,15 +100,7 @@ public class DialogueSystem : MonoBehaviour {
         }
 
         if (currentDialog.Length - 1 < index) {
-            StopAllCoroutines();
-            currentDialog = null;
-            mainText.text = "";
-            nameText.text = "";
-            index = 0;
-            RemoveOptions();
-            DialogueSystemObject.SetActive(false);
-            EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, false);
-            EventManager.Invoke(EventType.ON_DIALOG_ENDED);
+            ResetDialog();
             return;
         }
 
@@ -416,9 +422,10 @@ public class DialogueSystem : MonoBehaviour {
     }
 
     private void TyperwriterNoise() {
-        var tmp = UnityEngine.Random.Range(1, 5);
+        var tmp = UnityEngine.Random.Range(1, 20);
 
-        Amanager.PlayAudio(tmp.ToString());
+        if(tmp < 5)
+            Amanager.PlayAudio(tmp.ToString());
     }
 
     private T ParseEnum<T>(string value) {

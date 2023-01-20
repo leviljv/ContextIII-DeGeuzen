@@ -7,8 +7,7 @@ Bewaker: ...
 % jump Antwoord
 % wait
 % start Antwoord
-Bewaker: De andere bewakers renden net links de tuinen uit. 
-Bewaker: De andere bewakers renden net links de tuinen uit. 
+Bewaker: De andere bewakers renden net links de tuinen uit.
 Bewaker: Ik blijf hier wachten om de andere burgers te beschermen.
 @ Oke, bedankt.
 % jump Breakout

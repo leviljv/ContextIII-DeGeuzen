@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogueCameraTrigger : MonoBehaviour
 {
     private string CurrentHover;
+    private Transform ObjectInteractingWith;
 
     private bool CanInvoke = true;
 
@@ -16,6 +17,13 @@ public class DialogueCameraTrigger : MonoBehaviour
     }
 
     void Update() {
+        if(ObjectInteractingWith != null) {
+            if (Vector3.Distance(transform.position, ObjectInteractingWith.position) > 10f) {
+                EventManager.Invoke(EventType.RESET_DIALOG);
+                CanInvoke = true;
+            }
+        }
+
         if (!CanInvoke)
             return;
 
@@ -34,8 +42,10 @@ public class DialogueCameraTrigger : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.forward, out var hit, 10f)) {
             var hitContainer = hit.transform.GetComponent<DialogueContainer>();
             if (hitContainer) {
-                if(hitContainer.GetDialog() != null || hitContainer.GetDialog() != "")
+                if(hitContainer.GetDialog() != null || hitContainer.GetDialog() != "") {
+                    ObjectInteractingWith = hit.transform;
                     return hitContainer.GetDialog();
+                }
             }
         }
         return null;
