@@ -36,6 +36,8 @@ public class DialogueSystem : MonoBehaviour {
         funcs.Owner = this;
         funcs.Init();
 
+        Amanager.Init();
+
         currentTimeBetweenChars = TimeBetweenChars;
 
         var tmp = Resources.LoadAll<TextAsset>("Dialogue/DialogFiles/");
