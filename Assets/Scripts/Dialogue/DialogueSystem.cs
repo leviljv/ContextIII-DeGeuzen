@@ -123,7 +123,7 @@ public class DialogueSystem : MonoBehaviour {
                 return;
             }
 
-            if(line[1] == "end")
+            if(line[1] == "end" || line[1] == "wait")
                 return;
 
             index++;
