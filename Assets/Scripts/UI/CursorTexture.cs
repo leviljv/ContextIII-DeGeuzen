@@ -15,7 +15,5 @@ public class CursorTexture : MonoBehaviour
         Cursor.SetCursor(point, hotSpot, cursorMode);
     }
 
-    void Update() {
-        
-    }
+    
 }

@@ -27,7 +27,7 @@ public class ClimbingTutorial : MonoBehaviour
     {
         if(other.CompareTag("Player") && !alreadyShownTutorial)
         {
-            EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, true);
+            //EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, true);
             alreadyShownTutorial = true;
             StartCoroutine(ShowTutorialScroll());
         }
@@ -38,7 +38,7 @@ public class ClimbingTutorial : MonoBehaviour
     {
         scrollUI.SetActive(true);
         yield return new WaitForSeconds(secondsToShowScroll);
-        EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, false);
+        //EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, false);
         scrollUI.SetActive(false);
     }
 }

@@ -123,6 +123,131 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &332956185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 332956187}
+  - component: {fileID: 332956186}
+  m_Layer: 0
+  m_Name: Cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &332956186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332956185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc936d8e6f938144da4dffae9b63a498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  point: {fileID: 2800000, guid: 85b0cccc9c8f2cd479d6f79de5b7eaa4, type: 3}
+  grab: {fileID: 2800000, guid: 32f6ec11ef0483c43b917fdec3a4eaa7, type: 3}
+  open: {fileID: 2800000, guid: b4a28bc4d844963428907deb15a3d254, type: 3}
+  cursorMode: 0
+  hotSpot: {x: 0, y: 0}
+--- !u!4 &332956187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332956185}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1246.4506, y: 474.43625, z: -22.795824}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &468091308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 468091309}
+  - component: {fileID: 468091311}
+  - component: {fileID: 468091310}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &468091309
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468091308}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1862742623}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3.9246, y: -21.3949}
+  m_SizeDelta: {x: 979.1892, y: 979.1816}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &468091310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468091308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 39fa7b75d11804c4cadab52fc988042e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &468091311
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468091308}
+  m_CullTransparentMesh: 1
 --- !u!1 &489502969
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &489502970
 RectTransform:
   m_ObjectHideFlags: 0
@@ -158,7 +283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.29999924}
+  m_AnchoredPosition: {x: 0, y: 0.30000305}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &489502971
@@ -403,7 +528,7 @@ RectTransform:
   m_GameObject: {fileID: 765043958}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -19.2}
-  m_LocalScale: {x: 2.695568, y: 3.1426399, z: 2.695568}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 489502970}
@@ -412,8 +537,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 138, y: -304.99994}
-  m_SizeDelta: {x: 74.5763, y: 55.0341}
+  m_AnchoredPosition: {x: 313, y: -269}
+  m_SizeDelta: {x: 164.0303, y: 158.0753}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &765043960
 MonoBehaviour:
@@ -491,7 +616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 710b6573587d6f9468dbadf9a9fc6676, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a72eab45fd3aed043899dffe08fe156d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -539,7 +664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &960317315
 RectTransform:
   m_ObjectHideFlags: 0
@@ -718,12 +843,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1862742623}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.637497, y: -22}
-  m_SizeDelta: {x: 519.9464, y: 872.822}
+  m_AnchoredPosition: {x: -37, y: 54.721336}
+  m_SizeDelta: {x: 719.9839, y: 719.3794}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1296655555
 MonoBehaviour:
@@ -749,21 +874,19 @@ MonoBehaviour:
 
 
     Na gehoord te hebben van uw geweldige oplossingsvaardigheden
-    na de tragische dood van Willem van Oranje, vraag ik u om hulp. Gisteravond is
-    er een ketter ontsnapt die ter dood veroordeeld was. Een van de bewakers had
-    hem gevonden met opengebroken boeien. Hij heeft dus duidelijk hulp gehad, maar
-    van wie?
+    na de tragische dood van Willem van Oranje, vraag ik u om hulp. Het gaat om een
+    zwaar misdrijf: Er is een ketter bevrijd.
 
 
-    Ik heb uw hulp nodig om de dader en de ketter te vinden, voordat
-    Koning Filips ons allemaal zal straffen.
+    Ik heb uw hulp nodig om de dader
+    te vinden, voordat Koning Filips ons allemaal zal straffen.
 
 
-    Met vriendelijke groet,
+    Met vriendelijke
+    groet,
 
 
-    Cornelis
-    Groenveld
+    Cornelis Groenveld
 
 '
   m_isRightToLeft: 0
@@ -793,8 +916,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -937,6 +1060,7 @@ RectTransform:
   m_Children:
   - {fileID: 1239741919}
   - {fileID: 960317315}
+  - {fileID: 468091309}
   - {fileID: 1296655554}
   - {fileID: 2134706712}
   m_Father: {fileID: 0}
@@ -1063,7 +1187,7 @@ RectTransform:
   m_Children:
   - {fileID: 765043959}
   m_Father: {fileID: 1862742623}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
