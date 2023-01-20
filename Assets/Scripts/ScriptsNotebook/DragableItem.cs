@@ -82,6 +82,13 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
         offset = transform.position - Input.mousePosition;
         canvasGroup.alpha = 0.5f;
         canvasGroup.blocksRaycasts = false;
+        RaycastResult raycastResult = eventData.pointerCurrentRaycast;
+        if (winningCondition.index > 0 && winningCondition.CorrectGameObjects.Contains(gameObject))
+        {
+            winningCondition.index--;
+        }
+        winningCondition.CorrectAnswers.Remove(clue);
+        winningCondition.CorrectGameObjects.Remove(gameObject);
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -105,18 +112,24 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
             else if (raycastResult.gameObject.GetComponent<InventorySlot>().Antwoord.text != clue.ClueAntwoord)
             {
                 Debug.Log("IS NIET GOED!!!");
+                if(winningCondition.index > 0  && winningCondition.CorrectGameObjects.Contains(gameObject))
+                {
+                    winningCondition.index--;
+                }
                 winningCondition.CorrectAnswers.Remove(clue);
                 winningCondition.CorrectGameObjects.Remove(gameObject);
-                winningCondition.index--;
             }
         }
         else
         {
             transform.SetParent(raycastResult.gameObject.transform);
 
+            if (winningCondition.index > 0  && winningCondition.CorrectGameObjects.Contains(gameObject))
+            {
+                winningCondition.index--;
+            }
             winningCondition.CorrectAnswers.Remove(clue);
             winningCondition.CorrectGameObjects.Remove(gameObject);
-            winningCondition.index--;
 
             Debug.Log("NOT GOOD");
         }
