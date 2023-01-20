@@ -4,10 +4,15 @@ Omstander: ...
 &
 
 @ Heb jij iets gezien?
+	% jump Antwoord
+% wait
+
+% start Antwoord
 Omstander: Er rende net een man door de tuin heen, het leek alsof hij heel veel haast had. 
 Omstander: Volgens mij zag ik dat hij iets liet vallen vlak voordat hij de tuin verliet. 
+
 @ Door de tuin? Interessant...
-% jump Breakout
+	% jump Breakout
 @ Bedankt voor de informatie!
-% jump Breakout
+	% jump Breakout
 % start Breakout
