@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 6454556227207493958}
   - component: {fileID: 2535547566440862422}
   m_Layer: 5
-  m_Name: BoekPopup(lelijk)
+  m_Name: BoekPopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
