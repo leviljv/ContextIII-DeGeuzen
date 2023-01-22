@@ -12,6 +12,15 @@ public class GroundedState : MoveState {
 
     public override void OnEnter() {
         owner.lookAtMoveDir = true;
+
+        Vector3 input = new(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+
+        if (input.magnitude! > 0) {
+            previousValue = input.normalized.magnitude;
+            Toggle = true;
+        }
+
+        owner.audioManager.PlayLoopedAudio("Walking", Toggle);
     }
 
     public override void OnExit() {
@@ -29,18 +38,16 @@ public class GroundedState : MoveState {
         var movedir = owner.SlopeTransform.TransformDirection(input.normalized);
         velocity += movedir * owner.speed;
 
-        if (input.magnitude != previousValue) {
+        if (input.normalized.magnitude != previousValue) {
             owner.audioManager.PlayLoopedAudio("Walking", Toggle);
             Toggle = !Toggle;
         }
-        previousValue = input.magnitude;
+        previousValue = input.normalized.magnitude;
 
         //jump 
         if (Input.GetKeyDown(KeyCode.Space)) {
             owner.audioManager.PlayLoopedAudio("Walking", false);
             owner.audioManager.PlayAudio("Jump");
-            Toggle = true;
-            previousValue = 0;
             owner.velocity += new Vector3(0, Mathf.Sqrt(owner.jumpHeight * -2 * owner.gravity), 0);
         }
 

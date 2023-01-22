@@ -85,8 +85,7 @@ public class MovementManager : MonoBehaviour
         AddTransitionWithPrediquete(groundedState, (x) => {
             var tmp = evaluator.CollectableNearby();
             if (tmp != null) {
-                if (Input.GetKeyDown(KeyCode.E))
-                {
+                if (Input.GetKeyDown(KeyCode.E)) {
                     tmp.GetComponent<IInteractable>().Interact();
                     return false;
                 }
