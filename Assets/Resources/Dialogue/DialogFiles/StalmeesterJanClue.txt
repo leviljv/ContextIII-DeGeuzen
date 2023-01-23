@@ -1,5 +1,6 @@
 $ DIALOG_SET_PORTRAIT Empty
-
+&
+Stalmeester Jan: ...
 @ Wat was jij aan het doen vlak voor de moord?
 	% jump Antwoord
 @ Heb jij iets gezien?
