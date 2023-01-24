@@ -33,7 +33,6 @@ public class WinningCondition : MonoBehaviour
             index = 0;
         }
 
-
         if (clueHolder.ClueList.Count == CorrectAnswers.Count && Win == false)
         {
             foreach (GameObject obj in CorrectGameObjects)
@@ -41,7 +40,6 @@ public class WinningCondition : MonoBehaviour
                 obj.GetComponent<Image>().color = Groen;
                 Destroy(obj.GetComponent<DragableItem>());
             }
-            Debug.Log("YOU WIN");
             Win = true;
             //EventManager.Invoke(EventType.UP_GLOBAL_INDEX);
             EventManager<string>.Invoke(EventType.SET_SETTING, "FoundAllClues");

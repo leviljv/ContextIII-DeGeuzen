@@ -27,7 +27,6 @@ public class CompassBar : MonoBehaviour
         {
             AddQuestMarker(marker);
         }
-        
     }
 
     // Update is called once per frame

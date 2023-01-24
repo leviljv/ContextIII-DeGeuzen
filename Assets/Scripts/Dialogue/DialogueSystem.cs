@@ -68,10 +68,10 @@ public class DialogueSystem : MonoBehaviour {
 
     private void SetDialog(string DialogName) {
         if (Files.ContainsKey(DialogName)) {
+            DialogueSystemObject.SetActive(true);
             IsWriting = false;
             index = 0;
             currentDialog = Files[DialogName];
-            DialogueSystemObject.SetActive(true);
             EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, true);
             NextLine();
         }
