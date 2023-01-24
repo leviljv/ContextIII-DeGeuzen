@@ -122,16 +122,25 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
         }
         else
         {
-            transform.SetParent(raycastResult.gameObject.transform);
-
-            if (winningCondition.index > 0  && winningCondition.CorrectGameObjects.Contains(gameObject))
+            if(raycastResult.gameObject != null)
             {
-                winningCondition.index--;
-            }
-            winningCondition.CorrectAnswers.Remove(clue);
-            winningCondition.CorrectGameObjects.Remove(gameObject);
+                transform.SetParent(raycastResult.gameObject.transform);
 
-            Debug.Log("NOT GOOD");
+                if (winningCondition.index > 0  && winningCondition.CorrectGameObjects.Contains(gameObject))
+                {
+                    winningCondition.index--;
+                }
+                winningCondition.CorrectAnswers.Remove(clue);
+                winningCondition.CorrectGameObjects.Remove(gameObject);
+
+                Debug.Log("NOT GOOD");
+
+            }
+            else
+            {
+                transform.SetParent(parentAfterDrag);
+                SetRandomPos();
+            }
         }
         canvasGroup.alpha = 1;
         canvasGroup.blocksRaycasts = true;
