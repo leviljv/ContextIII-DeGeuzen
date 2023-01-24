@@ -24,8 +24,18 @@ public class NoteBookV2 : MonoBehaviour
     public int CollectibleChildNumber = 0;
 
     [HideInInspector] public bool BookActive = false;
+    [HideInInspector] public bool CanOpen = true;
     public bool collectibleActive;
     public bool codexActive;
+
+    private void OnEnable() {
+        EventManager.Subscribe(EventType.ON_DIALOG_STARTED, CannotPress);
+        EventManager.Subscribe(EventType.ON_DIALOG_ENDED, CanPress);
+    }
+    private void OnDisable() {
+        EventManager.Unsubscribe(EventType.ON_DIALOG_STARTED, CannotPress);
+        EventManager.Unsubscribe(EventType.ON_DIALOG_ENDED, CanPress);
+    }
 
     void Start()
     {
@@ -67,7 +77,16 @@ public class NoteBookV2 : MonoBehaviour
 
     public void ActivateBook()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && BookActive == false)
+        if (!CanOpen) {
+            if (BookActive) {
+                ToggleParent.gameObject.SetActive(false);
+                BookActive = false;
+            }
+
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q) && !BookActive)
         {
             AManager.PlayAudio("Open");
             ToggleParent.gameObject.SetActive(true);
@@ -75,7 +94,7 @@ public class NoteBookV2 : MonoBehaviour
             EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, true);
         }
 
-        else if (Input.GetKeyDown(KeyCode.Q) && BookActive == true)
+        else if (Input.GetKeyDown(KeyCode.Q) && BookActive)
         {
             AManager.PlayAudio("Close");
             ToggleParent.gameObject.SetActive(false);
@@ -83,12 +102,12 @@ public class NoteBookV2 : MonoBehaviour
             EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, false);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && BookActive == true)
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && BookActive)
         {
             AManager.PlayAudio("Flip");
             PageLeft();
         }
-        if (Input.GetKeyDown(KeyCode.RightArrow) && BookActive == true)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && BookActive)
         {
             AManager.PlayAudio("Flip");
             PageRight();
@@ -117,5 +136,12 @@ public class NoteBookV2 : MonoBehaviour
             collectibleManager.GoToPrevCollectiblePage();
         else if (collectibleActive == false && codexActive == false)
             clueManager.GoToPrevCluePage();
+    }
+
+    public void CanPress() {
+        CanOpen = true;
+    }
+    public void CannotPress() {
+        CanOpen = false;
     }
 }
