@@ -1,4 +1,4 @@
-$ DIALOG_SET_PORTRAIT Katharina
+$ DIALOG_SET_PORTRAIT Maria
 
 Maria: Goededag, prachtig weer vandaag vindt u niet?
 @ Heb jij er misschien wat mee te maken?

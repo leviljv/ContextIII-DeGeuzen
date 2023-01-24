@@ -1,12 +1,11 @@
 $ DIALOG_SET_PORTRAIT Katharina
-
-Katharina: ...
 &
+Katharina: ...
 
 @ Wat was jij aan het doen vlak voor de moord?
-	% jump GetuigeVraag
+% jump GetuigeVraag
 @ Waar was jij vlak voor de moord?
-	% jump PlaatsVraag
+% jump PlaatsVraag
 % wait
 
 % start GetuigeVraag
@@ -15,7 +14,7 @@ $ DIALOG_GIVE_CLUE WillemClueVoorafAns
 Katharina: Daarna wilden we naar boven gaan. Ik liep vooraan, Willem liep achter mij.
 Katharina: Daarom heb ik niets gezien, het gebeurde allemaal zo snel achter mijn rug…
 @ Bedankt voor de informatie!
-	% jump Breakout
+% jump Breakout
 % end GetuigeVraag
 
 % start PlaatsVraag
@@ -24,7 +23,7 @@ $ DIALOG_GIVE_CLUE WillemClueVoorafAns
 Katharina: Willem liep als een echte heer achteraan en liet mij en Rombertus voor. 
 Katharina: Daarom heb ik niets gezien, het gebeurde allemaal zo snel achter mijn rug…
 @ Bedankt voor de informatie!
-	% jump Breakout
+% jump Breakout
 % end PlaatsVraag
 
 % start Breakout

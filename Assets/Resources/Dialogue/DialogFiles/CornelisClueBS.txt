@@ -6,7 +6,7 @@ Cornelis Groenveld: Onze kerk.. nu moet alles verbouwd worden...
 @ Wat is jou opgevallen?
 % jump GetuigeVraag
 @ Ik weet wie de kerk hebben vernield.
-% if FoundAllClues jump AntwoordGoed : jump AntwoordFout
+% jump if FoundAllClues AntwoordGoed : AntwoordFout
 @ Laat maar
 % jump NeverMind
 % end OptionSection
