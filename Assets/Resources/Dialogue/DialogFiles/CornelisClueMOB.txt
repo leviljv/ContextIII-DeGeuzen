@@ -5,7 +5,7 @@ $ DIALOG_SET_PORTRAIT CornelisGroenveld
 @ Heb jij Peter de Boer vermoord?
 % jump BeschuldigVraag
 @ Ik weet wie de boer heeft vermoord.
-% if FoundAllClues jump AntwoordGoed : jump AntwoordFout
+% jump if FoundAllClues AntwoordGoed : AntwoordFout
 
 % start OptionSection
 % start GetuigeVraag

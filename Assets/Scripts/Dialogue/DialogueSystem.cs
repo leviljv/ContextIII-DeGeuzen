@@ -87,6 +87,7 @@ public class DialogueSystem : MonoBehaviour {
         mainText.text = "";
         nameText.text = "";
         index = 0;
+        IsWriting = false;
         RemoveOptions();
         DialogueSystemObject.SetActive(false);
         EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, false);
@@ -106,6 +107,8 @@ public class DialogueSystem : MonoBehaviour {
             ResetDialog();
             return;
         }
+
+        Debug.Log("Continue");
 
         currentTimeBetweenChars = TimeBetweenChars;
 
