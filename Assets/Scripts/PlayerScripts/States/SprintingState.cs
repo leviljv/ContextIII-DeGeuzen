@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SprintingState : MoveState {
+    private bool isWalking = false;
+    private bool PreviousisWalking = false;
 
     public SprintingState(StateMachine<MovementManager> owner) : base(owner) {
         this.owner = stateMachine.Owner;
@@ -10,9 +12,18 @@ public class SprintingState : MoveState {
 
     public override void OnEnter() {
         owner.sprinting = true;
+
+        Vector3 input = new(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+
+        if (input.magnitude! > 0) {
+            isWalking = true;
+        }
     }
 
     public override void OnExit() {
+        owner.audioManager.PlayLoopedAudio("Walking", false);
+        isWalking = false;
+        PreviousisWalking = false;
     }
 
     public override void OnUpdate() {
@@ -23,6 +34,16 @@ public class SprintingState : MoveState {
         //move
         var movedir = owner.SlopeTransform.TransformDirection(input.normalized);
         velocity += movedir * owner.runSpeed;
+
+        if (input.normalized.magnitude > 0)
+            isWalking = true;
+        else
+            isWalking = false;
+
+        if (isWalking != PreviousisWalking) {
+            owner.audioManager.PlayLoopedAudio("Walking", isWalking);
+        }
+        PreviousisWalking = isWalking;
 
         //jump
         if (Input.GetKeyDown(KeyCode.Space)) {

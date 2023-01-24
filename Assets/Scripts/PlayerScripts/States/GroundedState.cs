@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GroundedState : MoveState {
-    private float previousValue;
-    private bool Toggle = true;
+    private bool isWalking = false;
+    private bool PreviousisWalking = false;
 
     public GroundedState(StateMachine<MovementManager> owner) : base(owner) {
         this.owner = stateMachine.Owner;
@@ -16,16 +16,14 @@ public class GroundedState : MoveState {
         Vector3 input = new(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
         if (input.magnitude! > 0) {
-            previousValue = input.normalized.magnitude;
-            Toggle = true;
+            isWalking = true;
         }
-
-        owner.audioManager.PlayLoopedAudio("Walking", Toggle);
     }
 
     public override void OnExit() {
         owner.audioManager.PlayLoopedAudio("Walking", false);
-        Toggle = false;
+        isWalking = false;
+        PreviousisWalking = false;
     }
 
     public override void OnUpdate() {
@@ -38,16 +36,19 @@ public class GroundedState : MoveState {
         var movedir = owner.SlopeTransform.TransformDirection(input.normalized);
         velocity += movedir * owner.speed;
 
-        if (input.normalized.magnitude != previousValue) {
-            owner.audioManager.PlayLoopedAudio("Walking", Toggle);
-            Toggle = !Toggle;
+        if (input.normalized.magnitude > 0)
+            isWalking = true;
+        else
+            isWalking = false;
+
+        if(isWalking != PreviousisWalking) {
+            owner.audioManager.PlayLoopedAudio("Walking", isWalking);
         }
-        previousValue = input.normalized.magnitude;
+        PreviousisWalking = isWalking; 
 
         //jump 
         if (Input.GetKeyDown(KeyCode.Space)) {
             owner.audioManager.PlayLoopedAudio("Walking", false);
-            owner.audioManager.PlayAudio("Jump");
             owner.velocity += new Vector3(0, Mathf.Sqrt(owner.jumpHeight * -2 * owner.gravity), 0);
         }
 
