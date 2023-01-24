@@ -1410,7 +1410,7 @@ PrefabInstance:
     - target: {fileID: 5303517188042673976, guid: 563da5504649eff418cb27838a346ad7,
         type: 3}
       propertyPath: soundslist.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5303517188042673976, guid: 563da5504649eff418cb27838a346ad7,
         type: 3}
@@ -1777,7 +1777,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1259528342}
   - component: {fileID: 1259528344}
+  - component: {fileID: 1259528347}
   - component: {fileID: 1259528343}
+  - component: {fileID: 1259528345}
+  - component: {fileID: 1259528346}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -1867,6 +1870,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1259528345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259528341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c870a7aa94cb9c4aa8ed46e7b528aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoToDisplay: Druk op E om te praten
+--- !u!114 &1259528346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259528341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbc9f85bec2cee4784fcc065f55d129, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogPerIndex:
+  - Test 1
+  PositionsPerIndex: []
+  ShowMarkerPerIndex: 
+--- !u!65 &1259528347
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259528341}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30.000002, y: 40, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1308829698
 GameObject:
   m_ObjectHideFlags: 0

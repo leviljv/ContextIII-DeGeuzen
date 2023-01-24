@@ -127,7 +127,7 @@ public class MovementManager : MonoBehaviour
             }
             return false;
         }, typeof(SprintingState));
-        AddTransitionWithPrediquete(groundedState, (x) => { return Interacting; }, typeof(InteractionState));
+        AddTransitionWithPrediquete(crouchingState, (x) => { return Interacting; }, typeof(InteractionState));
 
         var slidingState = new SlidingState(movementStateMachine);
         movementStateMachine.AddState(typeof(SlidingState), slidingState);
@@ -156,7 +156,7 @@ public class MovementManager : MonoBehaviour
         AddTransitionWithPrediquete(sprintingState, (x) => { return !evaluator.IsGrounded(); }, typeof(AirbornState));
         AddTransitionWithPrediquete(sprintingState, (x) => { if (Input.GetAxisRaw("Vertical") <= 0) { sprinting = false; return true; } return false; }, typeof(GroundedState));
         AddTransitionWithPrediquete(sprintingState, (x) => { if (Input.GetKeyDown(KeyCode.LeftShift)) { sprinting = false; return true; } return false; }, typeof(GroundedState));
-        AddTransitionWithPrediquete(groundedState, (x) => { return Interacting; }, typeof(InteractionState));
+        AddTransitionWithPrediquete(sprintingState, (x) => { return Interacting; }, typeof(InteractionState));
 
         var wallLatchState = new LedgeGrabbingState(movementStateMachine);
         movementStateMachine.AddState(typeof(LedgeGrabbingState), wallLatchState);

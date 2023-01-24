@@ -35,6 +35,7 @@ public class DialogueCameraTrigger : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E)) {
             CanInvoke = false;
             EventManager<string>.Invoke(EventType.ON_DIALOG_STARTED, CurrentHover);
+            EventManager.Invoke(EventType.ON_DIALOG_STARTED);
         }
     }
 

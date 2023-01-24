@@ -9,7 +9,23 @@ public class HoverOver : MonoBehaviour
     public TextMeshProUGUI text;
     public float Range;
 
+    public bool ShowText = true;
+
+    private void OnEnable() {
+        EventManager.Subscribe(EventType.ON_DIALOG_STARTED, Hide);
+        EventManager.Subscribe(EventType.ON_DIALOG_ENDED, Show);
+    }
+    private void OnDisable() {
+        EventManager.Unsubscribe(EventType.ON_DIALOG_STARTED, Hide);
+        EventManager.Unsubscribe(EventType.ON_DIALOG_ENDED, Show);
+    }
+
     void Update() {
+        if (!ShowText) {
+            text.gameObject.SetActive(false);
+            return;
+        }
+
         Hover();
     }
 
@@ -28,5 +44,12 @@ public class HoverOver : MonoBehaviour
         else {
             text.gameObject.SetActive(false);
         }
+    }
+
+    private void Show() {
+        ShowText = true;
+    }
+    private void Hide() {
+        ShowText = false;
     }
 }
