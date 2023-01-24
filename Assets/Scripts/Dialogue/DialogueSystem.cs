@@ -75,7 +75,15 @@ public class DialogueSystem : MonoBehaviour {
             index = 0;
             currentDialog = Files[DialogName];
             EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, true);
-            NextLine();
+
+            try {
+                NextLine();
+            }
+            catch {
+                Debug.Log("AAAAHHH, Portrait went WRONGY SADDDDD :(:(:(");
+
+                Invoke(nameof(NextLine), .01f);
+            }
         }
         else
             Debug.LogError("No File named " + DialogName + " found!");
@@ -107,8 +115,6 @@ public class DialogueSystem : MonoBehaviour {
             ResetDialog();
             return;
         }
-
-        Debug.Log("Continue");
 
         currentTimeBetweenChars = TimeBetweenChars;
 
