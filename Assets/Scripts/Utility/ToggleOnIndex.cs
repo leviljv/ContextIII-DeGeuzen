@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ToggleOnIndex : MonoBehaviour
 {
-    public int ActiveAtIndex;
+    public List<bool> ActiveAtIndex;
     public GameObject toggle;
 
     private void OnEnable() {
@@ -15,9 +15,17 @@ public class ToggleOnIndex : MonoBehaviour
     }
 
     private void CheckIndex(int index) {
-        if (index == ActiveAtIndex) 
-            toggle.SetActive(true);
-        else
-            toggle.SetActive(true);
+        Debug.Log(index);
+
+        if(ActiveAtIndex.Count - 1 >= index)
+            if (ActiveAtIndex[index]) {
+                toggle.SetActive(true);
+
+                Debug.Log("ZET AAN");
+
+                return;
+            }
+
+        toggle.SetActive(false);
     }
 }

@@ -68,6 +68,7 @@ public class DialogueSystem : MonoBehaviour {
 
     private void SetDialog(string DialogName) {
         if (Files.ContainsKey(DialogName)) {
+            IsWriting = false;
             index = 0;
             currentDialog = Files[DialogName];
             DialogueSystemObject.SetActive(true);
