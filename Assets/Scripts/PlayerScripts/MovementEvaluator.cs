@@ -20,7 +20,11 @@ public class MovementEvaluator
         }
 
         if(Physics.CheckSphere(owner.transform.position + new Vector3(0, .2f, 0), .5f, owner.WaterLayer)) {
+            owner.controller.enabled = false;
             owner.transform.position = owner.LastGroundedPos;
+            owner.velocity = Vector3.zero;
+            owner.controller.enabled = true;
+            Debug.Log("WATER IN");
         }
 
         return false;

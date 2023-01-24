@@ -52,7 +52,7 @@ public class MovementManager : MonoBehaviour
     [HideInInspector] public bool canGrabNextLedge = true;
     [HideInInspector] public bool lookAtMoveDir = true;
     [HideInInspector] public GameObject CurrentLedge = null;
-    [HideInInspector] public Vector3 LastGroundedPos;
+    public Vector3 LastGroundedPos;
 
     [HideInInspector] public bool Interacting;
 
