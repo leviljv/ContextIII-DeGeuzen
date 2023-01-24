@@ -214,7 +214,8 @@ MonoBehaviour:
   DialogueSystemObject: {fileID: 2528269160884919146}
   mainText: {fileID: 2528269161350338518}
   nameText: {fileID: 2528269160992584160}
-  Portrait: {fileID: 2528269162431464616}
+  PortraitObject: {fileID: 2528269162431464622}
+  portrait: {fileID: 2528269162431464616}
   buttonContainer: {fileID: 2528269162480249305}
   buttonPanel: {fileID: 2528269160741986012}
   buttonPrefab: {fileID: 3874490211210969929, guid: 9b76cf0270016c74b825fab17197e84f,
@@ -270,30 +271,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundslist:
   - name: 1
-    clip: {fileID: 8300000, guid: 4b1838fc90a77d740901bd17f09ff1f7, type: 3}
+    clip: {fileID: 8300000, guid: fe0b6fc0292809b49a29240681133b7b, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.3
     pitch: 1
     spacialBlend: 0
     loop: 0
   - name: 2
-    clip: {fileID: 8300000, guid: fc3db67c05bb69043aa0e1f5592b08d7, type: 3}
+    clip: {fileID: 8300000, guid: 5ab2edd5503fee845aee854b21e37684, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.3
     pitch: 1
     spacialBlend: 0
     loop: 0
   - name: 3
-    clip: {fileID: 8300000, guid: 5f177854d09b6e841aebe3e3e5e1d9e4, type: 3}
+    clip: {fileID: 8300000, guid: e63fcbc9cc2f9074bac84d17418067ee, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.3
     pitch: 1
     spacialBlend: 0
     loop: 0
   - name: 4
-    clip: {fileID: 8300000, guid: e0fa97f76a2bf4e49ac7738030f5570c, type: 3}
+    clip: {fileID: 8300000, guid: 45ed59c16ee6d7b4ba988d2b567154c5, type: 3}
     source: {fileID: 0}
-    volume: 1
+    volume: 0.3
+    pitch: 1
+    spacialBlend: 0
+    loop: 0
+  - name: 5
+    clip: {fileID: 8300000, guid: dad9eb4c02369a34d9b2910e2389a1d9, type: 3}
+    source: {fileID: 0}
+    volume: 0.3
+    pitch: 1
+    spacialBlend: 0
+    loop: 0
+  - name: 6
+    clip: {fileID: 8300000, guid: c4f596b92c92d9b4393b24d1e0cb818d, type: 3}
+    source: {fileID: 0}
+    volume: 0.3
     pitch: 1
     spacialBlend: 0
     loop: 0

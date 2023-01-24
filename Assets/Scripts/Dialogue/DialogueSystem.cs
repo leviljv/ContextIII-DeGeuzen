@@ -10,7 +10,9 @@ public class DialogueSystem : MonoBehaviour {
     public GameObject DialogueSystemObject;
     public TextMeshProUGUI mainText;
     public TextMeshProUGUI nameText;
-    public Image Portrait;
+    public GameObject PortraitObject;
+    public Image portrait;
+    [HideInInspector] public Image Portrait => portrait ??= PortraitObject.GetComponent<Image>();
     public GameObject buttonContainer;
     public GameObject buttonPanel;
     public GameObject buttonPrefab;

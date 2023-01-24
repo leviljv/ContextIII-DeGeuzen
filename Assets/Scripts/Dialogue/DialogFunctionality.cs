@@ -40,9 +40,6 @@ public class DialogFunctionality
     }
 
     public void SetSprite(string SpriteName) {
-
-        Debug.Log(Owner.Portrait);
-
         if (Portraits.ContainsKey(SpriteName)) {
             Owner.Portrait.sprite = Portraits[SpriteName];
         }
