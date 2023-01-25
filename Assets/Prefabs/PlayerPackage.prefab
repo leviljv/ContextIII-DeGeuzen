@@ -476,7 +476,7 @@ MonoBehaviour:
   XRotTransform: {fileID: 3882733533375595190}
   player: {fileID: 3882733532703035154}
   Enabled: 0
-  mouseSensitivity: 400
+  mouseSensitivity: 300
   followSpeed: 0
   MaxAngleLook: 80
   MinAngleLook: -80
@@ -1014,7 +1014,7 @@ MonoBehaviour:
   jumpHeight: 1.2
   jumpAmount: 0
   spherecheckRadius: 0.5
-  climbTime: 1
+  climbTime: 0.7
   collectableRadius: 2
   CurrentDirection: {x: 0, y: 0, z: 0}
   GroundAngle: {x: 0, y: 0, z: 0}
