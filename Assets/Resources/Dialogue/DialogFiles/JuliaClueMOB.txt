@@ -7,8 +7,8 @@ $ DIALOG_SET_PORTRAIT Julia
 % jump NeverMind
 
 % start GetuigeVraag
-$ DIALOG_GIVE_CLUE MOBJuliaAns
-$ DIALOG_GIVE_CLUE MOBJuliaFalseAns
+$ DIALOG_GIVE_CLUE MOBGeertjeAns
+$ DIALOG_GIVE_CLUE MOBGeertjeFalseAns
 Julia: Iets gezien?
 Julia: Nou, uhhh..
 Julia: Het lichaam ligt letterlijk in mijn man’s werkplaats!
@@ -23,8 +23,8 @@ Julia: Dat gebeurt toch eenmaal als je zoveel op elkaars lip zit?
 % end GetuigeVraag
 
 % start BeschuldigVraag
-$ DIALOG_GIVE_CLUE MOBJuliaAns
-$ DIALOG_GIVE_CLUE MOBJuliaFalseAns
+$ DIALOG_GIVE_CLUE MOBGeertjeAns
+$ DIALOG_GIVE_CLUE MOBGeertjeFalseAns
 Julia: Wat?
 Julia: Hoe bedoelt u?? Hoe- wat.. 
 Julia: Het lichaam van die vieze boer lag in mijn man’s werkplaats!!

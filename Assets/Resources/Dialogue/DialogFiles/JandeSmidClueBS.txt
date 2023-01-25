@@ -1,4 +1,4 @@
-$ DIALOG_SET_PORTRAIT JanDeSmid
+$ DIALOG_SET_PORTRAIT JanDeSmit
 @ Waar was jij toen de kerk vernield werd?
 % jump GetuigeVraag
 @ Mag ik jouw handen even zien?

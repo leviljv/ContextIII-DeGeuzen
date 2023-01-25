@@ -8,6 +8,7 @@ $ DIALOG_SET_PORTRAIT Geertje
 
 % start GetuigeVraag
 $ DIALOG_GIVE_CLUE MOBGeertjeAns
+$ DIALOG_GIVE_CLUE MOBGeertjeAns
 $ DIALOG_GIVE_CLUE MOBGeertjeFalseAns
 Geertje: Iets verdachts?
 Geertje: Hmm... Eens denken...
@@ -22,6 +23,7 @@ Geertje: Volgens mij zag ze een beetje groen van jaloezie.
 % end GetuigeVraag
 
 % start BeschuldigVraag
+$ DIALOG_GIVE_CLUE MOBGeertjeAns
 $ DIALOG_GIVE_CLUE MOBGeertjeAns
 $ DIALOG_GIVE_CLUE MOBGeertjeFalseAns
 Geertje: Ik? Och nee..
