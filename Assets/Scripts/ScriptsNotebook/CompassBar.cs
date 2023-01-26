@@ -17,8 +17,6 @@ public class CompassBar : MonoBehaviour
     private List<QuestMarker> questMarkers = new List<QuestMarker>();
     public List<QuestMarker> questMarkerLocations = new List<QuestMarker>();
     
-
-    // Start is called before the first frame update
     void Start()
     {
         compassUnit = compassBarTransform.rect.width / 360f;
@@ -29,7 +27,6 @@ public class CompassBar : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         SetMarkerPosition(northTransform, Vector3.forward * 1000);
@@ -57,6 +54,7 @@ public class CompassBar : MonoBehaviour
 
         questMarkers.Add(marker);
     }
+
     Vector2 GetPosOnCompass(QuestMarker marker)
     {
         Vector2 playerPos = new Vector2(player.transform.position.x, player.transform.position.z);
@@ -65,6 +63,5 @@ public class CompassBar : MonoBehaviour
         float angle = Vector2.SignedAngle(marker.position - playerPos, playerfwd);
 
         return new Vector2(compassUnit * angle, 0f);
-
     }
 }
