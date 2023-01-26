@@ -14,7 +14,7 @@ $ DIALOG_GIVE_CLUE KBMariaFalseAns
 Maria: Gisteravond?
 Maria: Uhh...
 Maria: Ik was aan het koken.
-Maria: Ik maakte Karel's- ik bedoel Cornelis' lievelingsgerecht.
+Maria: Ik maakte Karel's, ik bedoel Cornelis' lievelingsgerecht.
 Maria: Sorry, Karel is een goede vriend van mij.
 Maria: Ik heb veel goede mannelijke vrienden.
 Maria: Maar...

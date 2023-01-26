@@ -711,7 +711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   point: {fileID: 2800000, guid: 85b0cccc9c8f2cd479d6f79de5b7eaa4, type: 3}
-  grab: {fileID: 0}
+  grab: {fileID: 2800000, guid: 32f6ec11ef0483c43b917fdec3a4eaa7, type: 3}
   open: {fileID: 2800000, guid: b4a28bc4d844963428907deb15a3d254, type: 3}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}

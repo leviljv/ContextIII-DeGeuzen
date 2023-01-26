@@ -29,7 +29,7 @@ $ DIALOG_GIVE_CLUE KBBroederFranciscusFalseAns
 Broeder Franciscus: Ketter...
 Broeder Franciscus: Wat een naar woord is het ook.
 Broeder Franciscus: Nee, ik heb de arme man niet geholpen.
-Broeder Franciscus: Ik k geloof dat zelfs protestanten het niet verdienen om zo wreed behandeld te worden.
+Broeder Franciscus: Ik geloof dat zelfs protestanten het niet verdienen om zo wreed behandeld te worden.
 Broeder Franciscus: We zijn allemaal tenslotte mensen.
 Broeder Franciscus: Iedereen met een goed hart zou de arme man helpen, hij deed geen vlieg kwaad.
 Broeder Franciscus: Hij had enkel een Lutherse bijbel in huis.

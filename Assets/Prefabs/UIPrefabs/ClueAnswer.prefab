@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.90019226, y: 0.18009949}
+  m_AnchoredPosition: {x: 0.9002075, y: 0.18009949}
   m_SizeDelta: {x: -59.002502, y: -19.722599}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3399454166839721022
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.35
+  m_fontSize: 40.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -175,7 +175,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 250, y: 60}
+  m_SizeDelta: {x: 600, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3399454167529196978
 CanvasRenderer:
@@ -231,8 +231,11 @@ MonoBehaviour:
   parentAfterDrag: {fileID: 0}
   backupParent: {fileID: 0}
   CanvasTransform: {fileID: 0}
-  destinationTag: DropArea
   posSet: 0
+  destinationTag: DropArea
+  handHold: {fileID: 0}
+  handOpen: {fileID: 0}
+  handWijs: {fileID: 0}
 --- !u!114 &190298453594460520
 MonoBehaviour:
   m_ObjectHideFlags: 0

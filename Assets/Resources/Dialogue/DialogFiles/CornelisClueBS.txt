@@ -42,10 +42,9 @@ Cornelis Groenveld: Hmm.. Juist.
 Cornelis Groenveld: De dronken boer en de monnik. Ik wist het!
 Cornelis Groenveld: Ontzettend bedankt voor uw hulp.
 Cornelis Groenveld: Door u kunnen deze ketters direct naar de gevangenis worden gestuurd!
-Cornelis Groenveld: Kom met mij mee naar de bakker, laten we een lekkernij halen om te vieren!
-@ Ik kom eraan.
+@ Graag gedaan!
 % jump Klaar
-@ Klinkt goed, ik heb honger!
+@ Zoals het hoort.
 % jump Klaar
 % end AntwoordGoed
 
