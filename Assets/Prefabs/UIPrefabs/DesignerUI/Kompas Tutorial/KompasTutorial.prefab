@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4481482421003697557}
   - component: {fileID: 4481482421003697556}
   - component: {fileID: 4481482421003697555}
-  - component: {fileID: 4481482421003697554}
   - component: {fileID: 4481482421003697553}
   m_Layer: 0
   m_Name: KompasTutorial
@@ -50,7 +49,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4481482421003697552}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -85,19 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4481482421003697554
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4481482421003697552}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4481482421003697553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,12 +96,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06844bddc5844ba40ae3fd58510fc21e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorialSentences:
-  - Hierboven zie je je kompas.
-  - Bij je kompas kan je mensen en aanwijzingen vinden.
-  - Kijk goed rond, en praat met iedereen.
-  - Wie weet, misschien vind je iets belangrijks...
-  sentenceIndex: 0
-  scrollUI: {fileID: 0}
-  textUI: {fileID: 0}
-  kysIndex: 0

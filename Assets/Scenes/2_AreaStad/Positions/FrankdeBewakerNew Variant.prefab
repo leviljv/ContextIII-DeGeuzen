@@ -344,7 +344,7 @@ PrefabInstance:
     - target: {fileID: 4312435122303311303, guid: ee3f532fb7315f041a0c1f4b0ea1ffe8,
         type: 3}
       propertyPath: m_Name
-      value: FrankdeBewakerNew
+      value: FrankdeBewakerNew Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4974962887667391155, guid: ee3f532fb7315f041a0c1f4b0ea1ffe8,
         type: 3}
@@ -427,7 +427,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 11.642743, y: 38.30994, z: 1}
   m_Center: {x: -0.6044859, y: 18.654972, z: 0}
---- !u!114 &895194238
+--- !u!114 &895194235
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -436,12 +436,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 5655649935591761438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f39c02e390c119499666d53249da110, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a647a79c20667f4794380880943fd18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useStaticBillboarding: 1
-  dis: 30
-  rotSpeed: 10
+  icon: {fileID: 21300000, guid: 644be36f6d2074047a2c617cdf556f1c, type: 3}
+  image: {fileID: 0}
+--- !u!114 &895194236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655649935591761438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c870a7aa94cb9c4aa8ed46e7b528aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoToDisplay: Druk op E om te praten
 --- !u!114 &895194237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,7 +470,7 @@ MonoBehaviour:
   - FrankdeBewakerClueKB
   PositionsPerIndex: []
   ShowMarkerPerIndex: 000100000001
---- !u!114 &895194236
+--- !u!114 &895194238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -467,24 +479,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 5655649935591761438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c870a7aa94cb9c4aa8ed46e7b528aba, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f39c02e390c119499666d53249da110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infoToDisplay: Druk op E om te praten
---- !u!114 &895194235
-MonoBehaviour:
+  useStaticBillboarding: 1
+  dis: 30
+  rotSpeed: 10
+--- !u!210 &6020936579308554039
+SortingGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5655649935591761438}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a647a79c20667f4794380880943fd18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  icon: {fileID: 21300000, guid: 644be36f6d2074047a2c617cdf556f1c, type: 3}
-  image: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!4 &6824359101429137021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3103192563369493924, guid: ee3f532fb7315f041a0c1f4b0ea1ffe8,

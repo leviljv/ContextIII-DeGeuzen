@@ -15,6 +15,7 @@ public class OudeCornelisWeg : MonoBehaviour
             cornelisOud.SetActive(false);
             replaced = true;
             cornelisNieuw.SetActive(true);
+
         }
     }
 }

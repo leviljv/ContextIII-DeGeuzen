@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Intro_KetterBevrijd : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
         EventManager<string>.Invoke(EventType.ON_DIALOG_STARTED, "StartDialoogKetterBevrijd");
     }
