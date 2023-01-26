@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Intro_MoordBoer : MonoBehaviour
 {
-    void Awake()
+    void Start()
     {
         EventManager<string>.Invoke(EventType.ON_DIALOG_STARTED, "StartDialoogMoordOpBoer");
     }
