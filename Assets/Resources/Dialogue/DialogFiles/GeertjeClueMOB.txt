@@ -3,7 +3,7 @@ $ DIALOG_SET_PORTRAIT Geertje
 % jump GetuigeVraag
 @ Heb jij Peter vermoord?
 % jump BeschuldigVraag
-@ Laat maar
+@ Sorry, laat maar!
 % jump NeverMind
 
 % start GetuigeVraag
@@ -12,11 +12,11 @@ $ DIALOG_GIVE_CLUE MOBGeertjeAns
 $ DIALOG_GIVE_CLUE MOBGeertjeFalseAns
 Geertje: Iets verdachts?
 Geertje: Hmm... Eens denken...
-Geertje: Oh! Mijn buurvrouw, Julia zei laatst wel iets opmerkelijks...
+Geertje: Oh! Mijn buurvrouw, Julia, zei laatst wel iets opmerkelijks...
 @ Julia? De vrouw van de Smid?
-Geertje: Ja! Die Julia.
+Geertje: Ja! Julia, die blonde vrouw.
 Geertje: Ze vertelde dat ze Peter niet kon uitstaan.
-Geertje: Dat ze zich ergerde aan hem en zijn relatie met Peter.
+Geertje: Ze ergerde zich aan hem, en vooral aan zijn relatie met Peter.
 Geertje: Volgens mij zag ze een beetje groen van jaloezie.
 @ Hmm... Interessant.
 % jump Breakout
@@ -28,18 +28,18 @@ $ DIALOG_GIVE_CLUE MOBGeertjeAns
 $ DIALOG_GIVE_CLUE MOBGeertjeFalseAns
 Geertje: Ik? Och nee..
 Geertje: Ik kende de man amper. 
-Geertje: Ik zag hem wel af en toe als hij met mijn man en mijn buurman ging drinken.
-Geertje: Ik dacht dat hij gister met hun mee was gaan drinken, 
-Geertje: maar ik heb hem niet gezien toen ze terugkwamen.
+Geertje: Ik zag hem wel af en toe als hij met mijn man en mijn buurman, Bart, ging drinken.
+Geertje: Ik dacht dat hij gister met hen mee was gaan drinken, maar... 
+Geertje: Ik heb hem niet bij hen gezien toen ze terugkwamen.
 @ Toen ze terugkwamen?
 Geertje: Jazeker. 
-Geertje: Gisteravond kwamen Jan en mijn man samen terug en hebben ze tot laat nog thuis gedronken.
+Geertje: Gisteravond kwamen Jan en mijn man samen terug, en hebben ze tot laat nog thuis gedronken. Peter was er niet bij.
 @ Hmmm.. Bedankt voor de informatie.
 % jump Breakout
 % end Beschuldigvraag
 
 % start NeverMind
-Geertje: Oke, doeidoei!
+Geertje: Oke, fijne dag verder.
 % jump Breakout
 % end NeverMind
 

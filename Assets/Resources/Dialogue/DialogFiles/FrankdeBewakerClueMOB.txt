@@ -1,40 +1,37 @@
 $ DIALOG_SET_PORTRAIT FrankDeBewaker
-@ Wie heeft Peter vermoord denk je?
+@ Wie heeft Peter vermoord, denk je?
 % jump GetuigeVraag
 @ Heb jij Peter de Boer vermoord?
 % jump BeschuldigVraag
-@ Laat maar
+@ Sorry, laat maar!
 % jump NeverMind
 
 % start GetuigeVraag
 $ DIALOG_GIVE_CLUE MOBBewakerFrankAns
 $ DIALOG_GIVE_CLUE MOBBewakerFrankFalseAns
-Frank de Bewaker: Wie?
 Frank de Bewaker: Is dat niet duidelijk?
 Frank de Bewaker: Die vieze vuile smid natuurlijk!
 Frank de Bewaker: How durft hij zomaar onze vriend zo te verraden!
 Frank de Bewaker: We gingen zo vaak met z’n drieën drinken...
 Frank de Bewaker: Ik snap er niks van, ze leken juist zo hecht samen...
-Frank de Bewaker: Hij zal boeten in hel!!
-Frank de Bewaker: Dan kan Peter in rust resten. Hij verdiende dit niet.
-@ Oke, genoteerd.
+@ Oke, staat genoteerd.
 % jump Breakout
 % end GetuigeVraag
 
 % start BeschuldigVraag
 $ DIALOG_GIVE_CLUE MOBBewakerFrankAns
 $ DIALOG_GIVE_CLUE MOBBewakerFrankFalseAns
-Frank de Bewaker: Ik??
-Frank de Bewaker: Ja hallo? Wat denk jij wel niet??
+Frank de Bewaker: Ik?
 Frank de Bewaker: Peter was mijn <b> vriend </b>.
-Frank de Bewaker: Ik zou hem nooit zo erg kwaad doen!
-Frank de Bewaker: Hoe durf je mij te beschuldigen..
+Frank de Bewaker: Ik zou hem nooit zo erg kwaad doen...
+Frank de Bewaker: Ik ben er kapot van.
 @ Bedankt voor je medewerking.
 % jump Breakout
 % end Beschuldigvraag
 
 % start NeverMind
 Frank de Bewaker: Huh? Oke...
+Frank de Bewaker: Weet wel, ik had er niks mee te maken. Geloof me!
 % jump Breakout
 % end NeverMind
 

@@ -1,18 +1,18 @@
 $ DIALOG_SET_PORTRAIT BakkerBart
 @ Heb jij iets verdachts gezien?
 % jump GetuigeVraag
-@ Heb jij Peter vermoord?
+@ Heb jij Peter wat aangedaan?
 % jump BeschuldigVraag
-@ Laat maar
+@ Sorry, laat maar!
 % jump NeverMind
 
 % start GetuigeVraag
 $ DIALOG_GIVE_CLUE MOBBakkerBartAns
 $ DIALOG_GIVE_CLUE MOBBakkerBartFalseAns
-Bakker Bart: Toen ik vanochtend mijn deeg ging voorbereiden, zag ik wel iets.
+Bakker Bart: Toen ik vanochtend mijn deeg ging voorbereiden, zag ik wel iets...
 Bakker Bart: Ik zag een klein iemand stiekem wegsluipen.
-Bakker Bart: Het was nog donker dus ik zag niet wie het was.
-Bakker Bart: Maar het leek wel alsof ze heel stiekem probeerde te doen.
+Bakker Bart: Het was nog donker, dus ik zag niet wie het was.
+Bakker Bart: Het leek wel alsof ze heel stiekem probeerde te doen...
 @ Hmm.. Interessant.
 % jump Breakout
 % end GetuigeVraag
@@ -21,9 +21,9 @@ Bakker Bart: Maar het leek wel alsof ze heel stiekem probeerde te doen.
 $ DIALOG_GIVE_CLUE MOBBakkerBartAns
 $ DIALOG_GIVE_CLUE MOBBakkerBartFalseAns
 Bakker Bart: Ik?
-Bakker Bart: Oh nee, ik was het niet.
-Bakker Bart: Ik hoor ook dat iedereen Jan verdenkt.
-Bakker Bart: Maar Jan en ik waren gisteravond samen gaan drinken na ons werk.
+Bakker Bart: Oh nee, zeker niet.
+Bakker Bart: Ik hoor ook dat iedereen Jan verdenkt, maar...
+Bakker Bart: Jan en ik waren gisteravond samen gaan drinken na ons werk.
 Bakker Bart: Eerst zou Peter nog meegaan, maar hij was niet op komen dagen.
 Bakker Bart: Dit was al best vreemd, normaal gesproken slaat Peter nooit een drinkavond over.
 Bakker Bart: Hadden we maar meteen alarm geslagen...
@@ -34,7 +34,7 @@ Bakker Bart: Klopt. Mijn vrouw heeft ons ook nog thuis zien komen.
 % end Beschuldigvraag
 
 % start NeverMind
-Bakker Bart: Oke, tot later!
+Bakker Bart: Oke... Maar ik ben wel echt onschuldig.
 % jump Breakout
 % end NeverMind
 

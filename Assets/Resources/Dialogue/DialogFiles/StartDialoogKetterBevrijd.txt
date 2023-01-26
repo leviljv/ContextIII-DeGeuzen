@@ -1,12 +1,10 @@
 $ DIALOG_SET_PORTRAIT CornelisGroenveld
 
 Cornelis Groenveld: Goededag, fijn dat u zo snel kon komen. 
-Cornelis Groenveld: Ik zit echt met mijn handen in mijn haar hier. 
-Cornelis Groenveld: Er is dus gister een ketter ontsnapt. 
-Cornelis Groenveld: Zijn cel was leeg, met alleen maar gebroken boeien op de grond. 
-Cornelis Groenveld: Hij heeft dus duidelijk hulp gehad, maar wie is hier een verrader? 
+Cornelis Groenveld: Ik zit echt met mijn handen in het haar hier. 
+Cornelis Groenveld: Er is gister een ketter ontsnapt. 
+Cornelis Groenveld: Zijn cel was leeg, en we vonden alleen gebroken boeien op de grond. 
+Cornelis Groenveld: Hij heeft dus duidelijk hulp gehad, maar wie in de stad is hier een verrader? 
 Cornelis Groenveld: Help mij alstublieft, uw detective vaardigheden zijn hard nodig.
 Cornelis Groenveld: Ga op zoek naar mogelijke daders rondom de gevangenis.
-Cornelis Groenveld: Laat het mij weten wanneer je de dader hebt gevonden!
-
-$ UP_GLOBAL_INDEX
+Cornelis Groenveld: Laat mij weten wanneer je de dader hebt gevonden! Ik zal hier blijven.

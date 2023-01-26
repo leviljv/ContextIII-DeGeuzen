@@ -7,15 +7,15 @@ Cornelis Groenveld: Onze kerk.. nu moet alles verbouwd worden...
 % jump GetuigeVraag
 @ Ik weet wie de kerk hebben vernield.
 % jump if FoundAllClues AntwoordGoed : AntwoordFout
-@ Laat maar
+@ Sorry, laat maar!
 % jump NeverMind
 % end OptionSection
 
 % start GetuigeVraag
 $ DIALOG_GIVE_CLUE BSCornelisAns
 $ DIALOG_GIVE_CLUE BSCornelisFalseAns
-Cornelis Groenveld: Toen ik aankwam bij de kerk was de schade al verricht.
-Cornelis Groenveld: Ik zag wel wat handafdrukken, misschien is het handig om de handen van iedereen te controleren.
+Cornelis Groenveld: Toen ik aankwam bij de kerk, was de schade al verricht.
+Cornelis Groenveld: Ik zag wel wat handafdrukken... Misschien is het handig iedereen hun handen te bekijken.
 % jump Breakout
 % end GetuigeVraag
 
@@ -26,7 +26,7 @@ Cornelis: Hmm...
 Cornelis: ...
 Cornelis: Weet u zeker dat dit al het bewijs is?
 Cornelis: Misschien moet u nog meer op onderzoek uitgaan.
-Cornelis: Ga met meer mensen gaan praten om clues te verzamelen.
+Cornelis: Ga met meer mensen praten om aanwijzingen te verzamelen.
 Cornelis: Succes!
 @ Oke, duidelijk!
 % jump Breakout
@@ -38,8 +38,8 @@ Cornelis: Succes!
 
 Cornelis Groenveld: Geweldig!
 Cornelis Groenveld: Mag ik uw aantekeningen eens zien?
-Cornelis Groenveld: Hmm.. Juist..
-Cornelis Groenveld: De dronken boer en de monnik.
+Cornelis Groenveld: Hmm.. Juist.
+Cornelis Groenveld: De dronken boer en de monnik. Ik wist het!
 Cornelis Groenveld: Ontzettend bedankt voor uw hulp.
 Cornelis Groenveld: Door u kunnen deze ketters direct naar de gevangenis worden gestuurd!
 Cornelis Groenveld: Kom met mij mee naar de bakker, laten we een lekkernij halen om te vieren!
@@ -56,7 +56,6 @@ Cornelis Groenveld: Oke, geen probleem.
 
 % start Klaar
 $ NEXT_SCENE
-$ UP_GLOBAL_INDEX
 % end Klaar
 
 

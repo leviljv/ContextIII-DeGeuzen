@@ -1,11 +1,11 @@
 $ DIALOG_SET_PORTRAIT Maria
 
-Maria: Goededag, prachtig weer vandaag vindt u niet?
-@ Heb jij er misschien wat mee te maken?
+Maria: Goededag, prachtig weer vandaag, vindt u niet?
+@ Heb jij de ketter bevrijd?
 % jump BeschuldigVraag
 @ Heb jij gisteravond iets geks gezien?
 % jump GetuigeVraag
-@ Laat maar
+@ Sorry, laat maar!
 % jump NeverMind
 
 % start GetuigeVraag
@@ -13,14 +13,13 @@ $ DIALOG_GIVE_CLUE KBMariaAns
 $ DIALOG_GIVE_CLUE KBMariaFalseAns
 Maria: Gisteravond?
 Maria: Uhh...
-Maria: Nou ehh...
-Maria: Ik was uhhh.. aan het koken!! Ja..
-Maria: Ik maakte Karel's- ik bedoel uhh Cornelis' lievelingsgerecht!
-Maria: Mijn man Cornelis.. 
-Maria: haha..
-Maria: Ja, hij is een flinke eter, dus veel voorbereiding nodig! haha...
-Maria: Maarehh...
-Maria: De bewaker kwam gisteravond nog naar mij toe om te vragen of de ketter wel gemist zou worden door iemand, ga hem anders eerst maar even strenger ondervragen!
+Maria: Ik was aan het koken.
+Maria: Ik maakte Karel's- ik bedoel Cornelis' lievelingsgerecht.
+Maria: Sorry, Karel is een goede vriend van mij.
+Maria: Ik heb veel goede mannelijke vrienden.
+Maria: Maar...
+Maria: De bewaker kwam gisteravond nog naar mij toe om te vragen of de ketter wel gemist zou worden door iemand...
+Maria: Ondervraag hem strenger! Hij heeft niet goed opgelet.
 @ Oke, duidelijk.
 % jump Breakout
 % end GetuigeVraag
@@ -31,19 +30,16 @@ $ DIALOG_GIVE_CLUE KBMariaAns
 $ DIALOG_GIVE_CLUE KBMariaFalseAns
 Maria: Verdenk je mij nou?
 @ Ik had nog niet eens gezegd waar het over ging...
-Maria: Oh...
-Maria: Oh...
-Maria: Nou ehh...
-Maria: <b>U kunt mij niet zo maar van iets beschuldigen!! </b>
-Maria: <b> Tuurlijk ga ik mijzelf dan verdedigen!! </b>
-Maria: Ik ben de vrouw van Cornelis en wij zijn allebei hartstikke katholiek, wij zouden nooit een ketter helpen!
-Maria: De bewaker kwam gisteravond nog naar mij toe om te vragen of de ketter wel gemist zou worden door iemand, ga hem anders eerst maar even strenger ondervragen!
+Maria: Het is toch overduidelijk? De hele stad is in rep en roer.
+Maria: Ik ben de vrouw van Cornelis en wij zijn allebei hartstikke katholiek, wij zouden nooit een ketter helpen.
+Maria: De bewaker kwam gisteravond nog naar mij toe om te vragen of de ketter wel gemist zou worden door iemand...
+Maria: Ondervraag hem strenger! Hij heeft niet goed opgelet.
 @ Oke, bedankt.
 % jump Breakout 
 % end BeschuldigVraag
 
 % start NeverMind
-Maria: Prima, tot ziens.
+Maria: Prima. Ik ben een goed mens, ik heb niks misdaan.
 % jump Breakout
 % end NeverMind
 

@@ -3,16 +3,16 @@ $ DIALOG_SET_PORTRAIT JanDeSmit
 % jump GetuigeVraag
 @ Mag ik jouw handen even zien?
 % jump HandVraag
-@ Laat maar
+@ Sorry, laat maar!
 % jump NeverMind
 
 % start GetuigeVraag
 $ DIALOG_GIVE_CLUE BSJandeSmidAns
 $ DIALOG_GIVE_CLUE BSJandeSmidFalseAns
 Jan de Smid: Waar ik was?
-Jan de Smid: Nou ja zeg, gewoon aan het werk!
-Jan de Smid: Ik was gister nog met mijn vrouw Julia in de kerk om te bidden.
-Jan de Smid: Wij zijn beiden goede katholieken!
+Jan de Smid: Gewoon, aan het werk.
+Jan de Smid: Ik was gister met mijn vrouw Julia in de kerk om te bidden.
+Jan de Smid: Wij zijn beiden goede katholieken.
 % jump Breakout
 % end GetuigeVraag
 
@@ -20,22 +20,21 @@ Jan de Smid: Wij zijn beiden goede katholieken!
 $ DIALOG_GIVE_CLUE BSJandeSmidAns
 $ DIALOG_GIVE_CLUE BSJandeSmidFalseAns
 Jan de Smid: Mijn handen?
-Jan de Smid: Uhh ja prima, ik zie niet echt waarom maar...
-@ Wat een ruwe handen.
-Jan de Smid: Pfft! Ja natuurlijk heb ik ruwe handen!
-Jan de Smid: Denkt u serieus dat ze ruw zijn door een avondje een heilige plek vernielen?
-Jan de Smid: Pfftt! U bent een minder goeie detective dan ik dacht
-Jan de Smid: Natuurlijk zijn ze ruw! Ik ben een SMID. 
-Jan de Smid: Ik gebruik mijn handen dag in dag uit tijdens mijn werk!
-@ Sorry
+Jan de Smid: Uhh,ja prima. Ik zie niet echt waarom...
+@ Wat een ruwe handen...
+Jan de Smid: Natuurlijk zijn ze ruw! Ik ben een smid. 
+Jan de Smid: Ik gebruik mijn handen dag in dag uit tijdens mijn werk.
+Jan de Smid: Ik ben bezig met een nieuw hoefijzer voor Peter zijn paard, een vuurpoker voor Cornelis... Ik heb het zo druk.
+@ Oke, duidelijk.
 % jump Breakout
 @ Bedankt voor je medewerking.
-Jan de Smid: Nou doeiii ik ga weer aan de slag!
+Jan de Smid: Ik ga weer aan de slag. 
 % jump Breakout
 % end HandVraag
 
 % start NeverMind
 Jan de Smid: Oke, ik ga weer aan het werk.
+Jan de Smid: Je kan me vertrouwen, ik heb niks misdaan.
 % jump Breakout
 % end NeverMind
 

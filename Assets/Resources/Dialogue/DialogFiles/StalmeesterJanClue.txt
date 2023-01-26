@@ -2,12 +2,13 @@ $ DIALOG_SET_PORTRAIT Empty
 &
 Stalmeester Jan: ...
 @ Wat was jij aan het doen vlak voor de moord?
-	% jump Antwoord
+% jump Antwoord
 @ Heb jij iets gezien?
-	% jump Antwoord
+% jump Antwoord
 % wait
 
 % start Antwoord
-Stalmeester Jan: Ik was mijn dagelijkse routine aan het volgen toen ik plots een knal hoorde. 
+Stalmeester Jan: Ik was mijn dagelijkse routine aan het volgen, toen ik plots een knal hoorde. 
 Stalmeester Jan: Toen ik mij omdraaide lag de prins onderaan de trap te bloeden, het was al te laat...
+Stalmeester Jan: Hij was al dood voor hij zijn laatste woorden kon zeggen...
 $ DIALOG_GIVE_CLUE WillemClueSlachtofferAns

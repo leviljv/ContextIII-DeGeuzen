@@ -6,17 +6,15 @@ Cornelis: Heeft u de dader al weten op te sporen?
 	% jump BeschuldigVraag
 @ Ja, ik weet wie de dader was.
 	% jump if FoundAllClues AntwoordGoed : AntwoordFout
-@ Laat maar
+@ Sorry, laat maar!
 	% jump NeverMind
 % end OptionSection
 
 % start BeschuldigVraag
 $ DIALOG_GIVE_CLUE KBCornelisAns
 $ DIALOG_GIVE_CLUE KBCornelisFalseAns
-Cornelis: Ik haal jou hier om mij te helpen en je denkt dat ik hem zelf heb bevrijd?
-Cornelis: Misschien ben je een slechtere detective dan ik dacht.
-Cornelis: Ik heb zelf het bevel gegeven om hem op te laten pakken en hem bovendien ter dood veroordeeld!
-Cornelis: Filips zorgt er met zijn harde aanpak wel voor dat iedereen hier boos wordt, zelfs ik wordt nu verdacht!
+Cornelis: Nee, natuurlijk niet. 
+Cornelis: Waarom zou ik dan het bevel geven om hem op te laten pakken?
 @ Oke, duidelijk.
 % jump Breakout 
 % end BeschuldigVraag
@@ -42,13 +40,14 @@ Cornelis: Fantastisch!
 Cornelis: Ik zag dat u een notitieboekje mee heeft met alle aanwijzingen die u heeft verzameld.
 Cornelis: Zou ik even mogen kijken?
 Cornelis: Hmmm..
-Cornelis: Wat??
-Cornelis: Mijn eigen vrouw?
+Cornelis: Wat?!
+Cornelis: Mijn eigen vrouw heeft de ketter bevrijd?!
 Cornelis: ...
-Cornelis: Nou als zij zo nodig liever met een ketter samen is mogen ze samen de gevangenis in!!
+Cornelis: Nee... Wat verschrikkelijk!
+Cornelis: Als zij zo nodig liever met een ketter samen is, mogen ze samen de gevangenis in!
 Cornelis: Bedankt, zonder uw hulp was ik nooit te weten gekomen dat mijn vrouw niet alleen een verrader is, maar ook een ketter!
-Cornelis: Heel erg bedankt voor uw hulp.
-Cornelis: Kom met me mee naar de markt, dan trakteer ik u op de specialiteit van de stad!
+Cornelis: Hartelijk dank voor uw hulp.
+Cornelis: Kom met me mee naar de markt, dan trakteer ik u op de specialiteit van de stad! Ik moet dit even verwerken...
 @ Is goed, ik kom eraan.
 % jump Klaar
 @ Oke, op naar de markt!
@@ -62,7 +61,6 @@ Cornelis Groenveld: Oke, geen probleem.
 
 % start Klaar
 $ NEXT_SCENE
-$ UP_GLOBAL_INDEX
 % end Klaar
 
 % start Breakout 
