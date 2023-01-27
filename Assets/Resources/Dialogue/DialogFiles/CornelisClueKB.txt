@@ -2,7 +2,7 @@ $ DIALOG_SET_PORTRAIT CornelisGroenveld
 
 % start OptionSection
 Cornelis: Heeft u de dader al weten op te sporen?
-@ Nee, heeft u hem zelf misschien hebt laten ontsnappen?
+@ Nee, heeft u er mee te maken gehad?
 	% jump BeschuldigVraag
 @ Ja, ik weet wie de dader was.
 	% jump if FoundAllClues AntwoordGoed : AntwoordFout

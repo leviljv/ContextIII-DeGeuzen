@@ -7,6 +7,4 @@ Brief: Ik heb uw hulp nodig om de dader te vinden, voordat Koning Filips II ons 
 Brief: Kom zo snel mogelijk.
 Brief: Met vriendelijke groet,
 Brief: Cornelis Groenveld
-% jump Breakout
-% start Breakout 
 $ NEXT_SCENE
