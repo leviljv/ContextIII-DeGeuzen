@@ -439,7 +439,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -594,6 +594,12 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -1380954181195567208, guid: 03dc42f51bc410b4182d2ec2d3878010, type: 2}
     value: {fileID: 917023280}
+  - key: {fileID: 8589503851671273413, guid: 03dc42f51bc410b4182d2ec2d3878010, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 7864774763468969814, guid: 03dc42f51bc410b4182d2ec2d3878010, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -3261738887516063935, guid: 03dc42f51bc410b4182d2ec2d3878010, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1702431272
@@ -664,7 +670,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: adafcc531ae5062489845fe432c4e308, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 576359d596d318341af2265b4c23c7d4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

@@ -280,6 +280,53 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3249901795559606381, guid: b03c9f5002ad19b4eace762a8d20d603,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249901795559606381, guid: b03c9f5002ad19b4eace762a8d20d603,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249901795559606381, guid: b03c9f5002ad19b4eace762a8d20d603,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 117.005005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249901795559606381, guid: b03c9f5002ad19b4eace762a8d20d603,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 74
+      objectReference: {fileID: 0}
+    - target: {fileID: 3249901795559606381, guid: b03c9f5002ad19b4eace762a8d20d603,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0032958984
+      objectReference: {fileID: 0}
+    - target: {fileID: 6555291491898033843, guid: b03c9f5002ad19b4eace762a8d20d603,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 6555291491898033843, guid: b03c9f5002ad19b4eace762a8d20d603,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: cde934f626f426c47bfb2f1bce593938,
+        type: 2}
+    - target: {fileID: 6555291491898033843, guid: b03c9f5002ad19b4eace762a8d20d603,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 6555291491898033843, guid: b03c9f5002ad19b4eace762a8d20d603,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7825302579151036977, guid: cde934f626f426c47bfb2f1bce593938,
+        type: 2}
     - target: {fileID: 7529962854247852733, guid: b03c9f5002ad19b4eace762a8d20d603,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
