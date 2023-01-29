@@ -9,16 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/0a_MainMenu.unity
     guid: 7b56a32ef13655145bfc7f6c06698499
   - enabled: 1
-    path: Assets/Scenes/0b_IntroScene.unity
+    path: Assets/Scenes/old_0b_IntroScene.unity
     guid: 9c0c7f0342957d94cbfacbeaf38dedb0
   - enabled: 1
-    path: Assets/Scenes/0c_Tutorial1.unity
+    path: Assets/Scenes/old_0c_Tutorial1.unity
     guid: d3efff12e24f7414592f75757079a18a
   - enabled: 1
-    path: Assets/Scenes/0c_Tutorial2.unity
+    path: Assets/Scenes/old_0c_Tutorial2.unity
     guid: a0673c2554484664e8fdb10f7c9f67ac
   - enabled: 1
-    path: Assets/Scenes/1_AreaWillem.unity
+    path: Assets/Scenes/old_1_AreaWillem.unity
     guid: 82c42ff8c72f24348806e37bf51656f3
   - enabled: 1
     path: Assets/Scenes/1b_LetterCornelis.unity
