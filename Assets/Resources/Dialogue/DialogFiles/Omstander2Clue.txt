@@ -8,7 +8,7 @@ Omstander: ...
 % wait
 
 % start Antwoord
-Omstander: Ik zag een man iets gehaast in een van de bosjes gooien
+Omstander: Ik zag een man iets gehaast in een van de bosjes gooien.
 Omstander: Het leek alsof hij het probeerde te verstoppen.
 @ In de bosjes? Interessant...
 % jump Breakout

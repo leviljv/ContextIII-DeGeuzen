@@ -1,6 +1,6 @@
 $ DIALOG_SET_PORTRAIT CornelisGroenveld
 
-@ Wie heeft Peter de Boer vermoord denk je?
+@ Wie heeft Peter de Boer vermoord, denk je?
 % jump GetuigeVraag
 @ Heb jij Peter de Boer vermoord?
 % jump BeschuldigVraag
@@ -9,26 +9,26 @@ $ DIALOG_SET_PORTRAIT CornelisGroenveld
 
 % start OptionSection
 % start GetuigeVraag
-Cornelis Groenveld: Nou ik hoor dat alle burgers de smid verdenken.
+Cornelis Groenveld: Ik hoor dat alle burgers de smid verdenken.
 Cornelis Groenveld: Het lichaam lag wel in zijn werkplaats...
+Cornelis Groenveld: Het is een makkelijke zaak.
+Cornelis Groenveld: Misschien ietsje te makkelijk...
 $ DIALOG_GIVE_CLUE MOBCornelisAns
 $ DIALOG_GIVE_CLUE MOBCornelisFalseAns
 @ Oke, duidelijk.
 % jump Breakout
 % end GetuigeVraag
-@ Laat maar
+@ Sorry, laat maar!
 % jump NeverMind
 % end OptionSection
 
 % start BeschuldigVraag
 $ DIALOG_GIVE_CLUE MOBCornelisAns
 $ DIALOG_GIVE_CLUE MOBCornelisFalseAns
-Cornelis Groenveld: Pardon??
-Cornelis Groenveld: Ik wilde dat de boer zou boeten voor zijn daden van het vernielen van de kerk
-Cornelis Groenveld: Maar dat zou in de gevangenis gebeuren.
-Cornelis Groenveld: Of hij zou opgehangen worden.
+Cornelis Groenveld: Ik wilde dat de boer zou boeten voor zijn daden van het vernielen van de kerk, maar...
+Cornelis Groenveld: Dat zou in de gevangenis gebeuren, niet door mij.
 Cornelis Groenveld: Kortom, hij zou eerlijk veroordeeld worden, ook al is hij slechts een boer.
-Cornelis Groenveld: Waarom zou ik hem ooit zelf vermoorden als ik daar een beul voor heb?!
+Cornelis Groenveld: Waarom zou ik hem ooit zelf vermoorden als ik daar een beul voor heb?
 @ Bedankt voor je medewerking.
 % jump Breakout
 % end Beschuldigvraag
@@ -40,7 +40,7 @@ Cornelis: Hmm...
 Cornelis: ...
 Cornelis: Weet u zeker dat dit al het bewijs is?
 Cornelis: Misschien moet u nog meer op zoek gaan.
-Cornelis: Ga met meer mensen gaan praten om clues te verzamelen.
+Cornelis: Ga met meer mensen praten om clues te verzamelen.
 Cornelis: Succes!
 @ Oke, duidelijk!
 % jump Breakout
@@ -53,13 +53,13 @@ Cornelis Groenveld: Zo snel al?
 Cornelis Groenveld: Wat fijn!
 Cornelis Groenveld: Mag ik uw notities zien?
 Cornelis Groenveld: Hmm.. oke...
-Cornelis Groenveld: Het was dus niet de smid maar zijn vrouw??
+Cornelis Groenveld: Het was dus niet de smid maar zijn vrouw?
 Cornelis Groenveld: Jeetje, dat iemand zo jaloers kan worden van een hechte vriendschap...
-Cornelis Groenveld: In ieder geval nogmaals bedankt.
+Cornelis Groenveld: In ieder geval, nogmaals bedankt.
 Cornelis Groenveld: Door u is ons stadje weer wat veiliger!
 @ Geen probleem, daar ben ik detective voor!
 % jump Klaar
-@ Je weet mij te vinden als er meer mysteries zijn om op te lossen!
+@ U weet mij te vinden als er meer mysteries zijn om op te lossen!
 % jump Klaar
 % end AntwoordGoed
 

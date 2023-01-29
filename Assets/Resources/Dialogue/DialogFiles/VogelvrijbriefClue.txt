@@ -1,7 +1,9 @@
 $ DIALOG_SET_PORTRAIT Empty
 
 $ DIALOG_GIVE_CLUE WillemClueAanleidingAns
-Notitie: Hmmm... een brief ondertekend door Koning Filips. Wat staat erin?
+Notitie: Hm. Een brief ondertekend door Koning Filips II. Wat staat er in?
 Notitie: "Hierbij veroordeel ik Willem van Oranje tot de dood"
 Notitie: "Iedereen mag bij deze ongestraft hem vermoorden"
-Notitie: Hmm... Een vogelvrij brief, zou dit de reden tot moord kunnen zijn?
+Notitie: Hmm... Een vogelvrij brief...
+Notitie: Iedereen mocht Willem vermoorden, zonder straf te kunnen krijgen.
+Notitie: Zou dit de reden tot moord kunnen zijn?

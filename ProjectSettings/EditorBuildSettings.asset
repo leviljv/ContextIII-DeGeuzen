@@ -5,28 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/0a_MainMenu.unity
     guid: 7b56a32ef13655145bfc7f6c06698499
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/old_0b_IntroScene.unity
     guid: 9c0c7f0342957d94cbfacbeaf38dedb0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/old_0c_Tutorial1.unity
     guid: d3efff12e24f7414592f75757079a18a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/old_0c_Tutorial2.unity
     guid: a0673c2554484664e8fdb10f7c9f67ac
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/old_1_AreaWillem.unity
     guid: 82c42ff8c72f24348806e37bf51656f3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/1b_LetterCornelis.unity
     guid: 71a94593800ce834fb3b28e27d76ba6e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/2_AreaStad.unity
     guid: c6a9e480137b1414eb04bf09ef3c515c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/3_EndScene.unity
     guid: f9a58ed0898a67949b8b295c198df6a0
   m_configObjects: {}

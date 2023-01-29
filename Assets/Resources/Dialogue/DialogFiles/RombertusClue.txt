@@ -4,22 +4,22 @@ Rombertus: Wat een gruwelijke dag...
 
 % start OptionSection
 @ Viel jou iets op eerder vandaag?
-	% jump GetuigeVraag
+% jump GetuigeVraag
 @ Verdenk jij iemand?
-	% jump VerdachtVraag
+% jump VerdachtVraag
 @ Ik weet wie de dader is.
-	% jump if FoundAllClues AntwoordGoed : AntwoordFout
+% jump if FoundAllClues AntwoordGoed : AntwoordFout
 % end OptionSection
 
 % start GetuigeVraag
 Rombertus: Eerder vandaag kwam een man genaamd <b>François Guyon</b> langs om de prins om een paspoort te vragen. 
-Rombertus: Ik kende hem niet en hij leek nerveus. 
+Rombertus: Ik kende hem niet, en hij leek nerveus. 
 Rombertus: Het leek wel alsof hij ergens was waar hij niet hoorde te zijn…
 
 @ Hmm.. interessant…
-	% jump Breakout
+% jump Breakout
 @ Bedankt voor de informatie!
-	% jump Breakout 
+% jump Breakout 
 % end GetuigeVraag
 
 % start VerdachtVraag
@@ -29,9 +29,9 @@ Rombertus: Toen ik vroeg of hij zijn naam wilde spellen, moest hij heel lang nad
 Rombertus: Je zou toch denken dat je je eigen naam wel zou onthouden…
 
 @ Hmm.. interessant…
-	% jump Breakout
+% jump Breakout
 @ Bedankt voor de informatie!
-	% jump Breakout 
+% jump Breakout 
 % end VerdachtVraag
 
 // if NOT all answers in notebook correct + filled in
@@ -42,13 +42,13 @@ Rombertus: Hmm...
 Rombertus: ...
 Rombertus: Weet u zeker dat dit genoeg bewijs is?
 Rombertus: Misschien moet u nog meer op zoek gaan.
-Rombertus: Of met meer mensen gaan praten om clues te verzamelen.
+Rombertus: U moet met meer mensen gaan praten om aanwijzingen te verzamelen.
 Rombertus: Succes!
 
 @ Oke, duidelijk!
-	% jump Breakout
+% jump Breakout
 @ Ga ik doen, tot zo!
-	% jump Breakout
+% jump Breakout
 % end AntwoordFout
 
 // if all answers in notebook correct + filled in
@@ -62,11 +62,12 @@ Rombertus: Natuurlijk... Het is me allemaal opeens heel duidelijk.
 Rombertus: Zijn naam was eigenlijk Balthasar Gerards.
 Rombertus: Balthasar Gerards was de moordenaar!
 Rombertus: Bedankt voor uw hulp!
+Rombertus: Cornelis moet hier over horen... Wauw!
 
 @ Geen probleem.
-	% jump Done
-@ Daarom ben ik detective.
-	% jump Done
+% jump Done
+@ Daarom ben ik detective!
+% jump Done
 % end AntwoordGoed 
 
 % start Done

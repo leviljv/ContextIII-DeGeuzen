@@ -1,0 +1,5 @@
+$ DIALOG_SET_PORTRAIT Horse
+
+Paard: *Hinnik*
+@ Uh... Waarom zit er een paard in de gevangenis?
+Paard: ... Hinnik?

@@ -3,7 +3,6 @@ $ DIALOG_SET_PORTRAIT CornelisGroenveld
 Cornelis Groenveld: De kerk is vannacht vernield!
 Cornelis Groenveld: Alle prachtige beelden zijn verwoest, een echte Beeldenstorm...
 Cornelis Groenveld: Eerst wordt een ketter bevrijd, en nu zijn er nog meer van die verrader <b>protestanten</b>!
-Cornelis Groenveld: Het lijkt erop dat er meer dan een dader is. 
+Cornelis Groenveld: Het lijkt erop dat er meer dan één dader is. 
 Cornelis Groenveld: Een persoon kan nooit alleen zo veel schade hebben aangericht.
 Cornelis Groenveld: Help mij om de daders op te sporen!
-$ up_global_index

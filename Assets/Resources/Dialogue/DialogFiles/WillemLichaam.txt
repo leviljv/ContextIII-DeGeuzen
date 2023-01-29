@@ -1,0 +1,3 @@
+$ DIALOG_SET_PORTRAIT Empty
+
+Notitie: Het dode lichaam van Willem van Oranje, geschoten door het hart.

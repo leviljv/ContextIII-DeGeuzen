@@ -1,18 +1,19 @@
 $ DIALOG_SET_PORTRAIT BalthasarGerards
 
-Francis Guien: Hey! Uhh.. wat moet je?
+Francis Guien: Uhh.. wat moet je?
 @ Wie bent u? Heeft u iets gezien van de moord?
 % jump Door
 % wait
 % start Door
-Francis Guien: Uhh.. ik ben Balthasar Gerards- Nee wacht ik ben helemaal niet Balthasar Gerards
-Francis Guien: Ik ben Francis Guien!
+Francis Guien: Ik heb helemaal niks gezien! Ik was net onderweg naar huis.
+Francis Guien: Ik hoorde dat mensen Balthasar Gerards verdenken, maar... Hij is een goede man. Echt waar.
+Francis Guien: Een fantastische man, zelfs. 
+Francis Guien: Oja. Mijn naam... Is Francis Guien. Ja!
 @ Francis Guien? Bedoelt u François Guyon?
 % jump Antwoord
 % wait
 % start Antwoord
-Francis Guien: Juist, uhh.. Ja dat is mijn naam...
+Francis Guien: Ja, dat is mijn naam...
 Francis Guien: Wat? Waarom sta je hier nog?
 Francis Guien: Ik heb niks gehoord of gezien!
-Francis Guien: Oke, doei!
 $ DIALOG_GIVE_CLUE WillemClueMoordenaarAns

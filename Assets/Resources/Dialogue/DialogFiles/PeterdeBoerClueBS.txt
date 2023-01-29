@@ -4,21 +4,20 @@ $ DIALOG_SET_PORTRAIT PeterDeBoer
 % jump GetuigeVraag
 @ Mag ik jouw handen even zien?
 % jump HandVraag
-@ Laat maar
+@ Sorry, laat maar!
 % jump NeverMind
 
 % start GetuigeVraag
 $ DIALOG_GIVE_CLUE BSPeterdeBoerAns
 $ DIALOG_GIVE_CLUE BSPeterdeBoerFalseAns
-Peter de boer: *hik* ohh hallo!
+Peter de boer: *hik* Ohh, hallo!
 Peter de boer: *hik*
 Peter de boer: Waar ik w- *hik* was?
-Peter de boer: Hahahaha! 
-Peter de boer: Jaa... *hik* Was een goeie avond hahaha...
-Peter de boer: Maarehhh.. Ik weet het niet meer zo goed
+Peter de boer: Ja... *hik* Dat was een goede avond...
+Peter de boer: Ik weet het niet meer z- *hik* zo goed.
 @ Je weet het niet meer?
-@ Een slokje wijn te veel misschien?
-Peter de boer: hahahaha!
+@ Een slokje te veel bier misschien?
+Peter de boer: Ha!
 Peter de boer: Klein beetje alcohol kan geen k- *hik* kwaad toch?
 % jump Breakout 
 % end GetuigeVraag
@@ -27,14 +26,13 @@ Peter de boer: Klein beetje alcohol kan geen k- *hik* kwaad toch?
 $ DIALOG_GIVE_CLUE BSPeterdeBoerAns
 $ DIALOG_GIVE_CLUE BSPeterdeBoerFalseAns
 Peter de boer: Mijn handen? *hik*
-Peter de boer: J-ja hoor *hik*
+Peter de boer: J-ja, kijk maar.
 @ Au, dat ziet er pijnlijk uit. Heb je je verwond?
 Peter de boer: Huh?
-Peter de boer: Oh
-Peter de boer: Hahahaha
-Peter de boer: Nee johh voel je niet als je beetje hebt gedronken hah- *hik* ahaha
+Peter de boer: Oh.
+Peter de boer: Nee joh, voel je niet als je beetje hebt gedronken!
 Peter de boer: Was het glas? Of steen? Of misschien m- *hik* marmer?
-Peter de boer: Hahahaha
+Peter de boer: Ha!
 Peter de boer: Ik weet het niet meer!
 @ Bedankt voor je medewerking.
 % jump Breakout
@@ -43,7 +41,7 @@ Peter de boer: Ik weet het niet meer!
 % end HandVraag
 
 % start NeverMind
-Peter de boer: D-Doei!! Hahaha...
+Peter de boer: J-joe! Ik ben een beetje misselijk...
 % jump Breakout
 % end NeverMind
 

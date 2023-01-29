@@ -1,0 +1,10 @@
+$ DIALOG_SET_PORTRAIT Empty
+
+Brief: Geachte detective,
+Brief: Na gehoord te hebben van uw geweldige oplossingsvaardigheden na de tragische dood van Willem van Oranje, vraag ik u om hulp. 
+Brief: Er is een zwaar misdrijf gepleegd.
+Brief: Ik heb uw hulp nodig om de dader te vinden, voordat Koning Filips II ons allemaal zal straffen.
+Brief: Kom zo snel mogelijk.
+Brief: Met vriendelijke groet,
+Brief: Cornelis Groenveld
+$ NEXT_SCENE

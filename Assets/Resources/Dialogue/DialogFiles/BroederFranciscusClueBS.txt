@@ -1,9 +1,9 @@
 $ DIALOG_SET_PORTRAIT BroederFranciscus
 
 Broeder Franciscus: ...
-@ Is jou iets opgevallen?
+@ Is u iets opgevallen?
 % jump GetuigeVraag
-@ Mag ik jouw handen even zien?
+@ Mag ik uw handen even zien?
 % jump HandVraag
 @ Laat maar
 % jump NeverMind
@@ -13,7 +13,7 @@ $ DIALOG_GIVE_CLUE BSBroederFranciscusAns
 $ DIALOG_GIVE_CLUE BSBroederFranciscusFalseAns
 Broeder Franciscus: Wat mij is opgevallen?
 Broeder Franciscus: De martelingen gaan te ver. 
-Broeder Franciscus: We zijn allemaal mensen, maar we gaan steeds verder weg van het woord van God
+Broeder Franciscus: We zijn allemaal mensen, maar we gaan steeds verder weg van het woord van God.
 Broeder Franciscus: Kunnen we ons weer als goede mensen gaan gedragen? Elkaar respecteren en voor elkaar zorgen?
 % jump Breakout 
 % end GetuigeVraag
@@ -26,12 +26,13 @@ Broeder Franciscus: Tuurlijk, ze zijn wel een beetje vies.
 @ Is dat houtskool?
 Broeder Franciscus: Oh ja, geen idee hoe dat erop is gekomen.
 Broeder Franciscus: Misschien tijdens het schrijven gebeurd, mijn excuus. 
-Broeder Franciscus: Ik zal ze gelijk even wassen.
+Broeder Franciscus: Ik schrijf best veel, en dat moet ook wel als de rest niet eens kan lezen en schrijven...
+Broeder Franciscus: Ik zal mijn handen gelijk even wassen.
 % jump Breakout
 % end HandVraag
 
 % start NeverMind
-Broeder Franciscus: Oke, fijne dag!
+Broeder Franciscus: ...Begrepen. Ik ben wel onschuldig... Dat u het weet.
 % jump Breakout
 % end NeverMind
 

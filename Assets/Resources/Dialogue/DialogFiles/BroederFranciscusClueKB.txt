@@ -5,19 +5,20 @@ Broeder Franciscus: Goedemorgen, prijs de Heer.
 % jump GetuigeVraag
 @ Heb jij de ketter helpen ontsnappen?
 % jump BeschuldigVraag
-@ Laat maar
+@ Sorry, laat maar!
 % jump NeverMind
 
 % start GetuigeVraag
 $ DIALOG_GIVE_CLUE KBBroederFranciscusAns
 $ DIALOG_GIVE_CLUE KBBroederFranciscusFalseAns
 Broeder Franciscus: Och die arme man, hopelijk heeft hij nog een beetje geluk zo.
-Broeder Franciscus: Zelf was ik bezig de Mis voor te bereiden, ik was de hele tijd in de kerk.
+Broeder Franciscus: Zelf was ik bezig de Mis voor te bereiden en was ik de hele tijd in de kerk.
 Broeder Franciscus: Ik heb dus niks gezien.
-Broeder Franciscus: Maar ik geloof dat zelfs protestanten het niet verdienen om zo wreed behandeld te worden.
+Broeder Franciscus: Ik geloof dat zelfs protestanten het niet verdienen om zo wreed behandeld te worden.
 Broeder Franciscus: We zijn allemaal tenslotte mensen.
 Broeder Franciscus: Iedereen met een goed hart zou de arme man helpen, hij deed geen vlieg kwaad.
 Broeder Franciscus: Hij had enkel een Lutherse bijbel in huis.
+Broeder Franciscus: Houd dit wel even tussen ons tweetjes... Oke?
 @ Oke, bedankt.
 % jump Breakout 
 % end GetuigeVraag
@@ -28,16 +29,17 @@ $ DIALOG_GIVE_CLUE KBBroederFranciscusFalseAns
 Broeder Franciscus: Ketter...
 Broeder Franciscus: Wat een naar woord is het ook.
 Broeder Franciscus: Nee, ik heb de arme man niet geholpen.
-Broeder Franciscus: Maar ik geloof dat zelfs protestanten het niet verdienen om zo wreed behandeld te worden.
+Broeder Franciscus: Ik geloof dat zelfs protestanten het niet verdienen om zo wreed behandeld te worden.
 Broeder Franciscus: We zijn allemaal tenslotte mensen.
 Broeder Franciscus: Iedereen met een goed hart zou de arme man helpen, hij deed geen vlieg kwaad.
 Broeder Franciscus: Hij had enkel een Lutherse bijbel in huis.
+Broeder Franciscus: Houd dit wel even tussen ons tweetjes... Oke?
 @ Oke, bedankt.
 % jump Breakout 
 % end BeschuldigVraag
 
 % start NeverMind
-Broeder Franciscus: Oke, fijne dag!
+Broeder Franciscus: ...Begrepen. Ik ben wel onschuldig... Dat u het weet.
 % jump Breakout
 % end NeverMind
 
