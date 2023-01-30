@@ -1895,6 +1895,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fbc9f85bec2cee4784fcc065f55d129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  empty: {fileID: 0}
+  marker: {fileID: 0}
   DialogPerIndex:
   - Test 1
   PositionsPerIndex: []
@@ -1944,6 +1946,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fbc9f85bec2cee4784fcc065f55d129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  empty: {fileID: 0}
+  marker: {fileID: 0}
   DialogPerIndex:
   - Test 1
   PositionsPerIndex: []
@@ -2157,6 +2161,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3574480057169110667, guid: e920d8f4e7d65a24996e2f5361409493,
+        type: 3}
+      propertyPath: soundslist.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3574480057169110667, guid: e920d8f4e7d65a24996e2f5361409493,
+        type: 3}
+      propertyPath: soundslist.Array.data[6].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e31a40f5513ddde42843df071d14657a, type: 3}
+    - target: {fileID: 3574480057169110667, guid: e920d8f4e7d65a24996e2f5361409493,
+        type: 3}
+      propertyPath: soundslist.Array.data[6].name
+      value: doekie
+      objectReference: {fileID: 0}
+    - target: {fileID: 3574480057169110667, guid: e920d8f4e7d65a24996e2f5361409493,
+        type: 3}
+      propertyPath: soundslist.Array.data[6].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3574480057169110667, guid: e920d8f4e7d65a24996e2f5361409493,
+        type: 3}
+      propertyPath: soundslist.Array.data[6].volume
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e920d8f4e7d65a24996e2f5361409493, type: 3}

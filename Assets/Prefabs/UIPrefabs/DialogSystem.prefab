@@ -227,6 +227,7 @@ MonoBehaviour:
   AutoNextChar: 38
   TimeBetweenChars: 0.01
   currentTimeBetweenChars: 0
+  CurrentInteracting: {fileID: 0}
 --- !u!114 &458012395959163690
 MonoBehaviour:
   m_ObjectHideFlags: 0

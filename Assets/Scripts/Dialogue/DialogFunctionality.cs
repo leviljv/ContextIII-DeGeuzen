@@ -32,7 +32,9 @@ public class DialogFunctionality
         EventManager<float>.Subscribe(EventType.DIALOG_SET_TYPE_TIME, SetTimeBetweenChars);
         EventManager<string>.Subscribe(EventType.DIALOG_SET_PORTRAIT, SetSprite);
         EventManager<string>.Subscribe(EventType.DIALOG_GIVE_CLUE, GiveClue);
+        EventManager<string>.Subscribe(EventType.DIALOG_PLAY_SOUND, PlaySound);
         EventManager.Subscribe(EventType.NEXT_SCENE, NextScene);
+        EventManager.Subscribe(EventType.DIALOG_DO_ANIMATION, ChangeAnimationOnCharacter);
     }
 
     public void SetTimeBetweenChars(float speed) {
@@ -56,6 +58,14 @@ public class DialogFunctionality
         else {
             Debug.LogError("Clue: " + ClueName + " Not Present In Dictionairy");
         }
+    }
+
+    public void ChangeAnimationOnCharacter() {
+        var tmp = Owner.CurrentInteracting.GetComponent<Animator>();
+    }
+
+    public void PlaySound(string SoundName) {
+        Owner.Amanager.PlayAudio(SoundName);
     }
 
     public void NextScene() {
