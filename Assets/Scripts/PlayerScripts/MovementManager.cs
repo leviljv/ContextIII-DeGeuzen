@@ -75,6 +75,8 @@ public class MovementManager : MonoBehaviour
         evaluator = new();
         evaluator.owner = this;
 
+        LastGroundedPos = transform.position;
+
         var groundedState = new GroundedState(movementStateMachine);
         movementStateMachine.AddState(typeof(GroundedState), groundedState);
         AddTransitionWithKey(groundedState, KeyCode.Space, typeof(AirbornState));
