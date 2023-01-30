@@ -33,7 +33,7 @@ Bakker Bart: Kijk eerst maar naar anderen, <b>Maria</b> had bijvoorbeeld volgens
 % end BeschuldigVraag
 
 % start NeverMind
-Bakker Bart: Oke... Maar ik ben wel echt onschuldig.
+Bakker Bart: Oke... 
 % jump Breakout
 % end NeverMind
 

@@ -34,7 +34,7 @@ Bakker Bart: Klopt. Mijn vrouw heeft ons ook nog thuis zien komen.
 % end Beschuldigvraag
 
 % start NeverMind
-Bakker Bart: Oke... Maar ik ben wel echt onschuldig.
+Bakker Bart: Oke...
 % jump Breakout
 % end NeverMind
 

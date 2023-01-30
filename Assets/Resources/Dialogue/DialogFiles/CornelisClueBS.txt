@@ -54,8 +54,8 @@ Cornelis Groenveld: Oke, geen probleem.
 % end NeverMind
 
 % start Klaar
-
+$ UP_GLOBAL_INDEX
 % end Klaar
-
+% jump Breakout
 
 % start Breakout

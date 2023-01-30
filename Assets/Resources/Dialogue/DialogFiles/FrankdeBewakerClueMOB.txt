@@ -23,8 +23,7 @@ $ DIALOG_GIVE_CLUE MOBBewakerFrankAns
 $ DIALOG_GIVE_CLUE MOBBewakerFrankFalseAns
 Frank de Bewaker: Ik?
 Frank de Bewaker: Peter was mijn <b> vriend </b>.
-Frank de Bewaker: Ik zou hem nooit zo erg kwaad doen...
-Frank de Bewaker: Ik ben er kapot van.
+Frank de Bewaker: Ik zou hem nooit kwaad doen.
 @ Bedankt voor je medewerking.
 % jump Breakout
 % end Beschuldigvraag
