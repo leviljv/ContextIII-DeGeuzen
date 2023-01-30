@@ -33,8 +33,8 @@ public class DialogFunctionality
         EventManager<string>.Subscribe(EventType.DIALOG_SET_PORTRAIT, SetSprite);
         EventManager<string>.Subscribe(EventType.DIALOG_GIVE_CLUE, GiveClue);
         EventManager<string>.Subscribe(EventType.DIALOG_PLAY_SOUND, PlaySound);
+        EventManager<string>.Subscribe(EventType.DIALOG_DO_ANIMATION, ChangeAnimationOnCharacter);
         EventManager.Subscribe(EventType.NEXT_SCENE, NextScene);
-        EventManager.Subscribe(EventType.DIALOG_DO_ANIMATION, ChangeAnimationOnCharacter);
     }
 
     public void SetTimeBetweenChars(float speed) {
@@ -60,8 +60,10 @@ public class DialogFunctionality
         }
     }
 
-    public void ChangeAnimationOnCharacter() {
+    public void ChangeAnimationOnCharacter(string triggerName) {
         var tmp = Owner.CurrentInteracting.GetComponent<Animator>();
+
+        tmp.SetTrigger(triggerName);
     }
 
     public void PlaySound(string SoundName) {
