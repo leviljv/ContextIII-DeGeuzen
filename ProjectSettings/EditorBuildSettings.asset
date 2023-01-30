@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/0c_Tutorial2.unity
     guid: a0673c2554484664e8fdb10f7c9f67ac
   - enabled: 1
-    path: Assets/Scenes/1_AreaWillem.unity
+    path: Assets/Scenes/Old_1_AreaWillem.unity
     guid: 82c42ff8c72f24348806e37bf51656f3
   - enabled: 1
     path: Assets/Scenes/1b_LetterCornelis.unity
