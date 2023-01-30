@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/2b_BeeldenstormStad.unity
     guid: 4bc7cde46a053d246a4f07425c06d7d5
   - enabled: 1
-    path: Assets/Scenes/2c_MoordBoerStad.unity
+    path: Assets/Scenes/old2c_MoordBoerStad.unity
     guid: 2b8e5a7eb8c9ac04e97077eb3b0060b6
   - enabled: 1
     path: Assets/Scenes/3_EndScene.unity

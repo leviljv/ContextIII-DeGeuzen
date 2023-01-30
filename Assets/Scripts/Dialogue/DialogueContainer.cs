@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class DialogueContainer : MonoBehaviour
 {
-    public Sprite empty;
-    public Sprite marker;
-
     public List<string> DialogPerIndex = new();
     public List<Transform> PositionsPerIndex = new();
     public List<bool> ShowMarkerPerIndex = new();
@@ -52,17 +49,11 @@ public class DialogueContainer : MonoBehaviour
             else
                 markerIndex = index;
 
-            GetComponent<QuestMarker>().image.sprite = marker;
             Marker.SetActive(ShowMarkerPerIndex[markerIndex]);
         }
     }
 
     public string GetDialog() {
-        if(GetComponent<QuestMarker>() != null) {
-            GetComponent<QuestMarker>().image.sprite = empty;
-            Marker.SetActive(false);
-        }
-
         return DialogPerIndex[dialogIndex];
     }
 }
