@@ -19,7 +19,7 @@ public class DialogFunctionality
         }
 
         foreach (var item in portraits) {
-            Portraits.Add(item.name, item);
+            Portraits.Add(item.name.ToLower(), item);
         }
         foreach (var item in clues) {
             Clues.Add(item.name.ToLower(), item);
@@ -33,8 +33,8 @@ public class DialogFunctionality
         EventManager<string>.Subscribe(EventType.DIALOG_SET_PORTRAIT, SetSprite);
         EventManager<string>.Subscribe(EventType.DIALOG_GIVE_CLUE, GiveClue);
         EventManager<string>.Subscribe(EventType.DIALOG_PLAY_SOUND, PlaySound);
+        EventManager<string>.Subscribe(EventType.DIALOG_DO_ANIMATION, ChangeAnimationOnCharacter);
         EventManager.Subscribe(EventType.NEXT_SCENE, NextScene);
-        EventManager.Subscribe(EventType.DIALOG_DO_ANIMATION, ChangeAnimationOnCharacter);
     }
 
     public void SetTimeBetweenChars(float speed) {
@@ -60,8 +60,10 @@ public class DialogFunctionality
         }
     }
 
-    public void ChangeAnimationOnCharacter() {
+    public void ChangeAnimationOnCharacter(string TriggerName) {
         var tmp = Owner.CurrentInteracting.GetComponent<Animator>();
+
+        tmp.SetTrigger(TriggerName);
     }
 
     public void PlaySound(string SoundName) {
