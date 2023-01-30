@@ -1,0 +1,3 @@
+$ DIALOG_SET_PORTRAIT FrankDeBewaker
+
+Frank de Bewaker: Goed werk, detective. Maria is nu in haar cel.

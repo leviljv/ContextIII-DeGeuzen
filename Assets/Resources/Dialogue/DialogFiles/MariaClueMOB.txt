@@ -1,0 +1,3 @@
+$ DIALOG_SET_PORTRAIT Maria
+
+Maria: Laat me met rust.

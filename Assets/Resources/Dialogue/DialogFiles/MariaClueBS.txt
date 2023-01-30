@@ -1,0 +1,3 @@
+$ DIALOG_SET_PORTRAIT Maria
+
+Maria: Ik wil Hendrick naast me hebben...

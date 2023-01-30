@@ -1,0 +1,3 @@
+$ DIALOG_SET_PORTRAIT BakkerBart
+
+Bakker Bart: Ik ben druk bezig detective, sorry!

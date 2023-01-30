@@ -1,0 +1,3 @@
+$ DIALOG_SET_PORTRAIT Julia
+
+Julia: Huh, hoe ben je hier gekomen? De brug staat open!

@@ -1,0 +1,3 @@
+$ DIALOG_SET_PORTRAIT BroederFranciscus
+
+Broeder Franciscus: Laat me bidden tot de Heer. 

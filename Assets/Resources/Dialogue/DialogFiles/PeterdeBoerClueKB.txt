@@ -1,0 +1,3 @@
+$ DIALOG_SET_PORTRAIT PeterDeBoer
+
+Peter de Boer: *hik* morgen!
