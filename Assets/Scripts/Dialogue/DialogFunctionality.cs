@@ -22,7 +22,7 @@ public class DialogFunctionality
             Portraits.Add(item.name, item);
         }
         foreach (var item in clues) {
-            Clues.Add(item.name, item);
+            Clues.Add(item.name.ToLower(), item);
         }
 
         SetEvents();
