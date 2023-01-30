@@ -453,8 +453,8 @@ public class DialogueSystem : MonoBehaviour {
     private void TyperwriterNoise() {
         var tmp = UnityEngine.Random.Range(1, 20);
 
-        //if(tmp < 7)
-            //Amanager.PlayAudio(tmp.ToString());
+        if(tmp < 7)
+            Amanager.PlayAudio(tmp.ToString());
     }
 
     private T ParseEnum<T>(string value) {
