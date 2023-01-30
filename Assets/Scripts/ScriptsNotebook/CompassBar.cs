@@ -17,37 +17,31 @@ public class CompassBar : MonoBehaviour
     private List<QuestMarker> questMarkers = new List<QuestMarker>();
     public List<QuestMarker> questMarkerLocations = new List<QuestMarker>();
     
-    void Start()
-    {
+    void Start() {
         compassUnit = compassBarTransform.rect.width / 360f;
 
-        foreach (QuestMarker marker in questMarkerLocations)
-        {
+        foreach (QuestMarker marker in questMarkerLocations) {
             AddQuestMarker(marker);
         }
     }
 
-    void Update()
-    {
+    void Update() {
         SetMarkerPosition(northTransform, Vector3.forward * 1000);
         SetMarkerPosition(southTransform, Vector3.back * 1000);
 
-        foreach (QuestMarker marker in questMarkers)
-        {
+        foreach (QuestMarker marker in questMarkers) {
             marker.image.rectTransform.anchoredPosition = GetPosOnCompass(marker);
         }
     }
 
-    private void SetMarkerPosition(RectTransform markerTransform, Vector3 worldPosition)
-    {
+    private void SetMarkerPosition(RectTransform markerTransform, Vector3 worldPosition) {
         Vector3 directionToTarget = worldPosition - playerCamera.position;
-        float angle = Vector2.SignedAngle(new Vector2(directionToTarget.x, directionToTarget.z), new Vector2(playerCamera.transform.forward.x, playerCamera.transform.forward.z));
+        float angle = Vector2.SignedAngle(new(directionToTarget.x, directionToTarget.z), new(playerCamera.transform.forward.x, playerCamera.transform.forward.z));
         float compassPositionX = Mathf.Clamp(2 * angle / Camera.main.fieldOfView, -1, 1);
-        markerTransform.anchoredPosition = new Vector2(compassBarTransform.rect.width / 2 * compassPositionX, 0);
+        markerTransform.anchoredPosition = new(compassBarTransform.rect.width / 2 * compassPositionX, 0);
     }
 
-    public void AddQuestMarker(QuestMarker marker)
-    {
+    public void AddQuestMarker(QuestMarker marker) {
         GameObject newMarker = Instantiate(iconPrefab, compassBarTransform);
         marker.image = newMarker.GetComponent<Image>();
         marker.image.sprite = marker.icon;
@@ -55,10 +49,9 @@ public class CompassBar : MonoBehaviour
         questMarkers.Add(marker);
     }
 
-    Vector2 GetPosOnCompass(QuestMarker marker)
-    {
-        Vector2 playerPos = new Vector2(player.transform.position.x, player.transform.position.z);
-        Vector2 playerfwd = new Vector2(player.transform.forward.x, player.transform.forward.z);
+    private Vector2 GetPosOnCompass(QuestMarker marker) {
+        Vector2 playerPos = new(player.transform.position.x, player.transform.position.z);
+        Vector2 playerfwd = new(player.transform.forward.x, player.transform.forward.z);
 
         float angle = Vector2.SignedAngle(marker.position - playerPos, playerfwd);
 

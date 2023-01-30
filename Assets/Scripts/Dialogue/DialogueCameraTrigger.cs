@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogueCameraTrigger : MonoBehaviour
 {
-    private string CurrentHover;
+    private DialogueContainer CurrentHover;
     private Transform ObjectInteractingWith;
 
     private bool CanInvoke = true;
@@ -20,6 +20,7 @@ public class DialogueCameraTrigger : MonoBehaviour
         if(ObjectInteractingWith != null) {
             if (Vector3.Distance(transform.position, ObjectInteractingWith.position) > 10f) {
                 EventManager.Invoke(EventType.RESET_DIALOG);
+                ObjectInteractingWith = null;
                 CanInvoke = true;
             }
         }
@@ -32,21 +33,20 @@ public class DialogueCameraTrigger : MonoBehaviour
         if (CurrentHover == null)
             return;
 
-        if (Input.GetKeyDown(KeyCode.E)) {
-            CanInvoke = false;
-            EventManager<string>.Invoke(EventType.ON_DIALOG_STARTED, CurrentHover);
-            EventManager.Invoke(EventType.ON_DIALOG_STARTED);
-        }
+        if (Input.GetKeyDown(KeyCode.E)) 
+            if (CurrentHover.GetDialog() != null || CurrentHover.GetDialog() != "") {
+                CanInvoke = false;
+                EventManager<string>.Invoke(EventType.ON_DIALOG_STARTED, CurrentHover.GetDialog());
+                EventManager.Invoke(EventType.ON_DIALOG_STARTED);
+            }
     }
 
-    public string Hovering() {
+    public DialogueContainer Hovering() {
         if (Physics.Raycast(transform.position, transform.forward, out var hit, 10f)) {
             var hitContainer = hit.transform.GetComponent<DialogueContainer>();
             if (hitContainer) {
-                if(hitContainer.GetDialog() != null || hitContainer.GetDialog() != "") {
-                    ObjectInteractingWith = hit.transform;
-                    return hitContainer.GetDialog();
-                }
+                ObjectInteractingWith = hit.transform;
+                return hitContainer;
             }
         }
         return null;

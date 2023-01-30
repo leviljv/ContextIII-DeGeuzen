@@ -232,6 +232,8 @@ public class MovementManager : MonoBehaviour
     public void ResetTimer(float time) => StartCoroutine(Timer(time));
 
     public void SetInteracting(bool setting) {
+        Debug.Log("Set to " + setting.ToString());
+
         Interacting = setting;
     }
 
