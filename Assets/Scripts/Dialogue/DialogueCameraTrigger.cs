@@ -37,6 +37,7 @@ public class DialogueCameraTrigger : MonoBehaviour
             if (CurrentHover.GetDialog() != null || CurrentHover.GetDialog() != "") {
                 CanInvoke = false;
                 EventManager<string>.Invoke(EventType.ON_DIALOG_STARTED, CurrentHover.GetDialog());
+                EventManager<GameObject>.Invoke(EventType.ON_DIALOG_STARTED, ObjectInteractingWith.gameObject);
                 EventManager.Invoke(EventType.ON_DIALOG_STARTED);
             }
     }

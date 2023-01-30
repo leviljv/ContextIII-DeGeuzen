@@ -58,8 +58,11 @@ public class DialogueContainer : MonoBehaviour
     }
 
     public string GetDialog() {
-        GetComponent<QuestMarker>().image.sprite = empty;
-        Marker.SetActive(false);
+        if(GetComponent<QuestMarker>() != null) {
+            GetComponent<QuestMarker>().image.sprite = empty;
+            Marker.SetActive(false);
+        }
+
         return DialogPerIndex[dialogIndex];
     }
 }

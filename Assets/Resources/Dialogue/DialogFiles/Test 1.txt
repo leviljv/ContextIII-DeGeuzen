@@ -2,6 +2,9 @@ $ DIALOG_SET_PORTRAIT Katharina
 
 	Unknown Person: You are <i>Gay</i>
 	Unknown Person: I am <i>Gay</i>
+
+$ DIALOG_PLAY_SOUND Doekie
+
 	Unknown Person: We are <i>Gay</i>
 	Unknown Person: Yes <i>Gay</i>
 

@@ -34,6 +34,8 @@ public class DialogueSystem : MonoBehaviour {
     private int index;
     private bool IsWriting;
 
+    [HideInInspector] public GameObject CurrentInteracting;
+
     void Awake() {
         funcs.Owner = this;
         funcs.Init();
@@ -51,10 +53,12 @@ public class DialogueSystem : MonoBehaviour {
 
     private void OnEnable() {
         EventManager<string>.Subscribe(EventType.ON_DIALOG_STARTED, SetDialog);
+        EventManager<GameObject>.Subscribe(EventType.ON_DIALOG_STARTED, SetObject);
         EventManager.Subscribe(EventType.RESET_DIALOG, ResetDialog);
     }
     private void OnDisable() {
         EventManager<string>.Unsubscribe(EventType.ON_DIALOG_STARTED, SetDialog);
+        EventManager<GameObject>.Unsubscribe(EventType.ON_DIALOG_STARTED, SetObject);
         EventManager.Unsubscribe(EventType.RESET_DIALOG, ResetDialog);
     }
 
@@ -76,22 +80,31 @@ public class DialogueSystem : MonoBehaviour {
             currentDialog = Files[DialogName];
             EventManager<bool>.Invoke(EventType.SET_INTERACTION_STATE, true);
 
-            try {
-                NextLine();
-            }
-            catch {
-                Debug.Log("AAAAHHH, Portrait went WRONGY SADDDDD :(:(:(");
-
-                Invoke(nameof(NextLine), .01f);
-            }
+            RetryOnError();
         }
         else
             Debug.LogError("No File named " + DialogName + " found!");
     }
 
+    private void RetryOnError() {
+        try {
+            NextLine();
+        }
+        catch {
+            Debug.Log("AAAAHHH, Portrait went WRONGY SADDDDD :(:(:(");
+
+            Invoke(nameof(RetryOnError), .001f);
+        }
+    }
+
+    private void SetObject(GameObject Object) {
+        CurrentInteracting = Object;
+    }
+
     public void ResetDialog() {
         StopAllCoroutines();
         currentDialog = null;
+        CurrentInteracting = null;
         mainText.text = "";
         nameText.text = "";
         index = 0;
@@ -179,8 +192,8 @@ public class DialogueSystem : MonoBehaviour {
             EventManager<float>.Invoke(ParseEnum<EventType>(command[1].ToUpper()), floatParse);
         else if (bool.TryParse(command[2].ToLower(), out var boolParse))
             EventManager<bool>.Invoke(ParseEnum<EventType>(command[1].ToUpper()), boolParse);
-        else 
-            EventManager<string>.Invoke(ParseEnum<EventType>(command[1].ToUpper()), command[2].ToLower().Trim());
+        else
+            EventManager<string>.Invoke(ParseEnum<EventType>(command[1].ToUpper()), command[2].Trim());
     }
 
     private void DisplayOptions(string[] file) {
@@ -440,8 +453,8 @@ public class DialogueSystem : MonoBehaviour {
     private void TyperwriterNoise() {
         var tmp = UnityEngine.Random.Range(1, 20);
 
-        if(tmp < 5)
-            Amanager.PlayAudio(tmp.ToString());
+        //if(tmp < 7)
+            //Amanager.PlayAudio(tmp.ToString());
     }
 
     private T ParseEnum<T>(string value) {
