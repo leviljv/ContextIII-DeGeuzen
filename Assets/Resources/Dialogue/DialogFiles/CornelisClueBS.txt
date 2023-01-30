@@ -54,7 +54,7 @@ Cornelis Groenveld: Oke, geen probleem.
 % end NeverMind
 
 % start Klaar
-$ NEXT_SCENE
+
 % end Klaar
 
 

@@ -1,0 +1,3 @@
+$ DIALOG_SET_PORTRAIT Empty
+
+Notitie: De handboeien van de ketter. Iemand heeft de ketter geholpen om ze af te krijgen.
