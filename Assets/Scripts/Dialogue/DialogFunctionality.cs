@@ -19,10 +19,10 @@ public class DialogFunctionality
         }
 
         foreach (var item in portraits) {
-            Portraits.Add(item.name.ToLower(), item);
+            Portraits.Add(item.name, item);
         }
         foreach (var item in clues) {
-            Clues.Add(item.name.ToLower(), item);
+            Clues.Add(item.name, item);
         }
 
         SetEvents();
