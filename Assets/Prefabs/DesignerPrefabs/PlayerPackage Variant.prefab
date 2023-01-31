@@ -160,7 +160,7 @@ PrefabInstance:
     - target: {fileID: 3882733533694752246, guid: 563da5504649eff418cb27838a346ad7,
         type: 3}
       propertyPath: m_Name
-      value: PlayerPackage
+      value: PlayerPackage Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3882733533958704757, guid: 563da5504649eff418cb27838a346ad7,
         type: 3}
@@ -236,6 +236,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 641.4738
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840866944427835216, guid: 563da5504649eff418cb27838a346ad7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7950224797900262131, guid: 563da5504649eff418cb27838a346ad7,
         type: 3}
