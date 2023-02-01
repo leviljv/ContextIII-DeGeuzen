@@ -82,5 +82,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPackage Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3249153490306824613, guid: 37cbf471637515e49aeb733970004fbb,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37cbf471637515e49aeb733970004fbb, type: 3}
