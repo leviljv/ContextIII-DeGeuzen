@@ -1,0 +1,4 @@
+$ DIALOG_SET_PORTRAIT Empty
+
+Kogelgaten: Er zijn hier drie kogels geschoten met een radslotpistool. 
+Kogelgaten: 2 raakten het slachtoffer.

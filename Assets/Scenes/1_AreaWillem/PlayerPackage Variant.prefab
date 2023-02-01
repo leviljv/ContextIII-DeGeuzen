@@ -7,6 +7,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 171627093206796168, guid: 37cbf471637515e49aeb733970004fbb,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 171627093206796168, guid: 37cbf471637515e49aeb733970004fbb,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 171627093206796168, guid: 37cbf471637515e49aeb733970004fbb,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3249153489844083956, guid: 37cbf471637515e49aeb733970004fbb,
         type: 3}
       propertyPath: m_RootOrder
@@ -65,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 3249153489844083959, guid: 37cbf471637515e49aeb733970004fbb,
         type: 3}
       propertyPath: m_Name
-      value: PlayerPackage
+      value: PlayerPackage Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37cbf471637515e49aeb733970004fbb, type: 3}

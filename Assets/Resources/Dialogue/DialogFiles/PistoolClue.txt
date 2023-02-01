@@ -1,4 +1,6 @@
 $ DIALOG_SET_PORTRAIT Empty
 
 $ DIALOG_GIVE_CLUE WillemClueMoordwapenAns
-Notitie: Hmmm... een radspistool. Wat doet die hier?
+Radslotpistool: Hm... Een radslotpistool. 
+Radslotpistool: Er passen 3 kogels in, die tegelijk gevuurd worden.
+Radslotpistool: Wat doet die hier?

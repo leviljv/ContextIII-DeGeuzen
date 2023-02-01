@@ -6,9 +6,8 @@ Francis Guien: Uhh.. wat moet je?
 % wait
 % start Door
 Francis Guien: Ik heb helemaal niks gezien! Ik was net onderweg naar huis.
-Francis Guien: Ik hoorde dat mensen Balthasar Gerards verdenken, maar... Hij is een goede man. Echt waar.
-Francis Guien: Een fantastische man, zelfs. 
-Francis Guien: Oja. Mijn naam... Is Francis Guien. Ja!
+Francis Guien: Ik hoorde dat mensen Balthasar Gerards verdenken, maar... Hij is een goede man.
+Francis Guien: Oja. Mijn naam... Is Francis Guien.
 @ Francis Guien? Bedoelt u François Guyon?
 % jump Antwoord
 % wait

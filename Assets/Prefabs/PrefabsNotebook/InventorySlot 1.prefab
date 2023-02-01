@@ -95,10 +95,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.85
-  m_fontSizeBase: 36
+  m_fontSize: 22.249691
+  m_fontSizeBase: 22.249691
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
@@ -510,8 +510,11 @@ MonoBehaviour:
   parentAfterDrag: {fileID: 0}
   backupParent: {fileID: 0}
   CanvasTransform: {fileID: 0}
-  destinationTag: DropArea
   posSet: 0
+  destinationTag: DropArea
+  handHold: {fileID: 0}
+  handOpen: {fileID: 0}
+  handWijs: {fileID: 0}
 --- !u!114 &3214195914570227812
 MonoBehaviour:
   m_ObjectHideFlags: 0

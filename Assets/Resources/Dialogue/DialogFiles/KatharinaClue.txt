@@ -4,24 +4,24 @@ Katharina: ...
 
 @ Wat was jij aan het doen vlak voor de moord?
 % jump GetuigeVraag
-@ Waar was jij vlak voor de moord?
+@ Waar was jij voor de moord?
 % jump PlaatsVraag
 % wait
 
 % start GetuigeVraag
-Katharina: Rombertus, Willem en ik waren gewoon rustig een gezellige <b>lunch</b> aan het houden.
+Katharina: Rombertus, Willem en ik waren gewoon rustig een gezellige <color="red"><b>lunch</b></color> aan het houden.
 $ DIALOG_GIVE_CLUE WillemClueVoorafAns
 Katharina: Daarna wilden we naar boven gaan. Ik liep vooraan, Willem liep achter mij.
-Katharina: Daarom heb ik niets gezien, het gebeurde allemaal zo snel achter mijn rug…
+Katharina: Daarom heb ik niets gezien. Het gebeurde allemaal zo snel, en ook nog achter mijn rug...
 @ Bedankt voor de informatie. Sterkte.
 % jump Breakout
 % end GetuigeVraag
 
 % start PlaatsVraag
-Katharina: Na onze <b>lunch</b> liepen wij alvast rustig naar boven. 
+Katharina: Na onze <color="red"><b>lunch</b></color> liepen wij alvast rustig naar boven. 
 $ DIALOG_GIVE_CLUE WillemClueVoorafAns
 Katharina: Willem liep als een echte heer achteraan, en liet mij en Rombertus voor. 
-Katharina: Daarom heb ik niets gezien, het gebeurde allemaal zo snel achter mijn rug…
+Katharina: Daarom heb ik niets gezien. Het gebeurde allemaal zo snel achter mijn rug…
 @ Bedankt voor de informatie. Sterkte.
 % jump Breakout
 % end PlaatsVraag

@@ -1,0 +1,4 @@
+$ DIALOG_SET_PORTRAIT Empty
+
+Lichaam: Het lichaam van Willem van Oranje.
+Lichaam: Hij is door het hart geschoten, en is zo overleden.
