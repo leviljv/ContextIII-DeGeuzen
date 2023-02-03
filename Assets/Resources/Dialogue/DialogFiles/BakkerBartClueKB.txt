@@ -15,7 +15,7 @@ $ DIALOG_GIVE_CLUE KBBakkerBartFalseAns
 Bakker Bart: Oh? Ontsnapt?
 Bakker Bart: Ik was voor de zon op, en was mijn deeg al aan het voorbereiden. Het was flink kneden, dus moest ik goed focussen.
 Bakker Bart: Ik heb niemand gezien.
-Bakker Bart: De ketter was een goede vriend van mij, ik weet bijvoorbeeld dat <b>Maria</b> stiekem een oogje op hem had.
+Bakker Bart: De ketter was een goede vriend van mij, ik weet bijvoorbeeld dat <color=#800000ff><b>Maria</b></color> stiekem een oogje op hem had.
 @ Oke, bedankt.
 % jump Breakout
 
@@ -27,13 +27,13 @@ $ DIALOG_GIVE_CLUE KBBakkerBartFalseAns
 Bakker Bart: Ik was voor de dauw al mijn deeg aan het voorbereiden, dus ik had nooit mijn vriend kunnen helpen.
 Bakker Bart: Tuurlijk ben ik blij dat hij vrij is, maar dat betekent niet dat ik er iets mee te maken had.
 Bakker Bart: Ik ben ten slotte een goede katholiek.
-Bakker Bart: Kijk eerst maar naar anderen, <b>Maria</b> had bijvoorbeeld volgens mij stiekem een oogje op hem.
+Bakker Bart: Kijk eerst maar naar anderen, <color=#800000ff><b>Maria</b></color> had bijvoorbeeld volgens mij stiekem een oogje op hem.
 @ Oke, bedankt.
 % jump Breakout
 % end BeschuldigVraag
 
 % start NeverMind
-Bakker Bart: Oke... Maar ik ben wel echt onschuldig.
+Bakker Bart: Oke.
 % jump Breakout
 % end NeverMind
 

@@ -1,0 +1,4 @@
+$ DIALOG_SET_PORTRAIT Empty
+
+Lichaam: Het lichaam van de boer. 
+Lichaam: Hij lijkt een enorme klap gekregen te hebben op zijn hoofd.

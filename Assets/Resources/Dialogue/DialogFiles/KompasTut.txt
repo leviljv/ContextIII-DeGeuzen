@@ -1,7 +1,7 @@
 $ DIALOG_SET_PORTRAIT Empty
 
 Notitie: Bovenin zie je jouw kompas. 
-Notitie: Hier kan je zien waar alle mensen en aanwijzingen te vinden zijn. 
+Notitie: Hier kan je zien waar alle <b><color=#800000ff>mensen en aanwijzingen</color></b> te vinden zijn. 
 Notitie: Als je de weg kwijt raakt, kan je altijd je kompas volgen!
 % jump Breakout
 % start Breakout 

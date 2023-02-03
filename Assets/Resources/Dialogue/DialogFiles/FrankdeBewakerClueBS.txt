@@ -1,0 +1,4 @@
+$ DIALOG_SET_PORTRAIT FrankDeBewaker
+
+Frank de Bewaker: Maria zit in haar cel. 
+Frank de Bewaker: Dank u wel, detective.

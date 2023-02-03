@@ -1,0 +1,4 @@
+$ DIALOG_SET_PORTRAIT Empty
+
+Handboeien: De ketter heeft hulp gekregen met het verwijderen van zijn handboeien. 
+Handboeien: Niet met de sleutel... 

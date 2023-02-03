@@ -9,7 +9,7 @@ Katharina: ...
 % wait
 
 % start GetuigeVraag
-Katharina: Rombertus, Willem en ik waren gewoon rustig een gezellige <color="red"><b>lunch</b></color> aan het houden.
+Katharina: Rombertus, Willem en ik waren gewoon rustig een gezellige <color=#800000ff><b>lunch</b></color> aan het houden.
 $ DIALOG_GIVE_CLUE WillemClueVoorafAns
 Katharina: Daarna wilden we naar boven gaan. Ik liep vooraan, Willem liep achter mij.
 Katharina: Daarom heb ik niets gezien. Het gebeurde allemaal zo snel, en ook nog achter mijn rug...
@@ -18,7 +18,7 @@ Katharina: Daarom heb ik niets gezien. Het gebeurde allemaal zo snel, en ook nog
 % end GetuigeVraag
 
 % start PlaatsVraag
-Katharina: Na onze <color="red"><b>lunch</b></color> liepen wij alvast rustig naar boven. 
+Katharina: Na onze <color=#800000ff><b>lunch</b></color> liepen wij alvast rustig naar boven. 
 $ DIALOG_GIVE_CLUE WillemClueVoorafAns
 Katharina: Willem liep als een echte heer achteraan, en liet mij en Rombertus voor. 
 Katharina: Daarom heb ik niets gezien. Het gebeurde allemaal zo snel achter mijn rug…

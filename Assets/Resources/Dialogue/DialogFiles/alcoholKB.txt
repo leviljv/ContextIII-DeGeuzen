@@ -1,0 +1,4 @@
+$ DIALOG_SET_PORTRAIT Empty
+
+Flessen alcohol: Oei, Frank heeft gedronken tijdens het werken...
+Flessen alcohol: Zo kon hij niet goed opletten. 

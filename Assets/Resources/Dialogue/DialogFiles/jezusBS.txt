@@ -1,0 +1,4 @@
+$ DIALOG_SET_PORTRAIT Empty
+
+Standbeeld: Het is een standbeeld van Jezus.
+Standbeeld: Het hoofd van het beeld is eraf geslagen of getrokken.

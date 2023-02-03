@@ -12,7 +12,7 @@ Rombertus: Wat een gruwelijke dag...
 % end OptionSection
 
 % start GetuigeVraag
-Rombertus: Eerder vandaag kwam een man genaamd <color="red"><b>François Guyon</b></color> langs om de prins om een paspoort te vragen. 
+Rombertus: Eerder vandaag kwam een man genaamd <color=#800000ff><b>François Guyon</b></color> langs om de prins om een paspoort te vragen. 
 Rombertus: Ik kende hem niet, en hij leek nerveus. 
 Rombertus: Het leek wel alsof hij ergens was waar hij niet hoorde te zijn…
 
@@ -23,7 +23,7 @@ Rombertus: Het leek wel alsof hij ergens was waar hij niet hoorde te zijn…
 % end GetuigeVraag
 
 % start VerdachtVraag
-Rombertus: Eerder vandaag kwam een man genaamd <color="red"><b> François Guyon</b></color> langs om de prins om een paspoort te vragen. 
+Rombertus: Eerder vandaag kwam een man genaamd <color=#800000ff><b> François Guyon</b></color> langs om de prins om een paspoort te vragen. 
 Rombertus: Ik kende hem niet, en hij leek nerveus. 
 Rombertus: Toen ik vroeg of hij zijn naam wilde spellen, moest hij heel lang nadenken en spelde het zelfs twee keer verkeerd. 
 Rombertus: Je zou toch denken dat je je eigen naam wel zou onthouden…
@@ -59,8 +59,8 @@ Rombertus: Hmm...
 Rombertus: ...
 Rombertus: Dus die François Guyon is eigenlijk iemand anders?
 Rombertus: Natuurlijk... Het is me allemaal opeens heel duidelijk.
-Rombertus: Zijn naam was eigenlijk <color="red"><b>Balthasar Gerards</b></color>.
-Rombertus: <color="red"><b>Balthasar Gerards</b></color> was de moordenaar!
+Rombertus: Zijn naam was eigenlijk <color=#800000ff><b>Balthasar Gerards</b></color>.
+Rombertus: <color=#800000ff><b>Balthasar Gerards</b></color> was de moordenaar!
 Rombertus: Bedankt voor uw hulp!
 Rombertus: Cornelis moet hier over horen...
 

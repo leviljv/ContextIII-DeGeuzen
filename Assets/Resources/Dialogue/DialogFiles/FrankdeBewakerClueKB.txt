@@ -16,7 +16,7 @@ Frank de Bewaker: Je hebt geen idee hoe zwaar het is om de hele nacht wakker te 
 Frank de Bewaker: Ik heb al genoeg dingen aan mijn hoofd.
 Frank de Bewaker: Ik kan niet alles altijd perfect in de gaten houden.
 @ Had je niet maar 1 ketter waar je op moest letten?
-Frank de Bewaker: Nou ehh...
+Frank de Bewaker: Nou...
 Frank de Bewaker: Je moet maar eens eerst naar anderen kijken!
 Frank de Bewaker: Ga maar eens die monnik ondervragen, hij kwam vaak langs bij de ketter. 
 @ Oke, bedankt.
@@ -38,7 +38,7 @@ Frank de Bewaker: Je moet maar eens die monnik ondervragen, hij kwam vaak langs 
 
 % start NeverMind
 Frank de Bewaker: Huh? Oke...
-Frank de Bewaker: Weet wel, ik had er niks mee te maken. Geloof me!
+Frank de Bewaker: Ik had er niks mee te maken. Geloof me!
 % jump Breakout
 % end NeverMind
 

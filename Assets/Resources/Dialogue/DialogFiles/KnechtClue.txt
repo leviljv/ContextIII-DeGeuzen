@@ -9,7 +9,7 @@ Knecht: ...
 
 % start Antwoord
 Knecht: Ik was aan het schoonmaken in de binnenkomsthal, toen ik <b>zo</b> erg schrok van een knal dat ik per ongeluk de klok liet vallen. 
-Knecht: Volgens mij zijn daardoor de <color="red"><b>wijzers stil gaan staan</b></color> op het moment van de knal.
+Knecht: Volgens mij zijn daardoor de <color=#800000ff><b>wijzers stil gaan staan</b></color> op het moment van de knal.
 Knecht: Het is al weer een paar uur later, en de klok is nu kapot...
 $ DIALOG_GIVE_CLUE WillemClueTijdAns
 

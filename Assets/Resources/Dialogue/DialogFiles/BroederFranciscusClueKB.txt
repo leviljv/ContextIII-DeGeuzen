@@ -39,7 +39,7 @@ Broeder Franciscus: Houd dit wel even tussen ons tweetjes... Oke?
 % end BeschuldigVraag
 
 % start NeverMind
-Broeder Franciscus: ...Begrepen. Ik ben wel onschuldig... Dat u het weet.
+Broeder Franciscus: ...Begrepen.
 % jump Breakout
 % end NeverMind
 
