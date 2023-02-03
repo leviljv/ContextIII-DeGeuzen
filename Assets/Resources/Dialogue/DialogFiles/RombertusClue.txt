@@ -62,6 +62,7 @@ Rombertus: Natuurlijk... Het is me allemaal opeens heel duidelijk.
 Rombertus: Zijn naam was eigenlijk <color=#800000ff><b>Balthasar Gerards</b></color>.
 Rombertus: <color=#800000ff><b>Balthasar Gerards</b></color> was de moordenaar!
 Rombertus: Bedankt voor uw hulp!
+$ DIALOG_PLAY_SOUND win
 Rombertus: Cornelis moet hier over horen...
 
 @ Geen probleem.

@@ -66858,7 +66858,7 @@ GameObject:
   - component: {fileID: 1015173251331541222}
   - component: {fileID: 5971568895055392171}
   - component: {fileID: 5716641040682694857}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: trapcollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

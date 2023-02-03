@@ -39,6 +39,7 @@ public class WinningCondition : MonoBehaviour
                 Destroy(obj.GetComponent<DragableItem>());
             }
             Win = true;
+
             //EventManager.Invoke(EventType.UP_GLOBAL_INDEX);
             EventManager<string>.Invoke(EventType.SET_SETTING, "FoundAllClues");
         }

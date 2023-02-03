@@ -8,6 +8,7 @@ $ DIALOG_SET_PORTRAIT BakkerBart
 
 % start GetuigeVraag
 $ DIALOG_GIVE_CLUE MOBBakkerBartAns
+$ DIALOG_GIVE_CLUE MOBBakkerBartAns
 $ DIALOG_GIVE_CLUE MOBBakkerBartFalseAns
 Bakker Bart: Toen ik vanochtend mijn deeg ging voorbereiden, zag ik wel iets...
 Bakker Bart: Ik zag een klein iemand stiekem wegsluipen.
@@ -18,6 +19,7 @@ Bakker Bart: Het leek wel alsof ze heel stiekem probeerde te doen...
 % end GetuigeVraag
 
 % start BeschuldigVraag
+$ DIALOG_GIVE_CLUE MOBBakkerBartAns
 $ DIALOG_GIVE_CLUE MOBBakkerBartAns
 $ DIALOG_GIVE_CLUE MOBBakkerBartFalseAns
 Bakker Bart: Ik?
@@ -34,6 +36,7 @@ Bakker Bart: Klopt. Mijn vrouw heeft ons ook nog thuis zien komen.
 % end Beschuldigvraag
 
 % start NeverMind
+$ DIALOG_GIVE_CLUE MOBBakkerBartAns
 Bakker Bart: Oke... Maar ik ben wel echt onschuldig.
 % jump Breakout
 % end NeverMind

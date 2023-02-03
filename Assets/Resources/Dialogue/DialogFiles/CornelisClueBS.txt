@@ -42,6 +42,7 @@ Cornelis Groenveld: Hmm.. Juist.
 Cornelis Groenveld: De dronken boer en de monnik. Ik wist het!
 Cornelis Groenveld: Ontzettend bedankt voor uw hulp.
 Cornelis Groenveld: Door u kunnen deze ketters direct naar de gevangenis worden gestuurd!
+$ DIALOG_PLAY_SOUND win
 @ Graag gedaan!
 % jump Klaar
 @ Zoals het hoort.

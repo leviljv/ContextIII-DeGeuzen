@@ -47,6 +47,7 @@ Cornelis: Nee... Wat verschrikkelijk!
 Cornelis: Als zij zo nodig liever met een ketter samen is, mogen ze samen de gevangenis in!
 Cornelis: Bedankt, zonder uw hulp was ik nooit te weten gekomen dat mijn vrouw niet alleen een verrader is, maar ook een ketter!
 Cornelis: Hartelijk dank voor uw hulp.
+$ DIALOG_PLAY_SOUND win
 @ Graag gedaan.
 % jump Klaar
 @ Alsjeblieft. Sterkte, Cornelis.

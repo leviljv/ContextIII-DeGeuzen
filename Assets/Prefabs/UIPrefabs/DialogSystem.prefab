@@ -313,6 +313,13 @@ MonoBehaviour:
     pitch: 1
     spacialBlend: 0
     loop: 0
+  - name: win
+    clip: {fileID: 8300000, guid: 6b275da844b445b438c14543cba37012, type: 3}
+    source: {fileID: 0}
+    volume: 1
+    pitch: 1
+    spacialBlend: 0
+    loop: 0
 --- !u!1 &2528269160992584166
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class TakeCollectible : MonoBehaviour, IInteractable
         if (NoteBookV2.instance.CollectiblesFound < 5)
         {
             NoteBookV2.instance.CollectiblesFound++;
+            
         }
         else if (NoteBookV2.instance.CollectiblesFound == 5)
         {
@@ -18,9 +19,8 @@ public class TakeCollectible : MonoBehaviour, IInteractable
             NoteBookV2.instance.CollectibleChildNumber++;
             NoteBookV2.instance.CollectiblesFound = 0;
         }
-
         EventManager.Invoke(EventType.COLLETABLE_FOUND);
-
+        AudioPlaceholder.instance.GrabCoin();
         Destroy(gameObject);
     }
 }

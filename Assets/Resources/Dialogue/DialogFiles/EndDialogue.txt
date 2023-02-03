@@ -7,3 +7,4 @@ Cornelis: U bent een echte held. Vergeet ons niet, Oke?
 Cornelis: U bent altijd welkom.
 Cornelis: En detective?
 Cornelis: Hier... Een cadeau.
+$ NEXT_SCENE

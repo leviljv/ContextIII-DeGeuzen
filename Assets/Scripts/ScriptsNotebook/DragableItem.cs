@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPointerDownHandler, IPointerUpHandler
+public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler
 {
     public ClueAnswerSO clue;
     [HideInInspector]public Transform parentAfterDrag;
@@ -79,6 +79,7 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
     }
     public void OnPointerDown(PointerEventData eventData)
     {
+        AudioPlaceholder.instance.Clicked();
         offset = transform.position - Input.mousePosition;
         canvasGroup.alpha = 0.5f;
         canvasGroup.blocksRaycasts = false;
@@ -93,6 +94,7 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        AudioPlaceholder.instance.Hovered();
         Cursor.SetCursor(handWijs, hotSpot, cursorMode);
         //gameObject.transform.position = newPos;
         RaycastResult raycastResult = eventData.pointerCurrentRaycast;
@@ -144,5 +146,10 @@ public class DragableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IPoi
         }
         canvasGroup.alpha = 1;
         canvasGroup.blocksRaycasts = true;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        AudioPlaceholder.instance.LetGo();
     }
 }

@@ -7,10 +7,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2439112769744052626, guid: 8ed2f81e0e10bfc45982e211ce52e10b,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2439112769891555281, guid: 8ed2f81e0e10bfc45982e211ce52e10b,
         type: 3}
       propertyPath: m_Name
-      value: PlayerPackage Variant 1
+      value: FIXEDPLAYER
       objectReference: {fileID: 0}
     - target: {fileID: 2439112769891555282, guid: 8ed2f81e0e10bfc45982e211ce52e10b,
         type: 3}
