@@ -27,7 +27,6 @@ public class WinningCondition : MonoBehaviour
         {
             foreach (GameObject obj in CorrectGameObjects)
             {
-                obj.GetComponent<Image>().color = Groen;
                 Destroy(obj.GetComponent<DragableItem>());
             }
             index = 0;
@@ -37,7 +36,6 @@ public class WinningCondition : MonoBehaviour
         {
             foreach (GameObject obj in CorrectGameObjects)
             {
-                obj.GetComponent<Image>().color = Groen;
                 Destroy(obj.GetComponent<DragableItem>());
             }
             Win = true;

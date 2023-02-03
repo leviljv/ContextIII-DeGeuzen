@@ -1,5 +1,5 @@
 $ DIALOG_SET_PORTRAIT JanDeSmit
-@ Hoe komt het lichaam van Peter de boer in jouw werkplaats?
+@ Hoe komt het lijk van Peter in jouw werkplaats?
 % jump VerlaringVraag
 @ Jan... Heb jij Peter iets aangedaan?
 % jump BeschuldigVraag
@@ -8,7 +8,7 @@ $ DIALOG_SET_PORTRAIT JanDeSmit
 
 % start VerlaringVraag
 $ DIALOG_GIVE_CLUE MOBJandeSmidAns
-$ DIALOG_GIVE_CLUE MOBJandeSmidFalseAns
+$ DIALOG_GIVE_CLUE MOBJandeSmidAns
 $ DIALOG_GIVE_CLUE MOBJandeSmidFalseAns
 Jan de Smid: Ik weet het niet!
 Jan de Smid: Ik weet niet waarom dit gebeurt...
@@ -27,7 +27,7 @@ Jan de Smid: Ik hield echt van hem.
 
 % start BeschuldigVraag
 $ DIALOG_GIVE_CLUE MOBJandeSmidAns
-$ DIALOG_GIVE_CLUE MOBJandeSmidFalseAns
+$ DIALOG_GIVE_CLUE MOBJandeSmidAns
 $ DIALOG_GIVE_CLUE MOBJandeSmidFalseAns
 Jan de Smid: Wat? <b> Nee! </b>
 Jan de Smid: Hij was mijn beste vriend!
