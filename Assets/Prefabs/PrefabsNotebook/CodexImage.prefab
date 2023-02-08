@@ -129,8 +129,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35.048553, y: 3.4000063}
-  m_SizeDelta: {x: 364.7163, y: 50}
+  m_AnchoredPosition: {x: 17.2955, y: -22.2822}
+  m_SizeDelta: {x: 469.4045, y: 141.3644}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4493633513646948455
 CanvasRenderer:
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Uitleg.
+  m_text: Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.Uitleg.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3dca728657e719c4b957e28632a34dc4, type: 2}
   m_sharedMaterial: {fileID: -4312800550946297033, guid: 3dca728657e719c4b957e28632a34dc4,
@@ -188,8 +188,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 22.249691
+  m_fontSizeBase: 22.249691
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -1.1287766, y: 0, z: -53.734524, w: -37.38437}
+  m_margin: {x: -1.1287766, y: 0, z: 7.1750984, w: 16.863213}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -326,8 +326,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 58.248
-  m_fontSizeBase: 58.248
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

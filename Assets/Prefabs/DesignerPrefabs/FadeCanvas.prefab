@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3007789138147333051}
   - component: {fileID: 8233305524019474266}
   - component: {fileID: 5262906164101552852}
-  - component: {fileID: 5460262879700332021}
   m_Layer: 5
   m_Name: FadeCanvas
   m_TagString: Untagged
@@ -84,23 +83,6 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
---- !u!114 &5460262879700332021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3623250168819877295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!1 &4073938053288945052
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,7 +95,6 @@ GameObject:
   - component: {fileID: 4073938053288945049}
   - component: {fileID: 4073938053288945048}
   - component: {fileID: 4073938053288945055}
-  - component: {fileID: 4073938053288945054}
   m_Layer: 0
   m_Name: FadeImage
   m_TagString: Fade
@@ -163,7 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -199,23 +180,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!320 &4073938053288945054
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4073938053288945052}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 471f5bffcf814804f83ada0aaea209a4, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings: []
-  m_ExposedReferences:
-    m_References: []
 --- !u!1 &4073938053527237959
 GameObject:
   m_ObjectHideFlags: 0
